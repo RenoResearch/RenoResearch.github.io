@@ -31483,7 +31483,7 @@ q.sRb(p)
 s=q
 o.wU$=s
 o.a8q$=new A.ah1(A.ba(t.lZ))
-o=new A.aga(o,"http://localhost:3000")
+o=new A.aga(o,"https://api.renoresearch.sg")
 o.ak7()
 return o},
 aga:function aga(a,b){this.a=a
