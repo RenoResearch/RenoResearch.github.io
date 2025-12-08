@@ -32069,7 +32069,7 @@ q.sVc(p)
 s=q
 o.yo$=s
 o.adY$=new A.akK(A.bk(t.lZ))
-o=new A.ajG(o,"http://localhost:3000")
+o=new A.ajG(o,"https://api.renoresearch.sg")
 o.apT()
 return o},
 ajG:function ajG(a,b){this.a=a
