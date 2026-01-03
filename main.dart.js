@@ -32301,7 +32301,7 @@ q.sVU(p)
 s=q
 o.yG$=s
 o.aeZ$=new A.alg(A.bm(t.lZ))
-o=new A.akc(o,"http://localhost:3000")
+o=new A.akc(o,"https://api.renoresearch.sg")
 o.aqZ()
 return o},
 akc:function akc(a,b){this.a=a
