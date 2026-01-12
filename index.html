@@ -60,50 +60,104 @@
   <script>
     (async function() {
       const STORAGE_KEY = 'app_version';
+      const CHECK_INTERVAL = 60000; // Check every 60 seconds
+      let currentVersion = null;
       
-      try {
-        // Fetch version with cache-busting
-        const response = await fetch('version.json?t=' + Date.now(), { cache: 'no-store' });
-        const data = await response.json();
-        const serverVersion = data.version + '_' + data.buildTime;
-        const storedVersion = localStorage.getItem(STORAGE_KEY);
-        
-        if (storedVersion && storedVersion !== serverVersion) {
-          console.log('New version detected, refreshing...');
-          localStorage.setItem(STORAGE_KEY, serverVersion);
+      async function checkVersion() {
+        try {
+          // Fetch version with cache-busting to always get fresh data
+          const response = await fetch('version.json?t=' + Date.now(), { 
+            cache: 'no-store',
+            headers: { 'Pragma': 'no-cache', 'Cache-Control': 'no-cache' }
+          });
           
+          if (!response.ok) {
+            console.warn('Failed to fetch version.json:', response.status);
+            return;
+          }
+          
+          const data = await response.json();
+          const serverVersion = data.version + '_' + data.buildTime;
+          const storedVersion = localStorage.getItem(STORAGE_KEY);
+          
+          // Store current version for periodic checks
+          currentVersion = serverVersion;
+          
+          // If we have a stored version and it's different, trigger refresh
+          if (storedVersion && storedVersion !== serverVersion) {
+            console.log('📦 New version detected!');
+            console.log('Old version:', storedVersion);
+            console.log('New version:', serverVersion);
+            localStorage.setItem(STORAGE_KEY, serverVersion);
+            
+            // Show user notification (optional)
+            if (window.confirm('A new version of the app is available. Refresh now to get the latest updates?')) {
+              performHardRefresh();
+            }
+            return;
+          }
+          
+          // First time - just store the version
+          if (!storedVersion) {
+            console.log('📦 Initial version:', serverVersion);
+            localStorage.setItem(STORAGE_KEY, serverVersion);
+          }
+        } catch (e) {
+          console.log('Version check failed:', e.message);
+        }
+      }
+      
+      async function performHardRefresh() {
+        try {
           // Clear all caches
           if (window.caches) {
             const names = await caches.keys();
+            console.log('Clearing caches:', names);
             await Promise.all(names.map(name => caches.delete(name)));
           }
           
           // Unregister service workers
           if ('serviceWorker' in navigator) {
             const registrations = await navigator.serviceWorker.getRegistrations();
+            console.log('Unregistering service workers:', registrations.length);
             await Promise.all(registrations.map(r => r.unregister()));
           }
           
           // Force reload from server
+          console.log('🔄 Reloading application...');
+          window.location.href = window.location.href.split('#')[0] + '?t=' + Date.now();
+        } catch (e) {
+          console.error('Error during refresh:', e);
+          // Fallback: hard reload
           window.location.reload(true);
-          return;
         }
-        
-        localStorage.setItem(STORAGE_KEY, serverVersion);
-      } catch (e) {
-        console.log('Version check failed:', e);
       }
       
-      // Force service worker update
+      // Initial version check
+      await checkVersion();
+      
+      // Set up periodic version checking (every 60 seconds)
+      setInterval(checkVersion, CHECK_INTERVAL);
+      
+      // Also check when page regains focus (user switches back to tab)
+      document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'visible') {
+          console.log('Page regained focus, checking version...');
+          checkVersion();
+        }
+      });
+      
+      // Force service worker update on load
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.getRegistrations().then(function(registrations) {
           for (let registration of registrations) {
-            registration.update();
+            registration.update().catch(err => console.log('SW update check failed:', err));
           }
         });
         
         // Listen for service worker updates
         navigator.serviceWorker.addEventListener('controllerchange', function() {
+          console.log('Service worker updated, reloading...');
           window.location.reload();
         });
       }
