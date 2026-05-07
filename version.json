@@ -1,7 +1,7 @@
 {
-  "version": "2026.05.07.1254",
-  "buildTime": "2026-05-07T07:24:03Z",
-  "gitHash": "3582db4",
+  "version": "2026.05.07.1304",
+  "buildTime": "2026-05-07T07:34:42Z",
+  "gitHash": "afe3baf",
   "gitBranch": "main",
   "buildMode": "release"
 }
