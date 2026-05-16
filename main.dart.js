@@ -149235,54 +149235,54 @@ o=A.a([A.r(B.mz,B.iu,l,13),A.i(l,l,5),A.b(""+q+"/"+r.length+" appointment slots 
 if(k.gbf(s)){n=A.i(l,l,5)
 m=A.f(10)
 B.j.t(o,A.a([n,A.h(l,A.b(""+k.gC(s)+" booked",l,l,l,l,A.a0(l,l,B.aK,l,l,l,l,l,l,l,l,9,l,l,B.q,l,l,!0,l,l,l,l,l,l,l,l),l,l,l),B.d,l,l,new A.j(B.dv,l,l,m,l,l,B.i),l,l,l,l,new A.o(5,2,5,2),l,l,l)],p))}return A.h(l,A.n(o,B.f,B.c,B.E,l,l),B.d,l,l,new A.j(B.nX,l,l,j,l,l,B.i),l,l,l,l,new A.o(10,6,10,6),l,l,l)},
-adL(c4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8=this,b9=null,c0="special_requirements",c1="quotation_form_data",c2=J.U(c4),c3=c2.h(c4,"customer_name")
-if(c3==null)c3="Unknown Customer"
-s=c2.h(c4,"budget")
+adL(c6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8=this,b9=null,c0="special_requirements",c1="quotation_form_data",c2="original_customer_data",c3="allowDesignerMatching",c4=J.U(c6),c5=c4.h(c6,"customer_name")
+if(c5==null)c5="Unknown Customer"
+s=c4.h(c6,"budget")
 if(s==null)s=""
-r=c2.h(c4,"timeline")
+r=c4.h(c6,"timeline")
 if(r==null)r=""
-q=c2.h(c4,"property_type")
+q=c4.h(c6,"property_type")
 if(q==null)q=""
-p=c2.h(c4,"property_size")
+p=c4.h(c6,"property_size")
 if(p==null)p=""
-o=c2.h(c4,"has_collected_keys")
+o=c4.h(c6,"has_collected_keys")
 if(o==null)o=!1
-n=c2.h(c4,"keys_status")
+n=c4.h(c6,"keys_status")
 if(n==null)n="Keys Not Collected"
-m=c2.h(c4,"accepted_leads_count")
+m=c4.h(c6,"accepted_leads_count")
 if(m==null)m=0
-l=c2.h(c4,"posted_date")
+l=c4.h(c6,"posted_date")
 if(l==null)l=new A.aG(Date.now(),0,!1)
 k=t.g
-j=k.a(c2.h(c4,"appointment_slots"))
+j=k.a(c4.h(c6,"appointment_slots"))
 if(j==null)j=[]
-i=k.a(c2.h(c4,"booked_appointment_slots"))
+i=k.a(c4.h(c6,"booked_appointment_slots"))
 if(i==null)i=[]
-h=c2.h(c4,"appointment_preference")
+h=c4.h(c6,"appointment_preference")
 g=h==null?b9:J.v(h)
 if(g==null)g=""
-if(!J.q(c2.h(c4,"is_showroom_appointment"),!0))B.l.u(g.toLowerCase(),"showroom")
+if(!J.q(c4.h(c6,"is_showroom_appointment"),!0))B.l.u(g.toLowerCase(),"showroom")
 f=b8.WP(j)
 h=A.X(f).k("aE<1>")
 A.O(new A.aE(f,new A.bfo(J.bD(i,new A.bfp(),t.N).hX(0)),h),!0,h.k("Y.E"))
 if(q.length!==0&&q!=="Not specified")e=p.length!==0&&p!=="Not specified"?q+(" \u2022 "+p):q
 else e=p.length!==0&&p!=="Not specified"?p:""
-d=c2.h(c4,"calculated_price")
+d=c4.h(c6,"calculated_price")
 if(A.hu(d))c=d
 else c=typeof d=="number"?d:20
-b=c2.h(c4,"has_floorplans")
+b=c4.h(c6,"has_floorplans")
 if(b==null)b=!1
-a=c2.h(c4,"has_site_images")
+a=c4.h(c6,"has_site_images")
 if(a==null)a=!1
-a0=c2.h(c4,"requires_loan")
+a0=c4.h(c6,"requires_loan")
 if(a0==null)a0=!1
-a1=c2.h(c4,"loan_option")
+a1=c4.h(c6,"loan_option")
 if(a1==null)a1=""
-a2=c2.h(c4,"is_looking_for_loan")
+a2=c4.h(c6,"is_looking_for_loan")
 if(a2==null)a2=a0
-a3=k.a(c2.h(c4,"loan_types"))
+a3=k.a(c4.h(c6,"loan_types"))
 if(a3==null)a3=[]
-k=c2.h(c4,"loan_type")
+k=c4.h(c6,"loan_type")
 a4=k==null?b9:J.v(k)
 if(a4==null)a4=a1
 k=A.f(14)
@@ -149293,7 +149293,7 @@ a7=A.m(38,B.h.i()>>>16&255,B.h.i()>>>8&255,B.h.i()&255)
 a8=A.f(10)
 a8=A.h(b9,A.r(B.dV,B.h,b9,20),B.d,b9,b9,new A.j(a7,b9,b9,a8,b9,b9,B.i),b9,b9,b9,b9,new A.o(8,8,8,8),b9,b9,b9)
 a7=A.i(b9,b9,10)
-a9=A.b(c3,b9,b9,b9,b9,A.d().$3$color$fontSize$fontWeight(B.h,16,B.t),b9,b9,b9)
+a9=A.b(c5,b9,b9,b9,b9,A.d().$3$color$fontSize$fontWeight(B.h,16,B.t),b9,b9,b9)
 b0=A.i(b9,3,b9)
 b1=o?B.zc:B.zd
 b1=A.r(b1,o?B.h:B.bp,b9,15)
@@ -149323,20 +149323,26 @@ else b2=!1
 if(b2)b0.push(A.i(b9,8,b9))
 if(a2||J.aO(a3))b0.push(A.n(A.a([A.r(B.hV,B.x,b9,16),A.i(b9,b9,6),A.A(A.b(b8.aEq(a2,a3,a4),b9,b9,b9,b9,A.d().$3$color$fontSize$fontWeight(B.a0,13,B.z),b9,b9,b9),1)],b3),B.f,B.c,B.b,b9,b9))
 b1.push(A.h(b9,A.p(b0,B.p,b9,B.c,B.b,B.k),B.d,b9,b9,new A.j(B.bz,b9,a9,a8,b9,b9,B.i),b9,b9,b9,b9,new A.o(12,12,12,12),b9,b9,b9))}if(!a7||a||a2||J.aO(a3))b1.push(A.i(b9,16,b9))
-a7=c2.h(c4,c0)
-if(J.v(a7==null?"":a7).length!==0)B.j.t(b1,A.a([new A.AF(J.v(c2.h(c4,c0)),b9),A.i(b9,14,b9)],b3))
-if(c2.h(c4,c1)!=null){a7=t.f
-a7=a7.b(c2.h(c4,c1))&&J.aO(a7.a(c2.h(c4,c1)))}else a7=!1
-if(a7)B.j.t(b1,A.a([b8.Vd(c2.h(c4,c1)),A.i(b9,14,b9)],b3))
-c2=A.az(4294638588)
-a7=A.f(10)
-a8=A.H(B.b7,B.n,1)
-b1.push(A.h(b9,A.n(A.a([b8.a7T(B.cx,B.C.n(m),"Accepted"),A.h(b9,b9,B.d,B.b7,b9,b9,b9,28,b9,b9,b9,b9,b9,1),b8.a7T(B.fL,b8.Y3(l),"Joined")],b3),B.f,B.n2,B.b,b9,b9),B.d,b9,b9,new A.j(c2,b9,a8,a7,b9,b9,B.i),b9,b9,b9,b9,new A.o(10,10,10,10),b9,b9,b9))
+a7=c4.h(c6,c0)
+if(J.v(a7==null?"":a7).length!==0)B.j.t(b1,A.a([new A.AF(J.v(c4.h(c6,c0)),b9),A.i(b9,14,b9)],b3))
+if(c4.h(c6,c1)!=null){a7=t.f
+a7=a7.b(c4.h(c6,c1))&&J.aO(a7.a(c4.h(c6,c1)))}else a7=!1
+if(a7)B.j.t(b1,A.a([b8.Vd(c4.h(c6,c1)),A.i(b9,14,b9)],b3))
+a7=A.az(4294638588)
+a8=A.f(10)
+a9=A.H(B.b7,B.n,1)
+b1.push(A.h(b9,A.n(A.a([b8.a7T(B.cx,B.C.n(m),"Accepted"),A.h(b9,b9,B.d,B.b7,b9,b9,b9,28,b9,b9,b9,b9,b9,1),b8.a7T(B.fL,b8.Y3(l),"Joined")],b3),B.f,B.n2,B.b,b9,b9),B.d,b9,b9,new A.j(a7,b9,a9,a8,b9,b9,B.i),b9,b9,b9,b9,new A.o(10,10,10,10),b9,b9,b9))
 b1.push(A.i(b9,14,b9))
 a5=A.a([B.e,B.r],a5)
-a7=A.f(10)
-a8=A.aS(b9,b9,B.K,b9,b9,b9,0,b9,b9,B.h,b9,b9,new A.o(0,12,0,12),B.K,new A.ad(A.f(10),B.v),b9,b9,b9,b9,b9)
-b1.push(A.n(A.a([A.A(A.h(b9,A.bb(!1,A.n(A.a([A.r(B.pa,b9,b9,16),A.i(b9,b9,6),A.b("Purchase Lead \u2022 S$"+B.m.a3(c,0),b9,b9,b9,b9,A.d().$2$fontSize$fontWeight(14,B.q),b9,b9,b9)],b3),B.f,B.I,B.b,b9,b9),b9,b9,b9,b9,b9,b9,new A.bfq(b8,c4),b9,a8),B.d,b9,b9,new A.j(b9,b9,b9,a7,b9,new A.a2(B.a5,B.a8,B.D,a5,b9,b9),B.i),b9,b9,b9,b9,b9,b9,b9,b9),1)],b3),B.f,B.c,B.b,b9,b9))
+a8=A.f(10)
+a7=c4.h(c6,c2)
+a7=a7==null?b9:J.k(a7,c3)
+a7=(a7==null?!1:a7)?B.K:B.W
+c4=c4.h(c6,c2)
+c4=c4==null?b9:J.k(c4,c3)
+c4=(c4==null?!1:c4)?B.h:B.a2
+c4=A.aS(b9,b9,a7,b9,b9,b9,0,b9,b9,c4,b9,b9,new A.o(0,12,0,12),B.K,new A.ad(A.f(10),B.v),b9,b9,b9,b9,b9)
+b1.push(A.n(A.a([A.A(A.h(b9,A.bb(!1,A.n(A.a([A.r(B.pa,b9,b9,16),A.i(b9,b9,6),A.b("Purchase Lead \u2022 S$"+B.m.a3(c,0),b9,b9,b9,b9,A.d().$2$fontSize$fontWeight(14,B.q),b9,b9,b9)],b3),B.f,B.I,B.b,b9,b9),b9,b9,b9,b9,b9,b9,new A.bfq(b8,c6),b9,c4),B.d,b9,b9,new A.j(b9,b9,b9,a8,b9,new A.a2(B.a5,B.a8,B.D,a5,b9,b9),B.i),b9,b9,b9,b9,b9,b9,b9,b9),1)],b3),B.f,B.c,B.b,b9,b9))
 return A.h(b9,A.p(A.a([a6,new A.R(new A.o(14,14,14,14),A.p(b1,B.p,b9,B.c,B.b,B.k),b9)],b3),B.p,b9,B.c,B.b,B.k),B.ab,b9,b9,new A.j(B.h,b9,b9,k,h,b9,B.i),b9,b9,b9,new A.o(0,0,0,14),b9,b9,b9,b9)},
 a7T(a,b,c){var s=null
 return A.p(A.a([A.r(a,B.e,s,20),A.i(s,4,s),A.b(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.a0,16,B.t),s,s,s),A.b(c,s,s,s,s,A.d().$2$color$fontSize(B.F,11),s,s,s)],t.p),B.f,s,B.c,B.b,B.k)},
