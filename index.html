@@ -163,6 +163,139 @@
       }
     })();
   </script>
-  <script src="flutter_bootstrap.js" async></script>
+  <!--
+    In-app-browser gate.
+
+    Embedded in-app browsers (WhatsApp, Instagram, Facebook/Messenger, TikTok, …)
+    run inside a stripped-down system WebView. This app fails there two ways:
+      1. CanvasKit paints on a WebGL surface and those WebViews have broken GPU
+         compositing -> corrupted / blank UI.
+      2. Google Sign-In (OAuth) is blocked by Google inside embedded WebViews and
+         camera / file uploads are unreliable.
+    So for those browsers we skip loading Flutter and show a plain-HTML screen
+    that gets the user into their real browser (Chrome / Safari), where the app
+    works. Normal browsers load Flutter exactly as before.
+  -->
+  <script>
+    (function () {
+      var ua = navigator.userAgent || '';
+
+      var isInAppBrowser =
+        // Named in-app browsers (covers iOS, where there is no "wv" marker).
+        /WhatsApp/i.test(ua) ||
+        /Instagram/i.test(ua) ||
+        /FBAN|FBAV|FB_IAB|FBIOS|Messenger/i.test(ua) || // Facebook / Messenger
+        /Line\//i.test(ua) ||
+        /TikTok|musical_ly|BytedanceWebview/i.test(ua) ||
+        /Snapchat/i.test(ua) ||
+        /Twitter/i.test(ua) ||
+        /Telegram/i.test(ua) ||
+        // Generic Android System WebView marker ("; wv)"). WhatsApp and most
+        // other Android in-app browsers set this even when they don't add a
+        // branded token. Real Chrome / Samsung Internet / Firefox do NOT include
+        // it, so normal browsers are unaffected.
+        /;\s*wv[;)]/i.test(ua);
+
+      function loadFlutter() {
+        var s = document.createElement('script');
+        s.src = 'flutter_bootstrap.js';
+        s.async = true;
+        document.body.appendChild(s);
+      }
+
+      if (!isInAppBrowser) {
+        loadFlutter();
+        return;
+      }
+
+      // ---- In-app browser: show "open in your browser" screen ---------------
+
+      var isAndroid = /Android/i.test(ua);
+      var fullUrl = window.location.href;
+
+      function openInExternalBrowser() {
+        if (isAndroid) {
+          var noScheme = fullUrl.replace(/^https?:\/\//, '');
+          try {
+            window.location.href =
+              'intent://' + noScheme +
+              '#Intent;scheme=https;package=com.android.chrome;end';
+            return;
+          } catch (e) { /* fall through */ }
+          try {
+            window.location.href =
+              'intent://' + noScheme + '#Intent;scheme=https;end';
+            return;
+          } catch (e2) { /* fall through */ }
+        }
+        window.open(fullUrl, '_system') || window.open(fullUrl, '_blank');
+      }
+
+      function copyLink(btn) {
+        var done = function () {
+          btn.textContent = 'Link copied ✓';
+          setTimeout(function () { btn.textContent = 'Copy link'; }, 2500);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(fullUrl).then(done, function () {});
+        } else {
+          var t = document.createElement('textarea');
+          t.value = fullUrl;
+          document.body.appendChild(t);
+          t.select();
+          try { document.execCommand('copy'); done(); } catch (e) {}
+          document.body.removeChild(t);
+        }
+      }
+
+      function showGate() {
+        document.documentElement.style.height = '100%';
+        document.body.style.margin = '0';
+
+        var host = window.location.host;
+        var hint = isAndroid
+          ? 'If nothing happens, tap the ⋮ menu (top-right) and choose “Open in Chrome”.'
+          : 'Tap the share / ⋯ menu and choose “Open in Safari” or your browser.';
+
+        var wrap = document.createElement('div');
+        wrap.setAttribute('id', 'inapp-browser-gate');
+        wrap.innerHTML =
+          '<div style="position:fixed;inset:0;background:#FFFDF7;display:flex;' +
+          'align-items:center;justify-content:center;padding:24px;box-sizing:border-box;' +
+          'font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',Roboto,sans-serif;' +
+          'color:#2B2B2B;z-index:2147483647;">' +
+            '<div style="max-width:360px;width:100%;text-align:center;">' +
+              '<img src="icons/Icon-192.png" alt="RenoResearch" width="72" height="72" ' +
+                'style="border-radius:18px;margin-bottom:20px;" />' +
+              '<h1 style="font-size:20px;line-height:1.35;margin:0 0 12px;font-weight:700;">' +
+                'Open in your browser to continue</h1>' +
+              '<p style="font-size:14.5px;line-height:1.55;margin:0 0 24px;color:#5A5A5A;">' +
+                'This app doesn’t work inside the in-app browser. Open it in ' +
+                'Chrome or Safari to sign in and use all features.</p>' +
+              '<button id="rr-open" style="display:block;width:100%;border:0;cursor:pointer;' +
+                'background:#F0A500;color:#fff;font-size:16px;font-weight:700;padding:15px;' +
+                'border-radius:12px;margin-bottom:12px;">Open in Browser</button>' +
+              '<button id="rr-copy" style="display:block;width:100%;cursor:pointer;' +
+                'background:transparent;color:#B07600;font-size:15px;font-weight:600;' +
+                'padding:13px;border:1.5px solid #F0A500;border-radius:12px;">Copy link</button>' +
+              '<p style="font-size:12.5px;line-height:1.5;margin:20px 0 0;color:#8A8A8A;">' + hint + '</p>' +
+              '<p style="font-size:12px;margin:14px 0 0;color:#B0B0B0;word-break:break-all;">' + host + '</p>' +
+            '</div>' +
+          '</div>';
+
+        document.body.appendChild(wrap);
+        document.getElementById('rr-open').addEventListener('click', openInExternalBrowser);
+        document.getElementById('rr-copy').addEventListener('click', function () {
+          copyLink(document.getElementById('rr-copy'));
+        });
+      }
+
+      if (document.body) {
+        showGate();
+      } else {
+        document.addEventListener('DOMContentLoaded', showGate);
+      }
+    })();
+  </script>
 </body>
 </html>
