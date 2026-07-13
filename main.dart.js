@@ -154990,9 +154990,9 @@ r=q.aE.h(0,s)
 if(r==null)return
 q.aF=!0
 $.az.rx$.push(new A.bpa(q,r))},
-b_f(a){var s="connectionsCount",r=null,q=typeof a.h(0,s)=="number"?B.m.au(A.eX(a.h(0,s))):r,p=q!=null&&q>0?A.w(q)+" designers":"enough designers",o=this.c
-o.toString
-A.bT(r,r,!0,r,new A.bqc(this,p),o,r,!0,!0,t.z)},
+b_f(a){var s="connectionsCount",r=null,q=J.q(a.h(0,"hideConnectionsCount"),!0),p=typeof a.h(0,s)=="number"?B.m.au(A.eX(a.h(0,s))):r,o=!q&&p!=null&&p>0?A.w(p)+" designers":"enough designers",n=this.c
+n.toString
+A.bT(r,r,!0,r,new A.bqc(this,o),n,r,!0,!0,t.z)},
 b_h(a){var s=null,r=this.c
 r.toString
 A.bT(s,s,!0,s,new A.bqE(this,a),r,s,!0,!0,t.z)},
@@ -156204,110 +156204,111 @@ Nw(a){var s,r,q
 try{s=A.h_(a,null)
 r=A.f8(J.v(s),A.aS("(\\d{1,3})(?=(\\d{3})+(?!\\d))",!1,!1),new A.bnR(),null)
 return r}catch(q){return a}},
-aLs(b6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5=this,a6=null,a7="purchased",a8="reno_research_remarks",a9="public_preview_files",b0="floorplan_count",b1=4294309365,b2="site_images_count",b3="quotation_form_data",b4=J.Q(b6),b5=b4.h(b6,"title")
-if(b5==null)b5="Renovation Project"
-s=b4.h(b6,"homeowner")
+aLs(b7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6=this,a7=null,a8="purchased",a9="reno_research_remarks",b0="public_preview_files",b1="floorplan_count",b2=4294309365,b3="site_images_count",b4="quotation_form_data",b5=J.Q(b7),b6=b5.h(b7,"title")
+if(b6==null)b6="Renovation Project"
+s=b5.h(b7,"homeowner")
 if(s==null)s="Unknown Customer"
-r=b4.h(b6,"location")
+r=b5.h(b7,"location")
 if(r==null)r="Location not specified"
-q=b4.h(b6,"budget")
+q=b5.h(b7,"budget")
 if(q==null)q="Budget not specified"
-p=b4.h(b6,"timeline")
+p=b5.h(b7,"timeline")
 if(p==null)p="Timeline not specified"
-o=b4.h(b6,"description")
+o=b5.h(b7,"description")
 if(o==null)o="No description provided"
-b4.h(b6,"urgency")
-n=b4.h(b6,"status")
+b5.h(b7,"urgency")
+n=b5.h(b7,"status")
 if(n==null)n="new"
-m=b4.h(b6,"posted_date")
+m=b5.h(b7,"posted_date")
 if(m==null)m=new A.aK(Date.now(),0,!1)
-l=b4.h(b6,"request_number")
+l=b5.h(b7,"request_number")
 if(l==null)l=1
-k=a5.Fs(b6)
-j=A.f(14)
-i=A.a([new A.M(-2,B.u,A.m(15,B.o.i()>>>16&255,B.o.i()>>>8&255,B.o.i()&255),new A.K(0,3),16),new A.M(0,B.u,A.m(13,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),new A.K(0,1),6)],t.V)
-h=t.O
-g=A.a([B.e,B.r],h)
-f=A.m(235,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255)
+k=J.q(b5.h(b7,"hide_connections_count"),!0)
+j=a6.Fs(b7)
+i=A.f(14)
+h=A.a([new A.M(-2,B.u,A.m(15,B.o.i()>>>16&255,B.o.i()>>>8&255,B.o.i()&255),new A.K(0,3),16),new A.M(0,B.u,A.m(13,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),new A.K(0,1),6)],t.V)
+g=t.O
+f=A.a([B.e,B.r],g)
+e=A.m(235,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255)
+d=A.f(20)
+c=t.p
+d=A.h(a7,A.n(A.a([A.r(B.d_,B.r,a7,12),A.i(a7,a7,4),A.b("HOMEOWNER APP LEAD",a7,a7,a7,a7,A.a_(a7,a7,B.r,a7,a7,a7,a7,a7,a7,a7,a7,10,a7,a7,B.t,a7,a7,!0,a7,0.3,a7,a7,a7,a7,a7,a7),a7,a7,a7)],c),B.f,B.c,B.E,0,a7,a7),B.d,a7,a7,new A.k(e,a7,a7,d,a7,a7,B.j),a7,a7,a7,a7,new A.o(8,4,8,4),a7,a7,a7)
 e=A.f(20)
-d=t.p
-e=A.h(a6,A.n(A.a([A.r(B.d_,B.r,a6,12),A.i(a6,a6,4),A.b("HOMEOWNER APP LEAD",a6,a6,a6,a6,A.a_(a6,a6,B.r,a6,a6,a6,a6,a6,a6,a6,a6,10,a6,a6,B.t,a6,a6,!0,a6,0.3,a6,a6,a6,a6,a6,a6),a6,a6,a6)],d),B.f,B.c,B.E,0,a6,a6),B.d,a6,a6,new A.k(f,a6,a6,e,a6,a6,B.j),a6,a6,a6,a6,new A.o(8,4,8,4),a6,a6,a6)
-f=A.f(20)
-c=A.a([],d)
-if(J.q(b4.h(b6,a7),!0))B.h.t(c,A.a([A.r(B.bq,B.aF,a6,13),A.i(a6,a6,4),A.b("PURCHASED",a6,a6,a6,a6,A.a_(a6,a6,B.aF,a6,a6,a6,a6,a6,a6,a6,a6,11,a6,a6,B.t,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6)],d))
-else B.h.t(c,A.a([A.b(""+k+" Credits",a6,a6,a6,a6,A.a_(a6,a6,B.r,a6,a6,a6,a6,a6,a6,a6,a6,13,a6,a6,B.t,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6)],d))
-g=A.h(a6,A.p(A.a([A.n(A.a([e,A.h(a6,A.n(c,B.f,B.c,B.E,0,a6,a6),B.d,a6,a6,new A.k(B.i,a6,a6,f,a6,a6,B.j),a6,a6,a6,a6,new A.o(10,4,10,4),a6,a6,a6)],d),B.f,B.ar,B.b,0,a6,a6),A.i(a6,10,a6),A.n(A.a([A.z(A.b(b5,2,B.a8,a6,a6,A.a_(a6,a6,B.i,a6,a6,a6,a6,a6,a6,a6,a6,17,a6,a6,B.t,a6,a6,!0,a6,-0.2,a6,a6,a6,a6,a6,a6),a6,a6,a6),1)],d),B.f,B.c,B.b,0,a6,a6)],d),B.f,a6,B.c,B.b,B.k),B.d,a6,a6,new A.k(a6,a6,a6,a6,a6,new A.a4(B.a5,B.a7,B.D,g,a6,a6),B.j),a6,a6,a6,a6,new A.o(14,12,14,12),a6,a6,a6)
-f=A.au(4294638588)
-e=A.f(10)
-c=A.H(A.au(4293849074),B.n,1)
-b=A.nG(A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),a6,A.r(B.d_,B.e,a6,20),18)
-a=A.i(a6,a6,10)
-a0=A.b(s,1,B.a8,a6,a6,A.a_(a6,a6,A.au(4279901473),a6,a6,a6,a6,a6,a6,a6,a6,14,a6,a6,B.q,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6)
-a1=A.i(a6,3,a6)
-a2=A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255)
-a3=A.f(10)
-a2=A.h(a6,A.b(A.ch(n,"_"," ").toUpperCase(),a6,a6,a6,a6,A.a_(a6,a6,B.r,a6,a6,a6,a6,a6,a6,a6,a6,9,a6,a6,B.q,a6,a6,!0,a6,0.2,a6,a6,a6,a6,a6,a6),a6,a6,a6),B.d,a6,a6,new A.k(a2,a6,a6,a3,a6,a6,B.j),a6,a6,a6,a6,new A.o(6,2,6,2),a6,a6,a6)
-a3=A.i(a6,a6,6)
-a4=l===1?"":"s"
-e=A.a([A.h(a6,A.n(A.a([b,a,A.z(A.p(A.a([a0,a1,A.n(A.a([a2,a3,A.b(A.w(l)+" ID"+a4+" Connected",a6,a6,a6,a6,A.a_(a6,a6,B.O,a6,a6,a6,a6,a6,a6,a6,a6,10,a6,a6,a6,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6)],d),B.f,B.c,B.b,0,a6,a6)],d),B.p,a6,B.c,B.b,B.k),1)],d),B.f,B.c,B.b,0,a6,a6),B.d,a6,a6,new A.k(f,a6,c,e,a6,a6,B.j),a6,a6,a6,a6,new A.o(10,10,10,10),a6,a6,a6),A.i(a6,12,a6),A.n(A.a([A.z(a5.pH(B.hM,"Location",r),1)],d),B.f,B.c,B.b,0,a6,a6)],d)
-if(B.l.u(r,"***")){f=B.e.D(0.1)
-c=A.f(10)
-e.push(new A.P(B.t5,new A.db(B.Z,a6,a6,A.h(a6,A.b("Full Address on Purchase",a6,a6,a6,a6,A.d().$3$color$fontSize$fontWeight(B.r,10,B.q),a6,a6,a6),B.d,a6,a6,new A.k(f,a6,a6,c,a6,a6,B.j),a6,a6,a6,a6,B.jJ,a6,a6,a6),a6),a6))}e.push(A.i(a6,6,a6))
-e.push(new A.lU(A.n(A.a([A.z(a5.pH(B.dK,"Budget",q),1),A.i(a6,a6,6),A.z(a5.pH(B.li,"Timeline",p),1)],d),B.du,B.c,B.b,0,a6,a6),a6))
-f=b4.h(b6,a8)
-if(B.l.G(J.v(f==null?"":f)).length!==0)B.h.t(e,A.a([A.i(a6,10,a6),a5.Xo(J.v(b4.h(b6,a8)))],d))
-f=t.g.a(b4.h(b6,a9))
-if(J.aP(f==null?[]:f))B.h.t(e,A.a([A.i(a6,10,a6),a5.Xn(t.j.a(b4.h(b6,a9)))],d))
-if(o.length!==0&&o!=="Customer Renovation project")B.h.t(e,A.a([A.i(a6,10,a6),new A.C6(o,a6)],d))
-e.push(A.i(a6,10,a6))
-f=b4.h(b6,b0)
-f=J.e4(f==null?0:f,0)?A.m(15,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255):A.au(b1)
-c=A.f(8)
-b=b4.h(b6,b0)
-b=J.e4(b==null?0:b,0)?B.pl:B.A_
-a=b4.h(b6,b0)
-b=A.r(b,J.e4(a==null?0:a,0)?B.r:B.V,a6,14)
-a0=A.i(a6,a6,5)
-a=b4.h(b6,b0)
-if(J.e4(a==null?0:a,0)){a=A.w(b4.h(b6,b0))
-a1=J.e4(b4.h(b6,b0),1)?"s":""
-a1=a+" Floorplan"+a1
-a=a1}else a="No Floorplan"
-a1=b4.h(b6,b0)
-f=A.z(A.h(a6,A.n(A.a([b,a0,A.b(a,a6,a6,a6,a6,A.a_(a6,a6,J.e4(a1==null?0:a1,0)?B.r:B.O,a6,a6,a6,a6,a6,a6,a6,a6,11,a6,a6,B.z,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6)],d),B.f,B.I,B.b,0,a6,a6),B.d,a6,a6,new A.k(f,a6,a6,c,a6,a6,B.j),a6,a6,a6,a6,new A.o(8,6,8,6),a6,a6,a6),1)
-c=A.i(a6,a6,6)
-b=b4.h(b6,b2)
-b=J.e4(b==null?0:b,0)?A.m(B.m.A(178.5),B.bp.i()>>>16&255,B.bp.i()>>>8&255,B.bp.i()&255):A.au(b1)
-a=A.f(8)
-a0=b4.h(b6,b2)
-a0=J.e4(a0==null?0:a0,0)?B.fE:B.jX
-a1=b4.h(b6,b2)
-a0=A.r(a0,J.e4(a1==null?0:a1,0)?B.ba:B.V,a6,14)
-a2=A.i(a6,a6,5)
-a1=b4.h(b6,b2)
-if(J.e4(a1==null?0:a1,0)){a1=A.w(b4.h(b6,b2))
-a3=J.e4(b4.h(b6,b2),1)?"s":""
-a3=a1+" Image"+a3
-a1=a3}else a1="No Images"
-a3=b4.h(b6,b2)
-e.push(A.n(A.a([f,c,A.z(A.h(a6,A.n(A.a([a0,a2,A.b(a1,a6,a6,a6,a6,A.a_(a6,a6,J.e4(a3==null?0:a3,0)?B.bE:B.O,a6,a6,a6,a6,a6,a6,a6,a6,11,a6,a6,B.z,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6)],d),B.f,B.I,B.b,0,a6,a6),B.d,a6,a6,new A.k(b,a6,a6,a,a6,a6,B.j),a6,a6,a6,a6,new A.o(8,6,8,6),a6,a6,a6),1)],d),B.f,B.c,B.b,0,a6,a6))
-if(J.q(b4.h(b6,"is_looking_for_loan"),!0)){f=A.i(a6,8,a6)
-c=A.f(20)
-B.h.t(e,A.a([f,A.h(a6,A.n(A.a([A.r(B.ie,B.e5,a6,13),A.i(a6,a6,5),A.b("Looking for Loan",a6,a6,a6,a6,A.a_(a6,a6,B.e4,a6,a6,a6,a6,a6,a6,a6,a6,11,a6,a6,B.z,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6)],d),B.f,B.c,B.E,0,a6,a6),B.d,a6,a6,new A.k(B.c3,a6,a6,c,a6,a6,B.j),a6,a6,a6,a6,new A.o(10,5,10,5),a6,a6,a6)],d))}if(a5.ahu(b6))B.h.t(e,A.a([A.i(a6,8,a6),a5.abS(b6)],d))
-if(b4.h(b6,b3)!=null){f=t.f
-f=f.b(b4.h(b6,b3))&&J.aP(f.a(b4.h(b6,b3)))}else f=!1
-if(f)B.h.t(e,A.a([A.i(a6,8,a6),a5.Xw(b4.h(b6,b3))],d))
-e.push(A.i(a6,10,a6))
-f=A.au(4293980400)
-e.push(A.h(a6,A.n(A.a([A.r(B.u9,B.V,a6,11),A.i(a6,a6,4),A.b("Received "+a5.a_J(m),a6,a6,a6,a6,A.a_(a6,a6,B.V,a6,a6,a6,a6,a6,a6,a6,a6,10,a6,a6,a6,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6)],d),B.f,B.I,B.b,0,a6,a6),B.d,a6,a6,new A.k(a6,a6,new A.cI(new A.a5(f,1,B.n,-1),B.v,B.v,B.v),a6,a6,a6,B.j),a6,a6,a6,a6,new A.o(0,8,0,0),a6,a6,a6))
-e.push(A.i(a6,12,a6))
-if(J.q(b4.h(b6,a7),!0)){b4=A.a([B.e,B.r],h)
-h=A.f(10)
-B.h.t(e,A.a([A.h(a6,A.d7(A.r(B.Au,a6,a6,18),A.b("Respond to Customer",a6,a6,a6,a6,A.a_(a6,a6,a6,a6,a6,a6,a6,a6,a6,a6,a6,14,a6,a6,B.q,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6),new A.bnp(a5,b6),A.aX(a6,a6,B.J,a6,a6,a6,0,a6,a6,B.i,a6,a6,new A.o(0,12,0,12),B.J,new A.ah(A.f(10),B.v),a6,a6,a6,a6,a6)),B.d,a6,a6,new A.k(a6,a6,a6,h,a6,new A.a4(B.a5,B.a7,B.D,b4,a6,a6),B.j),a6,a6,a6,a6,a6,a6,a6,1/0)],d))}else{b4=A.z(A.i0(A.r(B.ex,a6,a6,16),A.b("Decline",a6,a6,a6,a6,A.a_(a6,a6,a6,a6,a6,a6,a6,a6,a6,a6,a6,13,a6,a6,B.q,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6),new A.bnq(a5,b6),A.dB(a6,a6,a6,a6,a6,a6,a6,a6,a6,B.aL,a6,a6,new A.o(0,11,0,11),a6,new A.ah(A.f(10),B.v),new A.a5(B.hy,1,B.n,-1),a6,a6,a6,a6)),1)
-f=A.i(a6,a6,8)
-h=A.a([B.e,B.r],h)
-c=A.f(10)
-B.h.t(e,A.a([A.n(A.a([b4,f,A.z(A.h(a6,A.d7(A.r(B.cF,a6,a6,18),A.b("Accept - "+k+" Credits",a6,a6,a6,a6,A.a_(a6,a6,a6,a6,a6,a6,a6,a6,a6,a6,a6,14,a6,a6,B.q,a6,a6,!0,a6,a6,a6,a6,a6,a6,a6,a6),a6,a6,a6),new A.bnr(a5,b6),A.aX(a6,a6,B.J,a6,a6,a6,0,a6,a6,B.i,a6,a6,new A.o(0,12,0,12),B.J,new A.ah(A.f(10),B.v),a6,a6,a6,a6,a6)),B.d,a6,a6,new A.k(a6,a6,a6,c,a6,new A.a4(B.a5,B.a7,B.D,h,a6,a6),B.j),a6,a6,a6,a6,a6,a6,a6,a6),2)],d),B.f,B.c,B.b,0,a6,a6)],d))}return A.h(a6,A.p(A.a([g,new A.P(new A.o(14,14,14,14),A.p(e,B.p,a6,B.c,B.b,B.k),a6)],d),B.f,a6,B.c,B.b,B.k),B.a9,a6,a6,new A.k(B.i,a6,a6,j,i,a6,B.j),a6,a6,a6,new A.o(0,0,0,14),a6,a6,a6,a6)},
+b=A.a([],c)
+if(J.q(b5.h(b7,a8),!0))B.h.t(b,A.a([A.r(B.bq,B.aF,a7,13),A.i(a7,a7,4),A.b("PURCHASED",a7,a7,a7,a7,A.a_(a7,a7,B.aF,a7,a7,a7,a7,a7,a7,a7,a7,11,a7,a7,B.t,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7)],c))
+else B.h.t(b,A.a([A.b(""+j+" Credits",a7,a7,a7,a7,A.a_(a7,a7,B.r,a7,a7,a7,a7,a7,a7,a7,a7,13,a7,a7,B.t,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7)],c))
+f=A.h(a7,A.p(A.a([A.n(A.a([d,A.h(a7,A.n(b,B.f,B.c,B.E,0,a7,a7),B.d,a7,a7,new A.k(B.i,a7,a7,e,a7,a7,B.j),a7,a7,a7,a7,new A.o(10,4,10,4),a7,a7,a7)],c),B.f,B.ar,B.b,0,a7,a7),A.i(a7,10,a7),A.n(A.a([A.z(A.b(b6,2,B.a8,a7,a7,A.a_(a7,a7,B.i,a7,a7,a7,a7,a7,a7,a7,a7,17,a7,a7,B.t,a7,a7,!0,a7,-0.2,a7,a7,a7,a7,a7,a7),a7,a7,a7),1)],c),B.f,B.c,B.b,0,a7,a7)],c),B.f,a7,B.c,B.b,B.k),B.d,a7,a7,new A.k(a7,a7,a7,a7,a7,new A.a4(B.a5,B.a7,B.D,f,a7,a7),B.j),a7,a7,a7,a7,new A.o(14,12,14,12),a7,a7,a7)
+e=A.au(4294638588)
+d=A.f(10)
+b=A.H(A.au(4293849074),B.n,1)
+a=A.nG(A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),a7,A.r(B.d_,B.e,a7,20),18)
+a0=A.i(a7,a7,10)
+a1=A.b(s,1,B.a8,a7,a7,A.a_(a7,a7,A.au(4279901473),a7,a7,a7,a7,a7,a7,a7,a7,14,a7,a7,B.q,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7)
+a2=A.i(a7,3,a7)
+a3=A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255)
+a4=A.f(10)
+a3=A.a([A.h(a7,A.b(A.ch(n,"_"," ").toUpperCase(),a7,a7,a7,a7,A.a_(a7,a7,B.r,a7,a7,a7,a7,a7,a7,a7,a7,9,a7,a7,B.q,a7,a7,!0,a7,0.2,a7,a7,a7,a7,a7,a7),a7,a7,a7),B.d,a7,a7,new A.k(a3,a7,a7,a4,a7,a7,B.j),a7,a7,a7,a7,new A.o(6,2,6,2),a7,a7,a7)],c)
+if(!k){a4=A.i(a7,a7,6)
+a5=l===1?"":"s"
+B.h.t(a3,A.a([a4,A.b(A.w(l)+" ID"+a5+" Connected",a7,a7,a7,a7,A.a_(a7,a7,B.O,a7,a7,a7,a7,a7,a7,a7,a7,10,a7,a7,a7,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7)],c))}e=A.a([A.h(a7,A.n(A.a([a,a0,A.z(A.p(A.a([a1,a2,A.n(a3,B.f,B.c,B.b,0,a7,a7)],c),B.p,a7,B.c,B.b,B.k),1)],c),B.f,B.c,B.b,0,a7,a7),B.d,a7,a7,new A.k(e,a7,b,d,a7,a7,B.j),a7,a7,a7,a7,new A.o(10,10,10,10),a7,a7,a7),A.i(a7,12,a7),A.n(A.a([A.z(a6.pH(B.hM,"Location",r),1)],c),B.f,B.c,B.b,0,a7,a7)],c)
+if(B.l.u(r,"***")){d=B.e.D(0.1)
+b=A.f(10)
+e.push(new A.P(B.t5,new A.db(B.Z,a7,a7,A.h(a7,A.b("Full Address on Purchase",a7,a7,a7,a7,A.d().$3$color$fontSize$fontWeight(B.r,10,B.q),a7,a7,a7),B.d,a7,a7,new A.k(d,a7,a7,b,a7,a7,B.j),a7,a7,a7,a7,B.jJ,a7,a7,a7),a7),a7))}e.push(A.i(a7,6,a7))
+e.push(new A.lU(A.n(A.a([A.z(a6.pH(B.dK,"Budget",q),1),A.i(a7,a7,6),A.z(a6.pH(B.li,"Timeline",p),1)],c),B.du,B.c,B.b,0,a7,a7),a7))
+d=b5.h(b7,a9)
+if(B.l.G(J.v(d==null?"":d)).length!==0)B.h.t(e,A.a([A.i(a7,10,a7),a6.Xo(J.v(b5.h(b7,a9)))],c))
+d=t.g.a(b5.h(b7,b0))
+if(J.aP(d==null?[]:d))B.h.t(e,A.a([A.i(a7,10,a7),a6.Xn(t.j.a(b5.h(b7,b0)))],c))
+if(o.length!==0&&o!=="Customer Renovation project")B.h.t(e,A.a([A.i(a7,10,a7),new A.C6(o,a7)],c))
+e.push(A.i(a7,10,a7))
+d=b5.h(b7,b1)
+d=J.e4(d==null?0:d,0)?A.m(15,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255):A.au(b2)
+b=A.f(8)
+a=b5.h(b7,b1)
+a=J.e4(a==null?0:a,0)?B.pl:B.A_
+a0=b5.h(b7,b1)
+a=A.r(a,J.e4(a0==null?0:a0,0)?B.r:B.V,a7,14)
+a1=A.i(a7,a7,5)
+a0=b5.h(b7,b1)
+if(J.e4(a0==null?0:a0,0)){a0=A.w(b5.h(b7,b1))
+a2=J.e4(b5.h(b7,b1),1)?"s":""
+a2=a0+" Floorplan"+a2
+a0=a2}else a0="No Floorplan"
+a2=b5.h(b7,b1)
+d=A.z(A.h(a7,A.n(A.a([a,a1,A.b(a0,a7,a7,a7,a7,A.a_(a7,a7,J.e4(a2==null?0:a2,0)?B.r:B.O,a7,a7,a7,a7,a7,a7,a7,a7,11,a7,a7,B.z,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7)],c),B.f,B.I,B.b,0,a7,a7),B.d,a7,a7,new A.k(d,a7,a7,b,a7,a7,B.j),a7,a7,a7,a7,new A.o(8,6,8,6),a7,a7,a7),1)
+b=A.i(a7,a7,6)
+a=b5.h(b7,b3)
+a=J.e4(a==null?0:a,0)?A.m(B.m.A(178.5),B.bp.i()>>>16&255,B.bp.i()>>>8&255,B.bp.i()&255):A.au(b2)
+a0=A.f(8)
+a1=b5.h(b7,b3)
+a1=J.e4(a1==null?0:a1,0)?B.fE:B.jX
+a2=b5.h(b7,b3)
+a1=A.r(a1,J.e4(a2==null?0:a2,0)?B.ba:B.V,a7,14)
+a3=A.i(a7,a7,5)
+a2=b5.h(b7,b3)
+if(J.e4(a2==null?0:a2,0)){a2=A.w(b5.h(b7,b3))
+a4=J.e4(b5.h(b7,b3),1)?"s":""
+a4=a2+" Image"+a4
+a2=a4}else a2="No Images"
+a4=b5.h(b7,b3)
+e.push(A.n(A.a([d,b,A.z(A.h(a7,A.n(A.a([a1,a3,A.b(a2,a7,a7,a7,a7,A.a_(a7,a7,J.e4(a4==null?0:a4,0)?B.bE:B.O,a7,a7,a7,a7,a7,a7,a7,a7,11,a7,a7,B.z,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7)],c),B.f,B.I,B.b,0,a7,a7),B.d,a7,a7,new A.k(a,a7,a7,a0,a7,a7,B.j),a7,a7,a7,a7,new A.o(8,6,8,6),a7,a7,a7),1)],c),B.f,B.c,B.b,0,a7,a7))
+if(J.q(b5.h(b7,"is_looking_for_loan"),!0)){d=A.i(a7,8,a7)
+b=A.f(20)
+B.h.t(e,A.a([d,A.h(a7,A.n(A.a([A.r(B.ie,B.e5,a7,13),A.i(a7,a7,5),A.b("Looking for Loan",a7,a7,a7,a7,A.a_(a7,a7,B.e4,a7,a7,a7,a7,a7,a7,a7,a7,11,a7,a7,B.z,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7)],c),B.f,B.c,B.E,0,a7,a7),B.d,a7,a7,new A.k(B.c3,a7,a7,b,a7,a7,B.j),a7,a7,a7,a7,new A.o(10,5,10,5),a7,a7,a7)],c))}if(a6.ahu(b7))B.h.t(e,A.a([A.i(a7,8,a7),a6.abS(b7)],c))
+if(b5.h(b7,b4)!=null){d=t.f
+d=d.b(b5.h(b7,b4))&&J.aP(d.a(b5.h(b7,b4)))}else d=!1
+if(d)B.h.t(e,A.a([A.i(a7,8,a7),a6.Xw(b5.h(b7,b4))],c))
+e.push(A.i(a7,10,a7))
+d=A.au(4293980400)
+e.push(A.h(a7,A.n(A.a([A.r(B.u9,B.V,a7,11),A.i(a7,a7,4),A.b("Received "+a6.a_J(m),a7,a7,a7,a7,A.a_(a7,a7,B.V,a7,a7,a7,a7,a7,a7,a7,a7,10,a7,a7,a7,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7)],c),B.f,B.I,B.b,0,a7,a7),B.d,a7,a7,new A.k(a7,a7,new A.cI(new A.a5(d,1,B.n,-1),B.v,B.v,B.v),a7,a7,a7,B.j),a7,a7,a7,a7,new A.o(0,8,0,0),a7,a7,a7))
+e.push(A.i(a7,12,a7))
+if(J.q(b5.h(b7,a8),!0)){b5=A.a([B.e,B.r],g)
+g=A.f(10)
+B.h.t(e,A.a([A.h(a7,A.d7(A.r(B.Au,a7,a7,18),A.b("Respond to Customer",a7,a7,a7,a7,A.a_(a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,14,a7,a7,B.q,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7),new A.bnp(a6,b7),A.aX(a7,a7,B.J,a7,a7,a7,0,a7,a7,B.i,a7,a7,new A.o(0,12,0,12),B.J,new A.ah(A.f(10),B.v),a7,a7,a7,a7,a7)),B.d,a7,a7,new A.k(a7,a7,a7,g,a7,new A.a4(B.a5,B.a7,B.D,b5,a7,a7),B.j),a7,a7,a7,a7,a7,a7,a7,1/0)],c))}else{b5=A.z(A.i0(A.r(B.ex,a7,a7,16),A.b("Decline",a7,a7,a7,a7,A.a_(a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,13,a7,a7,B.q,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7),new A.bnq(a6,b7),A.dB(a7,a7,a7,a7,a7,a7,a7,a7,a7,B.aL,a7,a7,new A.o(0,11,0,11),a7,new A.ah(A.f(10),B.v),new A.a5(B.hy,1,B.n,-1),a7,a7,a7,a7)),1)
+d=A.i(a7,a7,8)
+g=A.a([B.e,B.r],g)
+b=A.f(10)
+B.h.t(e,A.a([A.n(A.a([b5,d,A.z(A.h(a7,A.d7(A.r(B.cF,a7,a7,18),A.b("Accept - "+j+" Credits",a7,a7,a7,a7,A.a_(a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,14,a7,a7,B.q,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7,a7),new A.bnr(a6,b7),A.aX(a7,a7,B.J,a7,a7,a7,0,a7,a7,B.i,a7,a7,new A.o(0,12,0,12),B.J,new A.ah(A.f(10),B.v),a7,a7,a7,a7,a7)),B.d,a7,a7,new A.k(a7,a7,a7,b,a7,new A.a4(B.a5,B.a7,B.D,g,a7,a7),B.j),a7,a7,a7,a7,a7,a7,a7,a7),2)],c),B.f,B.c,B.b,0,a7,a7)],c))}return A.h(a7,A.p(A.a([f,new A.P(new A.o(14,14,14,14),A.p(e,B.p,a7,B.c,B.b,B.k),a7)],c),B.f,a7,B.c,B.b,B.k),B.a9,a7,a7,new A.k(B.i,a7,a7,i,h,a7,B.j),a7,a7,a7,new A.o(0,0,0,14),a7,a7,a7,a7)},
 a_J(a){var s=new A.aK(Date.now(),0,!1).e_(a).a,r=B.A.bb(s,864e8)
 if(r===0){r=B.A.bb(s,36e8)
 if(r===0)return""+B.A.bb(s,6e7)+" minutes ago"
@@ -157798,117 +157799,118 @@ k=J.dG(m,t.l)
 for(j=0;j<m;++j)k[j]=i.aIi(q[j])
 B.h.t(s,k)
 B.h.t(n,s)}return A.k9(A.nW(n,h,new A.o(16,16,16,16),h,B.R,!1),h,i.gNy())},
-aIi(b8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8=this,a9=null,b0="reno_research_remarks",b1="public_preview_files",b2="floorplan_count",b3=4294309365,b4="site_images_count",b5="quotation_form_data",b6=J.Q(b8),b7=b6.h(b8,"title")
-if(b7==null)b7="Renovation Project"
-s=b6.h(b8,"homeowner")
+aIi(b9){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9=this,b0=null,b1="reno_research_remarks",b2="public_preview_files",b3="floorplan_count",b4=4294309365,b5="site_images_count",b6="quotation_form_data",b7=J.Q(b9),b8=b7.h(b9,"title")
+if(b8==null)b8="Renovation Project"
+s=b7.h(b9,"homeowner")
 if(s==null)s="Unknown Customer"
-r=b6.h(b8,"location")
+r=b7.h(b9,"location")
 if(r==null)r="Location not specified"
-q=b6.h(b8,"budget")
+q=b7.h(b9,"budget")
 if(q==null)q="Budget not specified"
-p=b6.h(b8,"timeline")
+p=b7.h(b9,"timeline")
 if(p==null)p="Timeline not specified"
-o=b6.h(b8,"description")
+o=b7.h(b9,"description")
 if(o==null)o="No description provided"
-n=b6.h(b8,"posted_date")
+n=b7.h(b9,"posted_date")
 if(n==null)n=new A.aK(Date.now(),0,!1)
-m=b6.h(b8,"request_number")
+m=b7.h(b9,"request_number")
 if(m==null)m=1
-l=b6.h(b8,"activity_level")
-if(l==null)l="New Customer"
-k=b6.h(b8,"group_name")
-if(k==null)k=""
-j=b6.h(b8,"is_bundle_lead")
-if(j==null)j=!1
-i=b6.h(b8,"expiry_threshold")
-if(i==null)i=0
-h=b6.h(b8,"remaining_slots")
-if(h==null)h=-1
-g=a8.Fs(b8)
-f=A.f(14)
-e=A.a([new A.M(-2,B.u,A.m(15,B.o.i()>>>16&255,B.o.i()>>>8&255,B.o.i()&255),new A.K(0,3),16),new A.M(0,B.u,A.m(13,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),new A.K(0,1),6)],t.V)
-d=A.a([B.e,B.r],t.O)
-c=t.p
-b=A.a([],c)
-if(k.length!==0){a=A.m(235,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255)
-a0=A.f(20)
-a1=j?B.pm:B.zA
-a1=A.r(a1,j?B.i4:B.r,a9,15)
-a2=A.i(a9,a9,5)
-b.push(new A.cB(1,B.aT,A.h(a9,A.n(A.a([a1,a2,new A.cB(1,B.aT,A.b(k,a9,a9,a9,a9,A.a_(a9,a9,j?B.eP:B.r,a9,a9,a9,a9,a9,a9,a9,a9,13,a9,a9,B.t,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9,a9),a9)],c),B.f,B.c,B.E,0,a9,a9),B.d,a9,a9,new A.k(a,a9,a9,a0,a9,a9,B.j),a9,a9,a9,a9,new A.o(10,4,10,4),a9,a9,a9),a9))}else{a=A.m(235,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255)
-a0=A.f(20)
-b.push(A.h(a9,A.n(A.a([A.r(B.h9,B.r,a9,12),A.i(a9,a9,4),A.b("PREMIUM LEAD",a9,a9,a9,a9,A.a_(a9,a9,B.r,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,B.t,a9,a9,!0,a9,0.3,a9,a9,a9,a9,a9,a9),a9,a9,a9)],c),B.f,B.c,B.E,0,a9,a9),B.d,a9,a9,new A.k(a,a9,a9,a0,a9,a9,B.j),a9,a9,a9,a9,new A.o(8,4,8,4),a9,a9,a9))}if(g>0){a=A.f(20)
-b.push(A.h(a9,A.b(""+g+" Credits",a9,a9,a9,a9,A.a_(a9,a9,B.r,a9,a9,a9,a9,a9,a9,a9,a9,13,a9,a9,B.t,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9,a9),B.d,a9,a9,new A.k(B.i,a9,a9,a,a9,a9,B.j),a9,a9,a9,a9,new A.o(10,4,10,4),a9,a9,a9))}b=A.a([A.n(b,B.f,B.ar,B.b,0,a9,a9),A.i(a9,10,a9),A.n(A.a([A.z(A.b(b7,2,B.a8,a9,a9,A.a_(a9,a9,B.i,a9,a9,a9,a9,a9,a9,a9,a9,17,a9,a9,B.t,a9,a9,!0,a9,-0.2,a9,a9,a9,a9,a9,a9),a9,a9,a9),1)],c),B.f,B.c,B.b,0,a9,a9),A.i(a9,6,a9)],c)
-if(i>0){a=h<=1
-a0=a?A.m(B.m.A(76.5),B.K.i()>>>16&255,B.K.i()>>>8&255,B.K.i()&255):A.m(51,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255)
-a1=A.f(8)
-a2=A.H(a?A.m(153,B.K.i()>>>16&255,B.K.i()>>>8&255,B.K.i()&255):A.m(102,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255),B.n,1)
-a3=A.r(a?B.Ix:B.jS,B.i,a9,14)
-a4=A.i(a9,a9,6)
-if(h>0){a=h>1?"s":""
-a=A.w(h)+" more ID"+a+" can connect"}else a="Last connection available!"
-b.push(A.h(a9,A.n(A.a([a3,a4,A.b(a,a9,a9,a9,a9,A.a_(a9,a9,B.i,a9,a9,a9,a9,a9,a9,a9,a9,11,a9,a9,B.z,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9,a9)],c),B.f,B.c,B.E,0,a9,a9),B.d,a9,a9,new A.k(a0,a9,a2,a1,a9,a9,B.j),a9,a9,a9,a9,new A.o(10,6,10,6),a9,a9,a9))}d=A.h(a9,A.p(b,B.f,a9,B.c,B.b,B.k),B.d,a9,a9,new A.k(a9,a9,a9,a9,a9,new A.a4(B.a5,B.a7,B.D,d,a9,a9),B.j),a9,a9,a9,a9,new A.o(14,12,14,12),a9,a9,a9)
-b=A.au(4294638588)
-a=A.f(10)
-a0=A.H(A.au(4293849074),B.n,1)
-a1=A.nG(A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),a9,A.r(B.d_,B.e,a9,20),18)
-a2=A.i(a9,a9,10)
-a3=A.b(s,1,B.a8,a9,a9,A.a_(a9,a9,A.au(4279901473),a9,a9,a9,a9,a9,a9,a9,a9,14,a9,a9,B.q,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9,a9)
-a4=A.i(a9,3,a9)
-a5=A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255)
-a6=A.f(10)
-a6=A.h(a9,A.b(l,a9,a9,a9,a9,A.a_(a9,a9,B.r,a9,a9,a9,a9,a9,a9,a9,a9,9,a9,a9,B.q,a9,a9,!0,a9,0.2,a9,a9,a9,a9,a9,a9),a9,a9,a9),B.d,a9,a9,new A.k(a5,a9,a9,a6,a9,a9,B.j),a9,a9,a9,a9,new A.o(6,2,6,2),a9,a9,a9)
-a5=A.i(a9,a9,6)
-a7=m===1?"":"s"
-a=A.a([A.h(a9,A.n(A.a([a1,a2,A.z(A.p(A.a([a3,a4,A.n(A.a([a6,a5,A.b(A.w(m)+" ID"+a7+" Connected",a9,a9,a9,a9,A.a_(a9,a9,B.O,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9,a9)],c),B.f,B.c,B.b,0,a9,a9)],c),B.p,a9,B.c,B.b,B.k),1)],c),B.f,B.c,B.b,0,a9,a9),B.d,a9,a9,new A.k(b,a9,a0,a,a9,a9,B.j),a9,a9,a9,a9,new A.o(10,10,10,10),a9,a9,a9),A.i(a9,12,a9),A.n(A.a([A.z(a8.pH(B.hM,"Location",r),1)],c),B.f,B.c,B.b,0,a9,a9)],c)
-if(B.l.u(r,"***")){b=B.e.D(0.1)
-a0=A.f(10)
-a.push(new A.P(B.t5,new A.db(B.Z,a9,a9,A.h(a9,A.b("Full Address on Purchase",a9,a9,a9,a9,A.d().$3$color$fontSize$fontWeight(B.r,10,B.q),a9,a9,a9),B.d,a9,a9,new A.k(b,a9,a9,a0,a9,a9,B.j),a9,a9,a9,a9,B.jJ,a9,a9,a9),a9),a9))}a.push(A.i(a9,6,a9))
-a.push(new A.lU(A.n(A.a([A.z(a8.pH(B.dK,"Budget",q),1),A.i(a9,a9,6),A.z(a8.pH(B.li,"Timeline",p),1)],c),B.du,B.c,B.b,0,a9,a9),a9))
-b=b6.h(b8,b0)
-if(B.l.G(J.v(b==null?"":b)).length!==0)B.h.t(a,A.a([A.i(a9,10,a9),a8.Xo(J.v(b6.h(b8,b0)))],c))
-b=t.g
-a0=b.a(b6.h(b8,b1))
-if(J.aP(a0==null?[]:a0))B.h.t(a,A.a([A.i(a9,10,a9),a8.Xn(t.j.a(b6.h(b8,b1)))],c))
-if(o.length!==0&&o!=="Customer Renovation project")B.h.t(a,A.a([A.i(a9,10,a9),new A.C6(o,a9)],c))
-a.push(A.i(a9,10,a9))
-a0=J.e4(b6.h(b8,b2),0)?A.m(15,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255):A.au(b3)
-a1=A.f(8)
-a2=J.e4(b6.h(b8,b2),0)?B.pl:B.A_
-a2=A.r(a2,J.e4(b6.h(b8,b2),0)?B.r:B.V,a9,14)
-a3=A.i(a9,a9,5)
-if(J.e4(b6.h(b8,b2),0)){a4=A.w(b6.h(b8,b2))
-a5=J.e4(b6.h(b8,b2),1)?"s":""
-a5=a4+" Floorplan"+a5
-a4=a5}else a4="No Floorplan"
-a0=A.z(A.h(a9,A.n(A.a([a2,a3,A.b(a4,a9,a9,a9,a9,A.a_(a9,a9,J.e4(b6.h(b8,b2),0)?B.r:B.O,a9,a9,a9,a9,a9,a9,a9,a9,11,a9,a9,B.z,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9,a9)],c),B.f,B.I,B.b,0,a9,a9),B.d,a9,a9,new A.k(a0,a9,a9,a1,a9,a9,B.j),a9,a9,a9,a9,new A.o(8,6,8,6),a9,a9,a9),1)
-a1=A.i(a9,a9,6)
-a2=J.e4(b6.h(b8,b4),0)?A.m(B.m.A(178.5),B.bp.i()>>>16&255,B.bp.i()>>>8&255,B.bp.i()&255):A.au(b3)
-a3=A.f(8)
-a4=J.e4(b6.h(b8,b4),0)?B.fE:B.jX
-a4=A.r(a4,J.e4(b6.h(b8,b4),0)?B.ba:B.V,a9,14)
-a5=A.i(a9,a9,5)
-if(J.e4(b6.h(b8,b4),0)){a6=A.w(b6.h(b8,b4))
-a7=J.e4(b6.h(b8,b4),1)?"s":""
-a7=a6+" Image"+a7
-a6=a7}else a6="No Images"
-a.push(A.n(A.a([a0,a1,A.z(A.h(a9,A.n(A.a([a4,a5,A.b(a6,a9,a9,a9,a9,A.a_(a9,a9,J.e4(b6.h(b8,b4),0)?B.bE:B.O,a9,a9,a9,a9,a9,a9,a9,a9,11,a9,a9,B.z,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9,a9)],c),B.f,B.I,B.b,0,a9,a9),B.d,a9,a9,new A.k(a2,a9,a9,a3,a9,a9,B.j),a9,a9,a9,a9,new A.o(8,6,8,6),a9,a9,a9),1)],c),B.f,B.c,B.b,0,a9,a9))
-if(J.q(b6.h(b8,"is_looking_for_loan"),!0)){a0=A.i(a9,8,a9)
+l=J.q(b7.h(b9,"hide_connections_count"),!0)
+k=b7.h(b9,"activity_level")
+if(k==null)k="New Customer"
+j=b7.h(b9,"group_name")
+if(j==null)j=""
+i=b7.h(b9,"is_bundle_lead")
+if(i==null)i=!1
+h=b7.h(b9,"expiry_threshold")
+if(h==null)h=0
+g=b7.h(b9,"remaining_slots")
+if(g==null)g=-1
+f=a9.Fs(b9)
+e=A.f(14)
+d=A.a([new A.M(-2,B.u,A.m(15,B.o.i()>>>16&255,B.o.i()>>>8&255,B.o.i()&255),new A.K(0,3),16),new A.M(0,B.u,A.m(13,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),new A.K(0,1),6)],t.V)
+c=A.a([B.e,B.r],t.O)
+b=t.p
+a=A.a([],b)
+if(j.length!==0){a0=A.m(235,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255)
 a1=A.f(20)
-a2=A.a([A.r(B.ie,B.e5,a9,13),A.i(a9,a9,5),A.b("Looking for Loan",a9,a9,a9,a9,A.a_(a9,a9,B.e4,a9,a9,a9,a9,a9,a9,a9,a9,11,a9,a9,B.z,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9,a9),A.i(a9,a9,5)],c)
-b=b.a(b6.h(b8,"loan_types"))
-if(b==null)b=[]
-B.h.t(a2,J.bF(b,new A.blC(),t.l))
-B.h.t(a,A.a([a0,A.h(a9,A.n(a2,B.f,B.c,B.E,0,a9,a9),B.d,a9,a9,new A.k(B.c3,a9,a9,a1,a9,a9,B.j),a9,a9,a9,a9,new A.o(10,5,10,5),a9,a9,a9)],c))}if(a8.ahu(b8))B.h.t(a,A.a([A.i(a9,8,a9),a8.abS(b8)],c))
-if(b6.h(b8,b5)!=null){b=t.f
-b=b.b(b6.h(b8,b5))&&J.aP(b.a(b6.h(b8,b5)))}else b=!1
-if(b)B.h.t(a,A.a([A.i(a9,8,a9),a8.Xw(b6.h(b8,b5))],c))
-a.push(A.i(a9,10,a9))
-b6=A.au(4293980400)
-a.push(A.h(a9,A.n(A.a([A.r(B.u9,B.V,a9,11),A.i(a9,a9,4),A.b("Received "+a8.a_J(n),a9,a9,a9,a9,A.a_(a9,a9,B.V,a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9,a9)],c),B.f,B.I,B.b,0,a9,a9),B.d,a9,a9,new A.k(a9,a9,new A.cI(new A.a5(b6,1,B.n,-1),B.v,B.v,B.v),a9,a9,a9,B.j),a9,a9,a9,a9,new A.o(0,8,0,0),a9,a9,a9))
-a.push(A.i(a9,12,a9))
-a.push(A.n(A.a([A.z(A.i0(A.r(B.ex,a9,a9,16),A.b("Decline",a9,a9,a9,a9,A.a_(a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,a9,13,a9,a9,B.q,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9,a9),new A.blD(a8,b8),A.dB(a9,a9,a9,a9,a9,a9,a9,a9,a9,B.aL,a9,a9,new A.o(0,11,0,11),a9,new A.ah(A.f(10),B.v),new A.a5(B.hy,1,B.n,-1),a9,a9,a9,a9)),1),A.i(a9,a9,8),A.z(new A.dY(new A.blE(a8,b8,g),a9),2)],c),B.f,B.c,B.b,0,a9,a9))
-return A.h(a9,A.p(A.a([d,new A.P(new A.o(14,14,14,14),A.p(a,B.p,a9,B.c,B.b,B.k),a9)],c),B.f,a9,B.c,B.b,B.k),B.a9,a9,a9,new A.k(B.i,a9,a9,f,e,a9,B.j),a9,a9,a9,new A.o(0,0,0,14),a9,a9,a9,a9)},
+a2=i?B.pm:B.zA
+a2=A.r(a2,i?B.i4:B.r,b0,15)
+a3=A.i(b0,b0,5)
+a.push(new A.cB(1,B.aT,A.h(b0,A.n(A.a([a2,a3,new A.cB(1,B.aT,A.b(j,b0,b0,b0,b0,A.a_(b0,b0,i?B.eP:B.r,b0,b0,b0,b0,b0,b0,b0,b0,13,b0,b0,B.t,b0,b0,!0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0),b0)],b),B.f,B.c,B.E,0,b0,b0),B.d,b0,b0,new A.k(a0,b0,b0,a1,b0,b0,B.j),b0,b0,b0,b0,new A.o(10,4,10,4),b0,b0,b0),b0))}else{a0=A.m(235,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255)
+a1=A.f(20)
+a.push(A.h(b0,A.n(A.a([A.r(B.h9,B.r,b0,12),A.i(b0,b0,4),A.b("PREMIUM LEAD",b0,b0,b0,b0,A.a_(b0,b0,B.r,b0,b0,b0,b0,b0,b0,b0,b0,10,b0,b0,B.t,b0,b0,!0,b0,0.3,b0,b0,b0,b0,b0,b0),b0,b0,b0)],b),B.f,B.c,B.E,0,b0,b0),B.d,b0,b0,new A.k(a0,b0,b0,a1,b0,b0,B.j),b0,b0,b0,b0,new A.o(8,4,8,4),b0,b0,b0))}if(f>0){a0=A.f(20)
+a.push(A.h(b0,A.b(""+f+" Credits",b0,b0,b0,b0,A.a_(b0,b0,B.r,b0,b0,b0,b0,b0,b0,b0,b0,13,b0,b0,B.t,b0,b0,!0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0),B.d,b0,b0,new A.k(B.i,b0,b0,a0,b0,b0,B.j),b0,b0,b0,b0,new A.o(10,4,10,4),b0,b0,b0))}a=A.a([A.n(a,B.f,B.ar,B.b,0,b0,b0),A.i(b0,10,b0),A.n(A.a([A.z(A.b(b8,2,B.a8,b0,b0,A.a_(b0,b0,B.i,b0,b0,b0,b0,b0,b0,b0,b0,17,b0,b0,B.t,b0,b0,!0,b0,-0.2,b0,b0,b0,b0,b0,b0),b0,b0,b0),1)],b),B.f,B.c,B.b,0,b0,b0),A.i(b0,6,b0)],b)
+if(h>0){a0=g<=1
+a1=a0?A.m(B.m.A(76.5),B.K.i()>>>16&255,B.K.i()>>>8&255,B.K.i()&255):A.m(51,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255)
+a2=A.f(8)
+a3=A.H(a0?A.m(153,B.K.i()>>>16&255,B.K.i()>>>8&255,B.K.i()&255):A.m(102,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255),B.n,1)
+a4=A.r(a0?B.Ix:B.jS,B.i,b0,14)
+a5=A.i(b0,b0,6)
+if(g>0){a0=g>1?"s":""
+a0=A.w(g)+" more ID"+a0+" can connect"}else a0="Last connection available!"
+a.push(A.h(b0,A.n(A.a([a4,a5,A.b(a0,b0,b0,b0,b0,A.a_(b0,b0,B.i,b0,b0,b0,b0,b0,b0,b0,b0,11,b0,b0,B.z,b0,b0,!0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0)],b),B.f,B.c,B.E,0,b0,b0),B.d,b0,b0,new A.k(a1,b0,a3,a2,b0,b0,B.j),b0,b0,b0,b0,new A.o(10,6,10,6),b0,b0,b0))}c=A.h(b0,A.p(a,B.f,b0,B.c,B.b,B.k),B.d,b0,b0,new A.k(b0,b0,b0,b0,b0,new A.a4(B.a5,B.a7,B.D,c,b0,b0),B.j),b0,b0,b0,b0,new A.o(14,12,14,12),b0,b0,b0)
+a=A.au(4294638588)
+a0=A.f(10)
+a1=A.H(A.au(4293849074),B.n,1)
+a2=A.nG(A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),b0,A.r(B.d_,B.e,b0,20),18)
+a3=A.i(b0,b0,10)
+a4=A.b(s,1,B.a8,b0,b0,A.a_(b0,b0,A.au(4279901473),b0,b0,b0,b0,b0,b0,b0,b0,14,b0,b0,B.q,b0,b0,!0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0)
+a5=A.i(b0,3,b0)
+a6=A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255)
+a7=A.f(10)
+a7=A.a([A.h(b0,A.b(k,b0,b0,b0,b0,A.a_(b0,b0,B.r,b0,b0,b0,b0,b0,b0,b0,b0,9,b0,b0,B.q,b0,b0,!0,b0,0.2,b0,b0,b0,b0,b0,b0),b0,b0,b0),B.d,b0,b0,new A.k(a6,b0,b0,a7,b0,b0,B.j),b0,b0,b0,b0,new A.o(6,2,6,2),b0,b0,b0)],b)
+if(!l){a6=A.i(b0,b0,6)
+a8=m===1?"":"s"
+B.h.t(a7,A.a([a6,A.b(A.w(m)+" ID"+a8+" Connected",b0,b0,b0,b0,A.a_(b0,b0,B.O,b0,b0,b0,b0,b0,b0,b0,b0,10,b0,b0,b0,b0,b0,!0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0)],b))}a=A.a([A.h(b0,A.n(A.a([a2,a3,A.z(A.p(A.a([a4,a5,A.n(a7,B.f,B.c,B.b,0,b0,b0)],b),B.p,b0,B.c,B.b,B.k),1)],b),B.f,B.c,B.b,0,b0,b0),B.d,b0,b0,new A.k(a,b0,a1,a0,b0,b0,B.j),b0,b0,b0,b0,new A.o(10,10,10,10),b0,b0,b0),A.i(b0,12,b0),A.n(A.a([A.z(a9.pH(B.hM,"Location",r),1)],b),B.f,B.c,B.b,0,b0,b0)],b)
+if(B.l.u(r,"***")){a0=B.e.D(0.1)
+a1=A.f(10)
+a.push(new A.P(B.t5,new A.db(B.Z,b0,b0,A.h(b0,A.b("Full Address on Purchase",b0,b0,b0,b0,A.d().$3$color$fontSize$fontWeight(B.r,10,B.q),b0,b0,b0),B.d,b0,b0,new A.k(a0,b0,b0,a1,b0,b0,B.j),b0,b0,b0,b0,B.jJ,b0,b0,b0),b0),b0))}a.push(A.i(b0,6,b0))
+a.push(new A.lU(A.n(A.a([A.z(a9.pH(B.dK,"Budget",q),1),A.i(b0,b0,6),A.z(a9.pH(B.li,"Timeline",p),1)],b),B.du,B.c,B.b,0,b0,b0),b0))
+a0=b7.h(b9,b1)
+if(B.l.G(J.v(a0==null?"":a0)).length!==0)B.h.t(a,A.a([A.i(b0,10,b0),a9.Xo(J.v(b7.h(b9,b1)))],b))
+a0=t.g
+a1=a0.a(b7.h(b9,b2))
+if(J.aP(a1==null?[]:a1))B.h.t(a,A.a([A.i(b0,10,b0),a9.Xn(t.j.a(b7.h(b9,b2)))],b))
+if(o.length!==0&&o!=="Customer Renovation project")B.h.t(a,A.a([A.i(b0,10,b0),new A.C6(o,b0)],b))
+a.push(A.i(b0,10,b0))
+a1=J.e4(b7.h(b9,b3),0)?A.m(15,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255):A.au(b4)
+a2=A.f(8)
+a3=J.e4(b7.h(b9,b3),0)?B.pl:B.A_
+a3=A.r(a3,J.e4(b7.h(b9,b3),0)?B.r:B.V,b0,14)
+a4=A.i(b0,b0,5)
+if(J.e4(b7.h(b9,b3),0)){a5=A.w(b7.h(b9,b3))
+a6=J.e4(b7.h(b9,b3),1)?"s":""
+a6=a5+" Floorplan"+a6
+a5=a6}else a5="No Floorplan"
+a1=A.z(A.h(b0,A.n(A.a([a3,a4,A.b(a5,b0,b0,b0,b0,A.a_(b0,b0,J.e4(b7.h(b9,b3),0)?B.r:B.O,b0,b0,b0,b0,b0,b0,b0,b0,11,b0,b0,B.z,b0,b0,!0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0)],b),B.f,B.I,B.b,0,b0,b0),B.d,b0,b0,new A.k(a1,b0,b0,a2,b0,b0,B.j),b0,b0,b0,b0,new A.o(8,6,8,6),b0,b0,b0),1)
+a2=A.i(b0,b0,6)
+a3=J.e4(b7.h(b9,b5),0)?A.m(B.m.A(178.5),B.bp.i()>>>16&255,B.bp.i()>>>8&255,B.bp.i()&255):A.au(b4)
+a4=A.f(8)
+a5=J.e4(b7.h(b9,b5),0)?B.fE:B.jX
+a5=A.r(a5,J.e4(b7.h(b9,b5),0)?B.ba:B.V,b0,14)
+a6=A.i(b0,b0,5)
+if(J.e4(b7.h(b9,b5),0)){a7=A.w(b7.h(b9,b5))
+a8=J.e4(b7.h(b9,b5),1)?"s":""
+a8=a7+" Image"+a8
+a7=a8}else a7="No Images"
+a.push(A.n(A.a([a1,a2,A.z(A.h(b0,A.n(A.a([a5,a6,A.b(a7,b0,b0,b0,b0,A.a_(b0,b0,J.e4(b7.h(b9,b5),0)?B.bE:B.O,b0,b0,b0,b0,b0,b0,b0,b0,11,b0,b0,B.z,b0,b0,!0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0)],b),B.f,B.I,B.b,0,b0,b0),B.d,b0,b0,new A.k(a3,b0,b0,a4,b0,b0,B.j),b0,b0,b0,b0,new A.o(8,6,8,6),b0,b0,b0),1)],b),B.f,B.c,B.b,0,b0,b0))
+if(J.q(b7.h(b9,"is_looking_for_loan"),!0)){a1=A.i(b0,8,b0)
+a2=A.f(20)
+a3=A.a([A.r(B.ie,B.e5,b0,13),A.i(b0,b0,5),A.b("Looking for Loan",b0,b0,b0,b0,A.a_(b0,b0,B.e4,b0,b0,b0,b0,b0,b0,b0,b0,11,b0,b0,B.z,b0,b0,!0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0),A.i(b0,b0,5)],b)
+a0=a0.a(b7.h(b9,"loan_types"))
+if(a0==null)a0=[]
+B.h.t(a3,J.bF(a0,new A.blC(),t.l))
+B.h.t(a,A.a([a1,A.h(b0,A.n(a3,B.f,B.c,B.E,0,b0,b0),B.d,b0,b0,new A.k(B.c3,b0,b0,a2,b0,b0,B.j),b0,b0,b0,b0,new A.o(10,5,10,5),b0,b0,b0)],b))}if(a9.ahu(b9))B.h.t(a,A.a([A.i(b0,8,b0),a9.abS(b9)],b))
+if(b7.h(b9,b6)!=null){a0=t.f
+a0=a0.b(b7.h(b9,b6))&&J.aP(a0.a(b7.h(b9,b6)))}else a0=!1
+if(a0)B.h.t(a,A.a([A.i(b0,8,b0),a9.Xw(b7.h(b9,b6))],b))
+a.push(A.i(b0,10,b0))
+b7=A.au(4293980400)
+a.push(A.h(b0,A.n(A.a([A.r(B.u9,B.V,b0,11),A.i(b0,b0,4),A.b("Received "+a9.a_J(n),b0,b0,b0,b0,A.a_(b0,b0,B.V,b0,b0,b0,b0,b0,b0,b0,b0,10,b0,b0,b0,b0,b0,!0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0)],b),B.f,B.I,B.b,0,b0,b0),B.d,b0,b0,new A.k(b0,b0,new A.cI(new A.a5(b7,1,B.n,-1),B.v,B.v,B.v),b0,b0,b0,B.j),b0,b0,b0,b0,new A.o(0,8,0,0),b0,b0,b0))
+a.push(A.i(b0,12,b0))
+a.push(A.n(A.a([A.z(A.i0(A.r(B.ex,b0,b0,16),A.b("Decline",b0,b0,b0,b0,A.a_(b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,13,b0,b0,B.q,b0,b0,!0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0),new A.blD(a9,b9),A.dB(b0,b0,b0,b0,b0,b0,b0,b0,b0,B.aL,b0,b0,new A.o(0,11,0,11),b0,new A.ah(A.f(10),B.v),new A.a5(B.hy,1,B.n,-1),b0,b0,b0,b0)),1),A.i(b0,b0,8),A.z(new A.dY(new A.blE(a9,b9,f),b0),2)],b),B.f,B.c,B.b,0,b0,b0))
+return A.h(b0,A.p(A.a([c,new A.P(new A.o(14,14,14,14),A.p(a,B.p,b0,B.c,B.b,B.k),b0)],b),B.f,b0,B.c,B.b,B.k),B.a9,b0,b0,new A.k(B.i,b0,b0,e,d,b0,B.j),b0,b0,b0,new A.o(0,0,0,14),b0,b0,b0,b0)},
 pH(a,b,c){var s=null,r=A.au(4294638588),q=A.f(8),p=A.H(A.au(4293849074),B.n,1),o=t.p
 return A.h(s,A.n(A.a([A.r(a,B.O,s,15),A.i(s,s,6),A.z(A.p(A.a([A.b(b,s,s,s,s,A.a_(s,s,B.V,s,s,s,s,s,s,s,s,9,s,s,B.z,s,s,!0,s,0.2,s,s,s,s,s,s),s,s,s),A.b(c,2,B.vS,s,!0,A.a_(s,s,A.au(4281151801),s,s,s,s,s,s,s,s,12,s,s,B.z,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)],o),B.p,s,B.c,B.b,B.k),1)],o),B.f,B.c,B.b,0,s,s),B.d,s,s,new A.k(r,s,p,q,s,s,B.j),s,s,s,s,new A.o(10,7,10,7),s,s,s)},
 Xw(a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2=this,a3=null
@@ -158062,128 +158064,131 @@ n=A.a([A.r(B.nb,B.i2,k,13),A.i(k,k,5),A.b(""+p+"/"+r.length+" appointment slots 
 if(j.gbj(s)){m=A.i(k,k,5)
 l=A.f(10)
 B.h.t(n,A.a([m,A.h(k,A.b(""+j.gF(s)+" booked",k,k,k,k,A.a_(k,k,B.aK,k,k,k,k,k,k,k,k,9,k,k,B.q,k,k,!0,k,k,k,k,k,k,k,k),k,k,k),B.d,k,k,new A.k(B.dC,k,k,l,k,k,B.j),k,k,k,k,new A.o(5,2,5,2),k,k,k)],o))}return A.h(k,A.n(n,B.f,B.c,B.E,0,k,k),B.d,k,k,new A.k(B.kP,k,k,i,k,k,B.j),k,k,k,k,new A.o(10,6,10,6),k,k,k)},
-ahW(d0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8=this,b9=null,c0="Not specified",c1=4294309365,c2="reno_research_remarks",c3="public_preview_files",c4="special_requirements",c5="quotation_form_data",c6="original_customer_data",c7="allowDesignerMatching",c8=J.Q(d0),c9=c8.h(d0,"customer_name")
-if(c9==null)c9="Unknown Customer"
-s=c8.h(d0,"budget")
+ahW(d1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9=this,c0=null,c1="Not specified",c2=4294309365,c3="reno_research_remarks",c4="public_preview_files",c5="special_requirements",c6="quotation_form_data",c7="original_customer_data",c8="allowDesignerMatching",c9=J.Q(d1),d0=c9.h(d1,"customer_name")
+if(d0==null)d0="Unknown Customer"
+s=c9.h(d1,"budget")
 if(s==null)s=""
-r=c8.h(d0,"timeline")
+r=c9.h(d1,"timeline")
 if(r==null)r=""
-q=c8.h(d0,"property_type")
+q=c9.h(d1,"property_type")
 if(q==null)q=""
-p=c8.h(d0,"property_size")
+p=c9.h(d1,"property_size")
 if(p==null)p=""
-o=c8.h(d0,"has_collected_keys")
+o=c9.h(d1,"has_collected_keys")
 if(o==null)o=!1
-n=c8.h(d0,"keys_status")
+n=c9.h(d1,"keys_status")
 if(n==null)n="Keys Not Collected"
-m=c8.h(d0,"accepted_leads_count")
+m=c9.h(d1,"accepted_leads_count")
 if(m==null)m=0
-l=c8.h(d0,"posted_date")
-if(l==null)l=new A.aK(Date.now(),0,!1)
-k=t.g
-j=k.a(c8.h(d0,"appointment_slots"))
-if(j==null)j=[]
-i=k.a(c8.h(d0,"booked_appointment_slots"))
+l=J.q(c9.h(d1,"hide_connections_count"),!0)
+k=c9.h(d1,"posted_date")
+if(k==null)k=new A.aK(Date.now(),0,!1)
+j=t.g
+i=j.a(c9.h(d1,"appointment_slots"))
 if(i==null)i=[]
-h=c8.h(d0,"appointment_preference")
-g=h==null?b9:J.v(h)
-if(g==null)g=""
-if(!J.q(c8.h(d0,"is_showroom_appointment"),!0))B.l.u(g.toLowerCase(),"showroom")
-f=b8.Zn(j)
-h=A.W(f).k("aE<1>")
-A.N(new A.aE(f,new A.bnd(J.bF(i,new A.bne(),t.N).hn(0)),h),h.k("X.E"))
-h=q.length!==0
-if(h&&q!=="Not specified")e=p.length!==0&&p!=="Not specified"?q+(" \u2022 "+p):q
-else e=p.length!==0&&p!=="Not specified"?p:""
-d=c8.h(d0,"calculated_price")
-if(A.hn(d))c=d
-else c=typeof d=="number"?d:20
-b=c8.h(d0,"has_floorplans")
-if(b==null)b=!1
-a=c8.h(d0,"has_site_images")
+h=j.a(c9.h(d1,"booked_appointment_slots"))
+if(h==null)h=[]
+g=c9.h(d1,"appointment_preference")
+f=g==null?c0:J.v(g)
+if(f==null)f=""
+if(!J.q(c9.h(d1,"is_showroom_appointment"),!0))B.l.u(f.toLowerCase(),"showroom")
+e=b9.Zn(i)
+g=A.W(e).k("aE<1>")
+A.N(new A.aE(e,new A.bnd(J.bF(h,new A.bne(),t.N).hn(0)),g),g.k("X.E"))
+g=q.length!==0
+if(g&&q!=="Not specified")d=p.length!==0&&p!=="Not specified"?q+(" \u2022 "+p):q
+else d=p.length!==0&&p!=="Not specified"?p:""
+c=c9.h(d1,"calculated_price")
+if(A.hn(c))b=c
+else b=typeof c=="number"?c:20
+a=c9.h(d1,"has_floorplans")
 if(a==null)a=!1
-a0=c8.h(d0,"requires_loan")
+a0=c9.h(d1,"has_site_images")
 if(a0==null)a0=!1
-a1=c8.h(d0,"loan_option")
-if(a1==null)a1=""
-a2=c8.h(d0,"is_looking_for_loan")
-if(a2==null)a2=a0
-a3=k.a(c8.h(d0,"loan_types"))
-if(a3==null)a3=[]
-a4=c8.h(d0,"loan_type")
-a5=a4==null?b9:J.v(a4)
-if(a5==null)a5=a1
-a4=A.f(14)
-a6=A.a([new A.M(-2,B.u,A.m(15,B.o.i()>>>16&255,B.o.i()>>>8&255,B.o.i()&255),new A.K(0,3),16),new A.M(0,B.u,A.m(13,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),new A.K(0,1),6)],t.V)
-a7=t.O
-a8=A.a([B.e,B.r],a7)
-a9=A.m(235,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255)
+a1=c9.h(d1,"requires_loan")
+if(a1==null)a1=!1
+a2=c9.h(d1,"loan_option")
+if(a2==null)a2=""
+a3=c9.h(d1,"is_looking_for_loan")
+if(a3==null)a3=a1
+a4=j.a(c9.h(d1,"loan_types"))
+if(a4==null)a4=[]
+a5=c9.h(d1,"loan_type")
+a6=a5==null?c0:J.v(a5)
+if(a6==null)a6=a2
+a5=A.f(14)
+a7=A.a([new A.M(-2,B.u,A.m(15,B.o.i()>>>16&255,B.o.i()>>>8&255,B.o.i()&255),new A.K(0,3),16),new A.M(0,B.u,A.m(13,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),new A.K(0,1),6)],t.V)
+a8=t.O
+a9=A.a([B.e,B.r],a8)
+b0=A.m(235,B.i.i()>>>16&255,B.i.i()>>>8&255,B.i.i()&255)
+b1=A.f(20)
+b2=t.p
+b1=A.h(c0,A.n(A.a([A.r(B.d_,B.r,c0,12),A.i(c0,c0,4),A.b("HOMEOWNER APP LEAD",c0,c0,c0,c0,A.a_(c0,c0,B.r,c0,c0,c0,c0,c0,c0,c0,c0,10,c0,c0,B.t,c0,c0,!0,c0,0.3,c0,c0,c0,c0,c0,c0),c0,c0,c0)],b2),B.f,B.c,B.E,0,c0,c0),B.d,c0,c0,new A.k(b0,c0,c0,b1,c0,c0,B.j),c0,c0,c0,c0,new A.o(8,4,8,4),c0,c0,c0)
 b0=A.f(20)
-b1=t.p
-b0=A.h(b9,A.n(A.a([A.r(B.d_,B.r,b9,12),A.i(b9,b9,4),A.b("HOMEOWNER APP LEAD",b9,b9,b9,b9,A.a_(b9,b9,B.r,b9,b9,b9,b9,b9,b9,b9,b9,10,b9,b9,B.t,b9,b9,!0,b9,0.3,b9,b9,b9,b9,b9,b9),b9,b9,b9)],b1),B.f,B.c,B.E,0,b9,b9),B.d,b9,b9,new A.k(a9,b9,b9,b0,b9,b9,B.j),b9,b9,b9,b9,new A.o(8,4,8,4),b9,b9,b9)
-a9=A.f(20)
-a9=A.n(A.a([b0,A.h(b9,A.b("S$"+B.m.a0(c,0),b9,b9,b9,b9,A.a_(b9,b9,B.r,b9,b9,b9,b9,b9,b9,b9,b9,13,b9,b9,B.t,b9,b9,!0,b9,b9,b9,b9,b9,b9,b9,b9),b9,b9,b9),B.d,b9,b9,new A.k(B.i,b9,b9,a9,b9,b9,B.j),b9,b9,b9,b9,new A.o(10,4,10,4),b9,b9,b9)],b1),B.f,B.ar,B.b,0,b9,b9)
-b0=A.i(b9,10,b9)
-h=h&&q!=="Not specified"?q:"Renovation Project"
-a8=A.h(b9,A.p(A.a([a9,b0,A.n(A.a([A.z(A.b(h,2,B.a8,b9,b9,A.a_(b9,b9,B.i,b9,b9,b9,b9,b9,b9,b9,b9,17,b9,b9,B.t,b9,b9,!0,b9,-0.2,b9,b9,b9,b9,b9,b9),b9,b9,b9),1)],b1),B.f,B.c,B.b,0,b9,b9)],b1),B.f,b9,B.c,B.b,B.k),B.d,b9,b9,new A.k(b9,b9,b9,b9,b9,new A.a4(B.a5,B.a7,B.D,a8,b9,b9),B.j),b9,b9,b9,b9,new A.o(14,12,14,12),b9,b9,b9)
-h=A.au(4294638588)
-b0=A.f(10)
-a9=A.H(A.au(4293849074),B.n,1)
-b2=A.nG(A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),b9,A.r(B.d_,B.e,b9,20),18)
-b3=A.i(b9,b9,10)
-b4=A.b(c9,1,B.a8,b9,b9,A.a_(b9,b9,A.au(4279901473),b9,b9,b9,b9,b9,b9,b9,b9,14,b9,b9,B.q,b9,b9,!0,b9,b9,b9,b9,b9,b9,b9,b9),b9,b9,b9)
-b5=A.i(b9,3,b9)
-b6=A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255)
-b7=A.f(10)
-h=A.a([A.h(b9,A.n(A.a([b2,b3,A.z(A.p(A.a([b4,b5,A.n(A.a([A.h(b9,A.n(A.a([A.r(o?B.AD:B.AE,B.r,b9,10),A.i(b9,b9,3),A.b(n.toUpperCase(),b9,b9,b9,b9,A.a_(b9,b9,B.r,b9,b9,b9,b9,b9,b9,b9,b9,9,b9,b9,B.q,b9,b9,!0,b9,0.2,b9,b9,b9,b9,b9,b9),b9,b9,b9)],b1),B.f,B.c,B.E,0,b9,b9),B.d,b9,b9,new A.k(b6,b9,b9,b7,b9,b9,B.j),b9,b9,b9,b9,new A.o(6,2,6,2),b9,b9,b9),A.i(b9,b9,6),A.b(A.w(m)+" Accepted",b9,b9,b9,b9,A.a_(b9,b9,B.O,b9,b9,b9,b9,b9,b9,b9,b9,10,b9,b9,b9,b9,b9,!0,b9,b9,b9,b9,b9,b9,b9,b9),b9,b9,b9)],b1),B.f,B.c,B.b,0,b9,b9)],b1),B.p,b9,B.c,B.b,B.k),1)],b1),B.f,B.c,B.b,0,b9,b9),B.d,b9,b9,new A.k(h,b9,a9,b0,b9,b9,B.j),b9,b9,b9,b9,new A.o(10,10,10,10),b9,b9,b9),A.i(b9,12,b9)],b1)
-if(e.length!==0)B.h.t(h,A.a([A.n(A.a([A.z(b8.pH(B.hL,"Property",e),1)],b1),B.f,B.c,B.b,0,b9,b9),A.i(b9,6,b9)],b1))
-a9=A.z(b8.pH(B.dK,"Budget",s.length!==0&&s!=="Budget not specified"?s:c0),1)
-b0=A.i(b9,b9,6)
-h.push(new A.lU(A.n(A.a([a9,b0,A.z(b8.pH(B.li,"Timeline",r.length!==0&&r!=="Timeline not specified"?r:c0),1)],b1),B.du,B.c,B.b,0,b9,b9),b9))
-h.push(A.i(b9,4,b9))
-h.push(A.i(b9,10,b9))
-a9=b?A.m(15,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255):A.au(c1)
-b0=A.f(8)
-b2=b?B.pl:B.A_
-b2=A.r(b2,b?B.r:B.V,b9,14)
-b3=A.i(b9,b9,5)
-b4=b?"Floorplans":"No Floorplan"
-a9=A.z(A.h(b9,A.n(A.a([b2,b3,A.b(b4,b9,b9,b9,b9,A.a_(b9,b9,b?B.r:B.O,b9,b9,b9,b9,b9,b9,b9,b9,11,b9,b9,B.z,b9,b9,!0,b9,b9,b9,b9,b9,b9,b9,b9),b9,b9,b9)],b1),B.f,B.I,B.b,0,b9,b9),B.d,b9,b9,new A.k(a9,b9,b9,b0,b9,b9,B.j),b9,b9,b9,b9,new A.o(8,6,8,6),b9,b9,b9),1)
-b0=A.i(b9,b9,6)
-b2=a?A.m(B.m.A(178.5),B.bp.i()>>>16&255,B.bp.i()>>>8&255,B.bp.i()&255):A.au(c1)
-b3=A.f(8)
-b4=a?B.fE:B.jX
-b4=A.r(b4,a?B.ba:B.V,b9,14)
-b5=A.i(b9,b9,5)
-b6=a?"Site Images":"No Images"
-h.push(A.n(A.a([a9,b0,A.z(A.h(b9,A.n(A.a([b4,b5,A.b(b6,b9,b9,b9,b9,A.a_(b9,b9,a?B.bE:B.O,b9,b9,b9,b9,b9,b9,b9,b9,11,b9,b9,B.z,b9,b9,!0,b9,b9,b9,b9,b9,b9,b9,b9),b9,b9,b9)],b1),B.f,B.I,B.b,0,b9,b9),B.d,b9,b9,new A.k(b2,b9,b9,b3,b9,b9,B.j),b9,b9,b9,b9,new A.o(8,6,8,6),b9,b9,b9),1)],b1),B.f,B.c,B.b,0,b9,b9))
-if(a2||J.aP(a3)){a9=A.i(b9,8,b9)
-b0=A.f(20)
-B.h.t(h,A.a([a9,A.h(b9,A.n(A.a([A.r(B.ie,B.e5,b9,13),A.i(b9,b9,5),new A.cB(1,B.aT,A.b(b8.aKe(a2,a3,a5),b9,b9,b9,b9,A.a_(b9,b9,B.e4,b9,b9,b9,b9,b9,b9,b9,b9,11,b9,b9,B.z,b9,b9,!0,b9,b9,b9,b9,b9,b9,b9,b9),b9,b9,b9),b9)],b1),B.f,B.c,B.E,0,b9,b9),B.d,b9,b9,new A.k(B.c3,b9,b9,b0,b9,b9,B.j),b9,b9,b9,b9,new A.o(10,5,10,5),b9,b9,b9)],b1))}h.push(A.i(b9,14,b9))
-a9=c8.h(d0,c2)
-if(B.l.G(J.v(a9==null?"":a9)).length!==0)B.h.t(h,A.a([b8.Xo(J.v(c8.h(d0,c2))),A.i(b9,14,b9)],b1))
-k=k.a(c8.h(d0,c3))
-if(J.aP(k==null?[]:k))B.h.t(h,A.a([b8.Xn(t.j.a(c8.h(d0,c3))),A.i(b9,14,b9)],b1))
-k=c8.h(d0,c4)
-if(J.v(k==null?"":k).length!==0)B.h.t(h,A.a([new A.C6(J.v(c8.h(d0,c4)),b9),A.i(b9,14,b9)],b1))
-if(c8.h(d0,c5)!=null){k=t.f
-k=k.b(c8.h(d0,c5))&&J.aP(k.a(c8.h(d0,c5)))}else k=!1
-if(k)B.h.t(h,A.a([b8.Xw(c8.h(d0,c5)),A.i(b9,14,b9)],b1))
-h.push(A.i(b9,10,b9))
-k=A.au(4293980400)
-h.push(A.h(b9,A.n(A.a([A.r(B.u9,B.V,b9,11),A.i(b9,b9,4),A.b("Posted "+b8.a_J(l),b9,b9,b9,b9,A.a_(b9,b9,B.V,b9,b9,b9,b9,b9,b9,b9,b9,10,b9,b9,b9,b9,b9,!0,b9,b9,b9,b9,b9,b9,b9,b9),b9,b9,b9)],b1),B.f,B.I,B.b,0,b9,b9),B.d,b9,b9,new A.k(b9,b9,new A.cI(new A.a5(k,1,B.n,-1),B.v,B.v,B.v),b9,b9,b9,B.j),b9,b9,b9,b9,new A.o(0,8,0,0),b9,b9,b9))
-h.push(A.i(b9,12,b9))
-a7=A.a([B.e,B.r],a7)
-k=A.f(10)
-a9=c8.h(d0,c6)
-a9=a9==null?b9:J.l(a9,c7)
-a9=(a9==null?!1:a9)?B.J:B.V
-c8=c8.h(d0,c6)
-c8=c8==null?b9:J.l(c8,c7)
-c8=(c8==null?!1:c8)?B.i:B.a0
-c8=A.aX(b9,b9,a9,b9,b9,b9,0,b9,b9,c8,b9,b9,new A.o(0,12,0,12),B.J,new A.ah(A.f(10),B.v),b9,b9,b9,b9,b9)
-h.push(A.n(A.a([A.z(A.h(b9,A.bd(A.n(A.a([A.r(B.pR,b9,b9,16),A.i(b9,b9,6),A.b("Purchase Lead \u2022 S$"+B.m.a0(c,0),b9,b9,b9,b9,A.d().$2$fontSize$fontWeight(14,B.q),b9,b9,b9)],b1),B.f,B.I,B.b,0,b9,b9),new A.bnf(b8,d0),c8),B.d,b9,b9,new A.k(b9,b9,b9,k,b9,new A.a4(B.a5,B.a7,B.D,a7,b9,b9),B.j),b9,b9,b9,b9,b9,b9,b9,b9),1)],b1),B.f,B.c,B.b,0,b9,b9))
-return A.h(b9,A.p(A.a([a8,new A.P(new A.o(14,14,14,14),A.p(h,B.p,b9,B.c,B.b,B.k),b9)],b1),B.p,b9,B.c,B.b,B.k),B.a9,b9,b9,new A.k(B.i,b9,b9,a4,a6,b9,B.j),b9,b9,b9,new A.o(0,0,0,14),b9,b9,b9,b9)},
+b0=A.n(A.a([b1,A.h(c0,A.b("S$"+B.m.a0(b,0),c0,c0,c0,c0,A.a_(c0,c0,B.r,c0,c0,c0,c0,c0,c0,c0,c0,13,c0,c0,B.t,c0,c0,!0,c0,c0,c0,c0,c0,c0,c0,c0),c0,c0,c0),B.d,c0,c0,new A.k(B.i,c0,c0,b0,c0,c0,B.j),c0,c0,c0,c0,new A.o(10,4,10,4),c0,c0,c0)],b2),B.f,B.ar,B.b,0,c0,c0)
+b1=A.i(c0,10,c0)
+g=g&&q!=="Not specified"?q:"Renovation Project"
+a9=A.h(c0,A.p(A.a([b0,b1,A.n(A.a([A.z(A.b(g,2,B.a8,c0,c0,A.a_(c0,c0,B.i,c0,c0,c0,c0,c0,c0,c0,c0,17,c0,c0,B.t,c0,c0,!0,c0,-0.2,c0,c0,c0,c0,c0,c0),c0,c0,c0),1)],b2),B.f,B.c,B.b,0,c0,c0)],b2),B.f,c0,B.c,B.b,B.k),B.d,c0,c0,new A.k(c0,c0,c0,c0,c0,new A.a4(B.a5,B.a7,B.D,a9,c0,c0),B.j),c0,c0,c0,c0,new A.o(14,12,14,12),c0,c0,c0)
+g=A.au(4294638588)
+b1=A.f(10)
+b0=A.H(A.au(4293849074),B.n,1)
+b3=A.nG(A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),c0,A.r(B.d_,B.e,c0,20),18)
+b4=A.i(c0,c0,10)
+b5=A.b(d0,1,B.a8,c0,c0,A.a_(c0,c0,A.au(4279901473),c0,c0,c0,c0,c0,c0,c0,c0,14,c0,c0,B.q,c0,c0,!0,c0,c0,c0,c0,c0,c0,c0,c0),c0,c0,c0)
+b6=A.i(c0,3,c0)
+b7=A.m(20,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255)
+b8=A.f(10)
+b7=A.a([A.h(c0,A.n(A.a([A.r(o?B.AD:B.AE,B.r,c0,10),A.i(c0,c0,3),A.b(n.toUpperCase(),c0,c0,c0,c0,A.a_(c0,c0,B.r,c0,c0,c0,c0,c0,c0,c0,c0,9,c0,c0,B.q,c0,c0,!0,c0,0.2,c0,c0,c0,c0,c0,c0),c0,c0,c0)],b2),B.f,B.c,B.E,0,c0,c0),B.d,c0,c0,new A.k(b7,c0,c0,b8,c0,c0,B.j),c0,c0,c0,c0,new A.o(6,2,6,2),c0,c0,c0)],b2)
+if(!l)B.h.t(b7,A.a([A.i(c0,c0,6),A.b(A.w(m)+" Accepted",c0,c0,c0,c0,A.a_(c0,c0,B.O,c0,c0,c0,c0,c0,c0,c0,c0,10,c0,c0,c0,c0,c0,!0,c0,c0,c0,c0,c0,c0,c0,c0),c0,c0,c0)],b2))
+g=A.a([A.h(c0,A.n(A.a([b3,b4,A.z(A.p(A.a([b5,b6,A.n(b7,B.f,B.c,B.b,0,c0,c0)],b2),B.p,c0,B.c,B.b,B.k),1)],b2),B.f,B.c,B.b,0,c0,c0),B.d,c0,c0,new A.k(g,c0,b0,b1,c0,c0,B.j),c0,c0,c0,c0,new A.o(10,10,10,10),c0,c0,c0),A.i(c0,12,c0)],b2)
+if(d.length!==0)B.h.t(g,A.a([A.n(A.a([A.z(b9.pH(B.hL,"Property",d),1)],b2),B.f,B.c,B.b,0,c0,c0),A.i(c0,6,c0)],b2))
+b0=A.z(b9.pH(B.dK,"Budget",s.length!==0&&s!=="Budget not specified"?s:c1),1)
+b1=A.i(c0,c0,6)
+g.push(new A.lU(A.n(A.a([b0,b1,A.z(b9.pH(B.li,"Timeline",r.length!==0&&r!=="Timeline not specified"?r:c1),1)],b2),B.du,B.c,B.b,0,c0,c0),c0))
+g.push(A.i(c0,4,c0))
+g.push(A.i(c0,10,c0))
+b0=a?A.m(15,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255):A.au(c2)
+b1=A.f(8)
+b3=a?B.pl:B.A_
+b3=A.r(b3,a?B.r:B.V,c0,14)
+b4=A.i(c0,c0,5)
+b5=a?"Floorplans":"No Floorplan"
+b0=A.z(A.h(c0,A.n(A.a([b3,b4,A.b(b5,c0,c0,c0,c0,A.a_(c0,c0,a?B.r:B.O,c0,c0,c0,c0,c0,c0,c0,c0,11,c0,c0,B.z,c0,c0,!0,c0,c0,c0,c0,c0,c0,c0,c0),c0,c0,c0)],b2),B.f,B.I,B.b,0,c0,c0),B.d,c0,c0,new A.k(b0,c0,c0,b1,c0,c0,B.j),c0,c0,c0,c0,new A.o(8,6,8,6),c0,c0,c0),1)
+b1=A.i(c0,c0,6)
+b3=a0?A.m(B.m.A(178.5),B.bp.i()>>>16&255,B.bp.i()>>>8&255,B.bp.i()&255):A.au(c2)
+b4=A.f(8)
+b5=a0?B.fE:B.jX
+b5=A.r(b5,a0?B.ba:B.V,c0,14)
+b6=A.i(c0,c0,5)
+b7=a0?"Site Images":"No Images"
+g.push(A.n(A.a([b0,b1,A.z(A.h(c0,A.n(A.a([b5,b6,A.b(b7,c0,c0,c0,c0,A.a_(c0,c0,a0?B.bE:B.O,c0,c0,c0,c0,c0,c0,c0,c0,11,c0,c0,B.z,c0,c0,!0,c0,c0,c0,c0,c0,c0,c0,c0),c0,c0,c0)],b2),B.f,B.I,B.b,0,c0,c0),B.d,c0,c0,new A.k(b3,c0,c0,b4,c0,c0,B.j),c0,c0,c0,c0,new A.o(8,6,8,6),c0,c0,c0),1)],b2),B.f,B.c,B.b,0,c0,c0))
+if(a3||J.aP(a4)){b0=A.i(c0,8,c0)
+b1=A.f(20)
+B.h.t(g,A.a([b0,A.h(c0,A.n(A.a([A.r(B.ie,B.e5,c0,13),A.i(c0,c0,5),new A.cB(1,B.aT,A.b(b9.aKe(a3,a4,a6),c0,c0,c0,c0,A.a_(c0,c0,B.e4,c0,c0,c0,c0,c0,c0,c0,c0,11,c0,c0,B.z,c0,c0,!0,c0,c0,c0,c0,c0,c0,c0,c0),c0,c0,c0),c0)],b2),B.f,B.c,B.E,0,c0,c0),B.d,c0,c0,new A.k(B.c3,c0,c0,b1,c0,c0,B.j),c0,c0,c0,c0,new A.o(10,5,10,5),c0,c0,c0)],b2))}g.push(A.i(c0,14,c0))
+b0=c9.h(d1,c3)
+if(B.l.G(J.v(b0==null?"":b0)).length!==0)B.h.t(g,A.a([b9.Xo(J.v(c9.h(d1,c3))),A.i(c0,14,c0)],b2))
+j=j.a(c9.h(d1,c4))
+if(J.aP(j==null?[]:j))B.h.t(g,A.a([b9.Xn(t.j.a(c9.h(d1,c4))),A.i(c0,14,c0)],b2))
+j=c9.h(d1,c5)
+if(J.v(j==null?"":j).length!==0)B.h.t(g,A.a([new A.C6(J.v(c9.h(d1,c5)),c0),A.i(c0,14,c0)],b2))
+if(c9.h(d1,c6)!=null){j=t.f
+j=j.b(c9.h(d1,c6))&&J.aP(j.a(c9.h(d1,c6)))}else j=!1
+if(j)B.h.t(g,A.a([b9.Xw(c9.h(d1,c6)),A.i(c0,14,c0)],b2))
+g.push(A.i(c0,10,c0))
+j=A.au(4293980400)
+g.push(A.h(c0,A.n(A.a([A.r(B.u9,B.V,c0,11),A.i(c0,c0,4),A.b("Posted "+b9.a_J(k),c0,c0,c0,c0,A.a_(c0,c0,B.V,c0,c0,c0,c0,c0,c0,c0,c0,10,c0,c0,c0,c0,c0,!0,c0,c0,c0,c0,c0,c0,c0,c0),c0,c0,c0)],b2),B.f,B.I,B.b,0,c0,c0),B.d,c0,c0,new A.k(c0,c0,new A.cI(new A.a5(j,1,B.n,-1),B.v,B.v,B.v),c0,c0,c0,B.j),c0,c0,c0,c0,new A.o(0,8,0,0),c0,c0,c0))
+g.push(A.i(c0,12,c0))
+a8=A.a([B.e,B.r],a8)
+j=A.f(10)
+b0=c9.h(d1,c7)
+b0=b0==null?c0:J.l(b0,c8)
+b0=(b0==null?!1:b0)?B.J:B.V
+c9=c9.h(d1,c7)
+c9=c9==null?c0:J.l(c9,c8)
+c9=(c9==null?!1:c9)?B.i:B.a0
+c9=A.aX(c0,c0,b0,c0,c0,c0,0,c0,c0,c9,c0,c0,new A.o(0,12,0,12),B.J,new A.ah(A.f(10),B.v),c0,c0,c0,c0,c0)
+g.push(A.n(A.a([A.z(A.h(c0,A.bd(A.n(A.a([A.r(B.pR,c0,c0,16),A.i(c0,c0,6),A.b("Purchase Lead \u2022 S$"+B.m.a0(b,0),c0,c0,c0,c0,A.d().$2$fontSize$fontWeight(14,B.q),c0,c0,c0)],b2),B.f,B.I,B.b,0,c0,c0),new A.bnf(b9,d1),c9),B.d,c0,c0,new A.k(c0,c0,c0,j,c0,new A.a4(B.a5,B.a7,B.D,a8,c0,c0),B.j),c0,c0,c0,c0,c0,c0,c0,c0),1)],b2),B.f,B.c,B.b,0,c0,c0))
+return A.h(c0,A.p(A.a([a9,new A.P(new A.o(14,14,14,14),A.p(g,B.p,c0,B.c,B.b,B.k),c0)],b2),B.p,c0,B.c,B.b,B.k),B.a9,c0,c0,new A.k(B.i,c0,c0,a5,a7,c0,B.j),c0,c0,c0,new A.o(0,0,0,14),c0,c0,c0,c0)},
 aIg(){return new A.yZ(2,this.V,new A.dY(new A.blA(this),null),null)},
 aLh(){var s,r,q,p,o=this
 if(o.k2)s=o.acA("Loading your projects...")
@@ -159729,257 +159734,258 @@ A.bov.prototype={
 $0(){this.a.dy=!1},
 $S:0}
 A.bnD.prototype={
-$1(k3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5,e6,e7,e8,e9,f0,f1,f2,f3,f4,f5="leadData",f6="customerData",f7=null,f8="customerName",f9="customerEmail",g0="customerPhone",g1="selectedBudgetValues",g2="isFlexibleBudget",g3="receivedAt",g4="renovationType",g5="partialSelections",g6="otherRenovationType",g7="timeline",g8="renovationTiming",g9="specialRequirements",h0="floorplanImages",h1="floorplanFiles",h2="siteImages",h3="siteVideoUrls",h4="customerActivity",h5="calculatedPrice",h6="bundleGroupName",h7="bulkPushGroupName",h8="bundleGroupId",h9="bulkPushGroupId",i0="isBundleLead",i1="expiryThreshold",i2="acceptedLeadsAtCreation",i3="renovationLoanInterest",i4="renovationLoan",i5="isLookingForLoan",i6="selectedLoanTypes",i7="loanTypes",i8="appointmentSlots",i9="acceptedAppointmentSlot",j0="selectedAppointmentSlot",j1="leadType",j2="source",j3="quotationFormData",j4="editHistory",j5="adminRemarks",j6=J.Q(k3),j7=t.f,j8=t.N,j9=t.z,k0=j7.b(j6.h(k3,f5))?A.bV(j7.a(j6.h(k3,f5)),j8,j9):A.L(j8,j9),k1=j7.b(j6.h(k3,f6))?A.bV(j7.a(j6.h(k3,f6)),j8,j9):A.L(j8,j9),k2=k1.h(0,"name")
-k2=k2==null?f7:J.v(k2)
-if(k2==null){k2=j6.h(k3,f8)
-k2=k2==null?f7:J.v(k2)}if(k2==null){k2=k0.h(0,f8)
-k2=k2==null?f7:J.v(k2)
-r=k2}else r=k2
+$1(k5){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5,e6,e7,e8,e9,f0,f1,f2,f3,f4,f5,f6="leadData",f7="customerData",f8=null,f9="customerName",g0="customerEmail",g1="customerPhone",g2="selectedBudgetValues",g3="isFlexibleBudget",g4="receivedAt",g5="renovationType",g6="partialSelections",g7="otherRenovationType",g8="timeline",g9="renovationTiming",h0="specialRequirements",h1="floorplanImages",h2="floorplanFiles",h3="siteImages",h4="siteVideoUrls",h5="customerActivity",h6="hideConnectionsCount",h7="calculatedPrice",h8="bundleGroupName",h9="bulkPushGroupName",i0="bundleGroupId",i1="bulkPushGroupId",i2="isBundleLead",i3="expiryThreshold",i4="acceptedLeadsAtCreation",i5="renovationLoanInterest",i6="renovationLoan",i7="isLookingForLoan",i8="selectedLoanTypes",i9="loanTypes",j0="appointmentSlots",j1="acceptedAppointmentSlot",j2="selectedAppointmentSlot",j3="leadType",j4="source",j5="quotationFormData",j6="editHistory",j7="adminRemarks",j8=J.Q(k5),j9=t.f,k0=t.N,k1=t.z,k2=j9.b(j8.h(k5,f6))?A.bV(j9.a(j8.h(k5,f6)),k0,k1):A.L(k0,k1),k3=j9.b(j8.h(k5,f7))?A.bV(j9.a(j8.h(k5,f7)),k0,k1):A.L(k0,k1),k4=k3.h(0,"name")
+k4=k4==null?f8:J.v(k4)
+if(k4==null){k4=j8.h(k5,f9)
+k4=k4==null?f8:J.v(k4)}if(k4==null){k4=k2.h(0,f9)
+k4=k4==null?f8:J.v(k4)
+r=k4}else r=k4
 if(r==null)r="Unknown Customer"
-k2=k1.h(0,"email")
-k2=k2==null?f7:J.v(k2)
-if(k2==null){k2=j6.h(k3,f9)
-k2=k2==null?f7:J.v(k2)}if(k2==null){k2=k0.h(0,f9)
-k2=k2==null?f7:J.v(k2)
-q=k2}else q=k2
+k4=k3.h(0,"email")
+k4=k4==null?f8:J.v(k4)
+if(k4==null){k4=j8.h(k5,g0)
+k4=k4==null?f8:J.v(k4)}if(k4==null){k4=k2.h(0,g0)
+k4=k4==null?f8:J.v(k4)
+q=k4}else q=k4
 if(q==null)q=""
-k2=k1.h(0,"phone")
-k2=k2==null?f7:J.v(k2)
-if(k2==null){k2=j6.h(k3,g0)
-k2=k2==null?f7:J.v(k2)}if(k2==null){k2=k0.h(0,g0)
-k2=k2==null?f7:J.v(k2)
-p=k2}else p=k2
+k4=k3.h(0,"phone")
+k4=k4==null?f8:J.v(k4)
+if(k4==null){k4=j8.h(k5,g1)
+k4=k4==null?f8:J.v(k4)}if(k4==null){k4=k2.h(0,g1)
+k4=k4==null?f8:J.v(k4)
+p=k4}else p=k4
 if(p==null)p=""
-k2=k1.h(0,"address")
-k2=k2==null?f7:J.v(k2)
-if(k2==null){k2=k0.h(0,"address")
-k2=k2==null?f7:J.v(k2)
-o=k2}else o=k2
+k4=k3.h(0,"address")
+k4=k4==null?f8:J.v(k4)
+if(k4==null){k4=k2.h(0,"address")
+k4=k4==null?f8:J.v(k4)
+o=k4}else o=k4
 if(o==null)o=""
-k2=k1.h(0,"unitNumber")
-n=k2==null?f7:J.v(k2)
+k4=k3.h(0,"unitNumber")
+n=k4==null?f8:J.v(k4)
 if(n==null)n=""
-k2=k1.h(0,"postalCode")
-m=k2==null?f7:J.v(k2)
+k4=k3.h(0,"postalCode")
+m=k4==null?f8:J.v(k4)
 if(m==null)m=""
-if(o.length!==0){k2=this.a
-l=k2.b_9(o)
+if(o.length!==0){k4=this.a
+l=k4.b_9(o)
 if(n.length!==0)l+=", Unit ****"
-if(m.length!==0)l+=", Singapore "+k2.b3w(m)}else l="Location not specified"
-if(j7.b(k0.h(0,g1)))k=A.bV(j7.a(k0.h(0,g1)),j8,j9)
-else k=j7.b(k1.h(0,g1))?A.bV(j7.a(k1.h(0,g1)),j8,j9):f7
-if(J.q(k0.h(0,g2),!0)||J.q(k1.h(0,g2),!0))j="Flexible Budget"
+if(m.length!==0)l+=", Singapore "+k4.b3w(m)}else l="Location not specified"
+if(j9.b(k2.h(0,g2)))k=A.bV(j9.a(k2.h(0,g2)),k0,k1)
+else k=j9.b(k3.h(0,g2))?A.bV(j9.a(k3.h(0,g2)),k0,k1):f8
+if(J.q(k2.h(0,g3),!0)||J.q(k3.h(0,g3),!0))j="Flexible Budget"
 else{j="Budget not specified"
-if(k!=null){k2=k.h(0,"min")
-i=k2==null?f7:J.v(k2)
-k2=k.h(0,"max")
-h=k2==null?f7:J.v(k2)
-if(i!=null&&h!=null){k2=this.a
-j="S$"+k2.Nw(i)+" - S$"+k2.Nw(h)}}}s=null
-if(j6.h(k3,g3)!=null)try{s=A.dE(j6.h(k3,g3))}catch(g){s=new A.aK(Date.now(),0,!1)}k2=k0.h(0,g4)
-k2=k2==null?f7:J.v(k2)
-if(k2==null){k2=k1.h(0,g4)
-k2=k2==null?f7:J.v(k2)
-f=k2}else f=k2
+if(k!=null){k4=k.h(0,"min")
+i=k4==null?f8:J.v(k4)
+k4=k.h(0,"max")
+h=k4==null?f8:J.v(k4)
+if(i!=null&&h!=null){k4=this.a
+j="S$"+k4.Nw(i)+" - S$"+k4.Nw(h)}}}s=null
+if(j8.h(k5,g4)!=null)try{s=A.dE(j8.h(k5,g4))}catch(g){s=new A.aK(Date.now(),0,!1)}k4=k2.h(0,g5)
+k4=k4==null?f8:J.v(k4)
+if(k4==null){k4=k3.h(0,g5)
+k4=k4==null?f8:J.v(k4)
+f=k4}else f=k4
 if(f==null)f="Renovation"
-k2=t.g
-e=k2.a(k0.h(0,g5))
-d=e==null?k2.a(k1.h(0,g5)):e
+k4=t.g
+e=k4.a(k2.h(0,g6))
+d=e==null?k4.a(k3.h(0,g6)):e
 if(d==null)d=[]
-e=k0.h(0,g6)
-e=e==null?f7:J.v(e)
-if(e==null){e=k1.h(0,g6)
-e=e==null?f7:J.v(e)
+e=k2.h(0,g7)
+e=e==null?f8:J.v(e)
+if(e==null){e=k3.h(0,g7)
+e=e==null?f8:J.v(e)
 c=e}else c=e
 if(c==null)c=""
-if(f.toLowerCase()==="partial"&&J.aP(d))f="Partial ("+J.bF(d,new A.bnB(),j8).aX(0,", ")+")"
+if(f.toLowerCase()==="partial"&&J.aP(d))f="Partial ("+J.bF(d,new A.bnB(),k0).aX(0,", ")+")"
 else if(f.toLowerCase()==="other"&&c.length!==0)f="Other ("+c+")"
 else if(f==="Renovation"&&c.length!==0)f=c
-e=k0.h(0,g7)
-e=e==null?f7:J.v(e)
-if(e==null){e=k1.h(0,g7)
-e=e==null?f7:J.v(e)}if(e==null){e=k1.h(0,g8)
-e=e==null?f7:J.v(e)
+e=k2.h(0,g8)
+e=e==null?f8:J.v(e)
+if(e==null){e=k3.h(0,g8)
+e=e==null?f8:J.v(e)}if(e==null){e=k3.h(0,g9)
+e=e==null?f8:J.v(e)
 b=e}else b=e
 if(b==null)b="Timeline not specified"
-e=k0.h(0,g9)
-e=e==null?f7:J.v(e)
-if(e==null){e=k1.h(0,g9)
-e=e==null?f7:J.v(e)
+e=k2.h(0,h0)
+e=e==null?f8:J.v(e)
+if(e==null){e=k3.h(0,h0)
+e=e==null?f8:J.v(e)
 a=e}else a=e
 if(a==null)a=""
-e=k2.a(k0.h(0,h0))
-a0=e==null?k2.a(k1.h(0,h0)):e
+e=k4.a(k2.h(0,h1))
+a0=e==null?k4.a(k3.h(0,h1)):e
 if(a0==null)a0=[]
-e=k2.a(k0.h(0,h1))
-a1=e==null?k2.a(k1.h(0,h1)):e
+e=k4.a(k2.h(0,h2))
+a1=e==null?k4.a(k3.h(0,h2)):e
 if(a1==null)a1=[]
-e=k2.a(k0.h(0,h2))
-a2=e==null?k2.a(k1.h(0,h2)):e
+e=k4.a(k2.h(0,h3))
+a2=e==null?k4.a(k3.h(0,h3)):e
 if(a2==null)a2=[]
-e=k2.a(k0.h(0,h3))
-a3=e==null?k2.a(k1.h(0,h3)):e
+e=k4.a(k2.h(0,h4))
+a3=e==null?k4.a(k3.h(0,h4)):e
 if(a3==null)a3=[]
-e=A.N(a0,j9)
+e=A.N(a0,k1)
 B.h.t(e,a1)
-a4=j6.h(k3,"leadId")
-a5=a4==null?f7:J.v(a4)
+a4=j8.h(k5,"leadId")
+a5=a4==null?f8:J.v(a4)
 if(a5==null)a5=""
-a6=j7.b(j6.h(k3,h4))?A.bV(j7.a(j6.h(k3,h4)),j8,j9):A.L(j8,j9)
+a6=j9.b(j8.h(k5,h5))?A.bV(j9.a(j8.h(k5,h5)),k0,k1):A.L(k0,k1)
 a4=A.fm(a6.h(0,"connectionsCount"))
-if(a4==null)a4=A.fm(j6.h(k3,"customerConnectionsCount"))
+if(a4==null)a4=A.fm(j8.h(k5,"customerConnectionsCount"))
 a7=a4==null?A.fm(a6.h(0,"requestNumber")):a4
 if(a7==null)a7=0
 a4=a6.h(0,"activityLevel")
-a4=a4==null?f7:J.v(a4)
+a4=a4==null?f8:J.v(a4)
 if(a4==null){a4=a6.h(0,"description")
-a4=a4==null?f7:J.v(a4)
+a4=a4==null?f8:J.v(a4)
 a8=a4}else a8=a4
 if(a8==null)a8="New Customer"
+a9=J.q(j8.h(k5,h6),!0)||J.q(a6.h(0,h6),!0)
 a4=a5.length!==0?a5:"lead_"+Date.now()
-a9=j6.h(k3,"creditsRequired")
-if(a9==null)a9=50
-b0=j6.h(k3,h5)
-b1=a.length!==0?a:"Customer "+f+" project"
-b2=this.a
-b3=b2.b3v(p)
-b4=b2.b3u(q)
-b5=t.s
-b6=A.a([],b5)
-b7=k0.h(0,g4)
-b8=b7==null?f7:J.v(b7)
-if(b8==null){b7=k1.h(0,g4)
-b8=b7==null?f7:J.v(b7)}if(b8!=null)b6.push(b8)
-b7=k0.h(0,g7)
-b7=b7==null?f7:J.v(b7)
-if(b7==null){b7=k1.h(0,g7)
-b7=b7==null?f7:J.v(b7)
-b9=b7}else b9=b7
-if(b9==null){b7=k1.h(0,g8)
-b9=b7==null?f7:J.v(b7)}if(b9!=null)b6.push("Timeline: "+b9)
-b7=k0.h(0,g9)
-c0=b7==null?f7:J.v(b7)
-if(c0==null){b7=k1.h(0,g9)
-c0=b7==null?f7:J.v(b7)}if(c0!=null&&c0.length!==0)b6.push(c0)
-b7=k2.a(k0.h(0,h1))
-if(b7==null)b7=k2.a(k1.h(0,h1))
-c1=b7==null?k2.a(k1.h(0,h0)):b7
-if(c1==null)c1=[]
-b7=J.Q(c1)
-if(b7.gbj(c1))b6.push(""+b7.gF(c1)+" floorplan file(s) provided")
-b7=k2.a(k0.h(0,h2))
-c2=b7==null?k2.a(k1.h(0,h2)):b7
+b0=j8.h(k5,"creditsRequired")
+if(b0==null)b0=50
+b1=j8.h(k5,h7)
+b2=a.length!==0?a:"Customer "+f+" project"
+b3=this.a
+b4=b3.b3v(p)
+b5=b3.b3u(q)
+b6=t.s
+b7=A.a([],b6)
+b8=k2.h(0,g5)
+b9=b8==null?f8:J.v(b8)
+if(b9==null){b8=k3.h(0,g5)
+b9=b8==null?f8:J.v(b8)}if(b9!=null)b7.push(b9)
+b8=k2.h(0,g8)
+b8=b8==null?f8:J.v(b8)
+if(b8==null){b8=k3.h(0,g8)
+b8=b8==null?f8:J.v(b8)
+c0=b8}else c0=b8
+if(c0==null){b8=k3.h(0,g9)
+c0=b8==null?f8:J.v(b8)}if(c0!=null)b7.push("Timeline: "+c0)
+b8=k2.h(0,h0)
+c1=b8==null?f8:J.v(b8)
+if(c1==null){b8=k3.h(0,h0)
+c1=b8==null?f8:J.v(b8)}if(c1!=null&&c1.length!==0)b7.push(c1)
+b8=k4.a(k2.h(0,h2))
+if(b8==null)b8=k4.a(k3.h(0,h2))
+c2=b8==null?k4.a(k3.h(0,h1)):b8
 if(c2==null)c2=[]
-b7=J.Q(c2)
-if(b7.gbj(c2))b6.push(""+b7.gF(c2)+" site image(s) provided")
-b7=k1.h(0,"importantFactor")
-c3=b7==null?f7:J.v(b7)
-if(c3!=null&&c3.length!==0)b6.push("Priority: "+c3)
-if(J.q(k1.h(0,g2),!0))b6.push("Budget is flexible")
-b5=b6.length!==0?b6:A.a(["Standard renovation requirements"],b5)
-b7=s
-if(b7==null)b7=new A.aK(Date.now(),0,!1)
-c4=b2.ahX(b)
-c5=j6.h(k3,"status")
-if(c5==null)c5="new"
-c6=j6.h(k3,"priority")
-if(c6==null)c6="normal"
-c7=e.length
-c8=J.Q(a2)
-c9=c8.gF(a2)
-d0=J.Q(a3)
-d1=d0.gF(a3)
-c8=e.length!==0||c8.gbj(a2)||d0.gbj(a3)
-k2=k2.a(k0.h(0,"publicPreviewFiles"))
-if(k2==null)k2=[]
-d0=j6.h(k3,"viewed")
-if(d0==null)d0=!1
-d2=j6.h(k3,"responded")
-if(d2==null)d2=!1
-d3=j6.h(k3,"purchased")
+b8=J.Q(c2)
+if(b8.gbj(c2))b7.push(""+b8.gF(c2)+" floorplan file(s) provided")
+b8=k4.a(k2.h(0,h3))
+c3=b8==null?k4.a(k3.h(0,h3)):b8
+if(c3==null)c3=[]
+b8=J.Q(c3)
+if(b8.gbj(c3))b7.push(""+b8.gF(c3)+" site image(s) provided")
+b8=k3.h(0,"importantFactor")
+c4=b8==null?f8:J.v(b8)
+if(c4!=null&&c4.length!==0)b7.push("Priority: "+c4)
+if(J.q(k3.h(0,g3),!0))b7.push("Budget is flexible")
+b6=b7.length!==0?b7:A.a(["Standard renovation requirements"],b6)
+b8=s
+if(b8==null)b8=new A.aK(Date.now(),0,!1)
+c5=b3.ahX(b)
+c6=j8.h(k5,"status")
+if(c6==null)c6="new"
+c7=j8.h(k5,"priority")
+if(c7==null)c7="normal"
+c8=e.length
+c9=J.Q(a2)
+d0=c9.gF(a2)
+d1=J.Q(a3)
+d2=d1.gF(a3)
+c9=e.length!==0||c9.gbj(a2)||d1.gbj(a3)
+k4=k4.a(k2.h(0,"publicPreviewFiles"))
+if(k4==null)k4=[]
+d1=j8.h(k5,"viewed")
+if(d1==null)d1=!1
+d3=j8.h(k5,"responded")
 if(d3==null)d3=!1
-d4=k0.h(0,h6)
-d4=d4==null?f7:J.v(d4)
-if(d4==null){d4=j6.h(k3,h6)
-d4=d4==null?f7:J.v(d4)}if(d4==null){d4=k0.h(0,h7)
-d4=d4==null?f7:J.v(d4)}if(d4==null){d4=j6.h(k3,h7)
-d4=d4==null?f7:J.v(d4)}if(d4==null)d4=""
-d5=k0.h(0,h8)
-d5=d5==null?f7:J.v(d5)
-if(d5==null){d5=j6.h(k3,h8)
-d5=d5==null?f7:J.v(d5)}if(d5==null){d5=k0.h(0,h9)
-d5=d5==null?f7:J.v(d5)}if(d5==null){d5=j6.h(k3,h9)
-d5=d5==null?f7:J.v(d5)}if(d5==null)d5=""
-d6=k0.h(0,i0)
-if(d6==null)d6=j6.h(k3,i0)
-if(d6==null)d6=!1
-d7=k0.h(0,i1)
-if(d7==null)d7=j6.h(k3,i1)
-if(d7==null)d7=0
-d8=j6.h(k3,"remainingSlots")
-if(d8==null)d8=-1
-d9=j6.h(k3,"acceptedSinceCreation")
-if(d9==null)d9=0
-e0=k0.h(0,i2)
-if(e0==null)e0=j6.h(k3,i2)
+d4=j8.h(k5,"purchased")
+if(d4==null)d4=!1
+d5=k2.h(0,h8)
+d5=d5==null?f8:J.v(d5)
+if(d5==null){d5=j8.h(k5,h8)
+d5=d5==null?f8:J.v(d5)}if(d5==null){d5=k2.h(0,h9)
+d5=d5==null?f8:J.v(d5)}if(d5==null){d5=j8.h(k5,h9)
+d5=d5==null?f8:J.v(d5)}if(d5==null)d5=""
+d6=k2.h(0,i0)
+d6=d6==null?f8:J.v(d6)
+if(d6==null){d6=j8.h(k5,i0)
+d6=d6==null?f8:J.v(d6)}if(d6==null){d6=k2.h(0,i1)
+d6=d6==null?f8:J.v(d6)}if(d6==null){d6=j8.h(k5,i1)
+d6=d6==null?f8:J.v(d6)}if(d6==null)d6=""
+d7=k2.h(0,i2)
+if(d7==null)d7=j8.h(k5,i2)
+if(d7==null)d7=!1
+d8=k2.h(0,i3)
+if(d8==null)d8=j8.h(k5,i3)
+if(d8==null)d8=0
+d9=j8.h(k5,"remainingSlots")
+if(d9==null)d9=-1
+e0=j8.h(k5,"acceptedSinceCreation")
 if(e0==null)e0=0
-e1=k0.h(0,i3)
-if(e1==null)e1=k1.h(0,i3)
-if(e1==null)e1=j7.b(k0.h(0,i4))?J.l(j7.a(k0.h(0,i4)),i5):f7
-if(e1==null)e1=j7.b(k1.h(0,i4))?J.l(j7.a(k1.h(0,i4)),i5):f7
-if(e1==null)e1=!1
-e2=k0.h(0,i6)
-if(e2==null)e2=k1.h(0,i6)
-if(e2==null)e2=j7.b(k0.h(0,i4))?J.l(j7.a(k0.h(0,i4)),i7):f7
-if(e2==null)e2=j7.b(k1.h(0,i4))?J.l(j7.a(k1.h(0,i4)),i7):f7
-if(e2==null)e2=[]
-e3=t.j
-e3.a(e2)
-e4=k0.h(0,i8)
-if(e4==null)e4=k1.h(0,i8)
-e4=e3.a(e4==null?[]:e4)
-e5=k0.h(0,"bookedAppointmentSlots")
-e5=e3.a(e5==null?[]:e5)
-e6=j6.h(k3,"customerBookedAppointmentSlots")
-b2=b2.b_b(e5,e3.a(e6==null?[]:e6))
-e5=j6.h(k3,i9)
-if(e5==null)e5=j6.h(k3,j0)
-if(e5==null)e5=k0.h(0,i9)
-if(e5==null)e5=k0.h(0,j0)
-e6=j6.h(k3,"effectiveLeadType")
-e6=e6==null?f7:J.v(e6)
-if(e6==null){e6=k0.h(0,j1)
-e6=e6==null?f7:J.v(e6)}if(e6==null){e6=j6.h(k3,j1)
-e6=e6==null?f7:J.v(e6)}if(e6==null){e6=k0.h(0,"type")
-e6=e6==null?f7:J.v(e6)}if(e6==null)e6=""
-e7=j6.h(k3,"purchaseAmount")
-if(e7==null)e7=j6.h(k3,h5)
-if(e7==null)e7=k0.h(0,h5)
-e8=j6.h(k3,j2)
-e8=e8==null?f7:J.v(e8)
-if(e8==null){e8=k0.h(0,"leadSource")
-e8=e8==null?f7:J.v(e8)}if(e8==null)e8=""
-e9=j6.h(k3,"paymentMethod")
-e9=e9==null?f7:J.v(e9)
-if(e9==null)e9=""
-f0=j6.h(k3,"purchaseId")
-f0=f0==null?f7:J.v(f0)
+e1=k2.h(0,i4)
+if(e1==null)e1=j8.h(k5,i4)
+if(e1==null)e1=0
+e2=k2.h(0,i5)
+if(e2==null)e2=k3.h(0,i5)
+if(e2==null)e2=j9.b(k2.h(0,i6))?J.l(j9.a(k2.h(0,i6)),i7):f8
+if(e2==null)e2=j9.b(k3.h(0,i6))?J.l(j9.a(k3.h(0,i6)),i7):f8
+if(e2==null)e2=!1
+e3=k2.h(0,i8)
+if(e3==null)e3=k3.h(0,i8)
+if(e3==null)e3=j9.b(k2.h(0,i6))?J.l(j9.a(k2.h(0,i6)),i9):f8
+if(e3==null)e3=j9.b(k3.h(0,i6))?J.l(j9.a(k3.h(0,i6)),i9):f8
+if(e3==null)e3=[]
+e4=t.j
+e4.a(e3)
+e5=k2.h(0,j0)
+if(e5==null)e5=k3.h(0,j0)
+e5=e4.a(e5==null?[]:e5)
+e6=k2.h(0,"bookedAppointmentSlots")
+e6=e4.a(e6==null?[]:e6)
+e7=j8.h(k5,"customerBookedAppointmentSlots")
+b3=b3.b_b(e6,e4.a(e7==null?[]:e7))
+e6=j8.h(k5,j1)
+if(e6==null)e6=j8.h(k5,j2)
+if(e6==null)e6=k2.h(0,j1)
+if(e6==null)e6=k2.h(0,j2)
+e7=j8.h(k5,"effectiveLeadType")
+e7=e7==null?f8:J.v(e7)
+if(e7==null){e7=k2.h(0,j3)
+e7=e7==null?f8:J.v(e7)}if(e7==null){e7=j8.h(k5,j3)
+e7=e7==null?f8:J.v(e7)}if(e7==null){e7=k2.h(0,"type")
+e7=e7==null?f8:J.v(e7)}if(e7==null)e7=""
+e8=j8.h(k5,"purchaseAmount")
+if(e8==null)e8=j8.h(k5,h7)
+if(e8==null)e8=k2.h(0,h7)
+e9=j8.h(k5,j4)
+e9=e9==null?f8:J.v(e9)
+if(e9==null){e9=k2.h(0,"leadSource")
+e9=e9==null?f8:J.v(e9)}if(e9==null)e9=""
+f0=j8.h(k5,"paymentMethod")
+f0=f0==null?f8:J.v(f0)
 if(f0==null)f0=""
-f1=j6.h(k3,j2)
-if((f1==null?f7:J.v(f1))!=="explore_page"){f1=j6.h(k3,j2)
-f1=(f1==null?f7:J.v(f1))==="explore_page_credits"}else f1=!0
-f2=k0.h(0,j3)
-if(f2==null)f2=k1.h(0,j3)
-if(f2==null)f2=j6.h(k3,j3)
-f3=J.q(j6.h(k3,"edited"),!0)
-f4=j6.h(k3,"lastEditedAt")
-f4=f4==null?f7:J.v(f4)
-if(f4==null)f4=""
-if(e3.b(j6.h(k3,j4))){j6=J.D_(e3.a(j6.h(k3,j4)),j7)
-j6=A.ba(A.ky(j6,new A.bnC(),j6.$ti.k("X.E"),j9),!0,t.P)}else j6=A.a([],t.t)
-j7=k0.h(0,j5)
-if(j7==null)j7=k1.h(0,j5)
-return A.G(["id",a4,"lead_id",a5,"type","Customer Lead","title",f+" Project","location",l,"budget",j,"timeline",b,"credits_required",a9,"incalculated_price",b0,"description",b1,"homeowner",r,"homeowner_profile","View contact details","customer_phone",b3,"customer_email",b4,"raw_customer_phone",p,"raw_customer_email",q,"raw_customer_name",r,"raw_address",o,"raw_unit_number",n,"raw_postal_code",m,"project_requirements",b5,"posted_date",b7,"urgency",c4,"property_type",f,"size","Size not specified","status",c5,"priority",c6,"floorplan_images",a0,"floorplan_pdfs",a1,"floorplan_files",e,"site_images",a2,"site_video_urls",a3,"floorplan_count",c7,"site_images_count",c9,"site_videos_count",d1,"has_files",c8,"public_preview_files",k2,"viewed",d0,"responded",d2,"purchased",d3,"request_number",a7,"connections_count",a7,"activity_level",a8,"original_lead_data",k3,"group_name",d4,"group_id",d5,"is_bundle_lead",d6,"expiry_threshold",d7,"remaining_slots",d8,"accepted_since_creation",d9,"accepted_leads_at_creation",e0,"is_looking_for_loan",e1,"loan_types",e2,"appointment_slots",e4,"booked_appointment_slots",b2,"appointment_slot",e5,"lead_type",e6,"purchase_amount",e7,"purchase_source",e8,"payment_method",e9,"purchase_id",f0,"is_alacarte",f1,"quotation_form_data",f2,"edited",f3,"last_edited_at",f4,"edit_history",j6,"reno_research_remarks",J.v(j7==null?"":j7)],j8,j9)},
+f1=j8.h(k5,"purchaseId")
+f1=f1==null?f8:J.v(f1)
+if(f1==null)f1=""
+f2=j8.h(k5,j4)
+if((f2==null?f8:J.v(f2))!=="explore_page"){f2=j8.h(k5,j4)
+f2=(f2==null?f8:J.v(f2))==="explore_page_credits"}else f2=!0
+f3=k2.h(0,j5)
+if(f3==null)f3=k3.h(0,j5)
+if(f3==null)f3=j8.h(k5,j5)
+f4=J.q(j8.h(k5,"edited"),!0)
+f5=j8.h(k5,"lastEditedAt")
+f5=f5==null?f8:J.v(f5)
+if(f5==null)f5=""
+if(e4.b(j8.h(k5,j6))){j8=J.D_(e4.a(j8.h(k5,j6)),j9)
+j8=A.ba(A.ky(j8,new A.bnC(),j8.$ti.k("X.E"),k1),!0,t.P)}else j8=A.a([],t.t)
+j9=k2.h(0,j7)
+if(j9==null)j9=k3.h(0,j7)
+return A.G(["id",a4,"lead_id",a5,"type","Customer Lead","title",f+" Project","location",l,"budget",j,"timeline",b,"credits_required",b0,"incalculated_price",b1,"description",b2,"homeowner",r,"homeowner_profile","View contact details","customer_phone",b4,"customer_email",b5,"raw_customer_phone",p,"raw_customer_email",q,"raw_customer_name",r,"raw_address",o,"raw_unit_number",n,"raw_postal_code",m,"project_requirements",b6,"posted_date",b8,"urgency",c5,"property_type",f,"size","Size not specified","status",c6,"priority",c7,"floorplan_images",a0,"floorplan_pdfs",a1,"floorplan_files",e,"site_images",a2,"site_video_urls",a3,"floorplan_count",c8,"site_images_count",d0,"site_videos_count",d2,"has_files",c9,"public_preview_files",k4,"viewed",d1,"responded",d3,"purchased",d4,"request_number",a7,"connections_count",a7,"hide_connections_count",a9,"activity_level",a8,"original_lead_data",k5,"group_name",d5,"group_id",d6,"is_bundle_lead",d7,"expiry_threshold",d8,"remaining_slots",d9,"accepted_since_creation",e0,"accepted_leads_at_creation",e1,"is_looking_for_loan",e2,"loan_types",e3,"appointment_slots",e5,"booked_appointment_slots",b3,"appointment_slot",e6,"lead_type",e7,"purchase_amount",e8,"purchase_source",e9,"payment_method",f0,"purchase_id",f1,"is_alacarte",f2,"quotation_form_data",f3,"edited",f4,"last_edited_at",f5,"edit_history",j8,"reno_research_remarks",J.v(j9==null?"":j9)],k0,k1)},
 $S:70}
 A.bnB.prototype={
 $1(a){return J.v(a)},
@@ -159997,134 +160003,135 @@ q=p.h(r,"timeSlot")
 return s+"_"+A.w(q==null?p.h(r,"time"):q)}return""},
 $S:12}
 A.bnF.prototype={
-$1(d8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8=null,c9="selectedBudgetValues",d0="renovationLoan",d1="isLookingForLoan",d2="lastUpdatedAt",d3="registeredOn",d4="customerId",d5=J.Q(d8),d6=d5.h(d8,"customerName"),d7=d6==null?c8:J.v(d6)
-if(d7==null)d7="Unknown Customer"
-d6=d5.h(d8,"customerPhone")
-r=d6==null?c8:J.v(d6)
+$1(d9){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9=null,d0="selectedBudgetValues",d1="renovationLoan",d2="isLookingForLoan",d3="lastUpdatedAt",d4="registeredOn",d5="customerId",d6=J.Q(d9),d7=d6.h(d9,"customerName"),d8=d7==null?c9:J.v(d7)
+if(d8==null)d8="Unknown Customer"
+d7=d6.h(d9,"customerPhone")
+r=d7==null?c9:J.v(d7)
 if(r==null)r=""
-d6=d5.h(d8,"customerEmail")
-q=d6==null?c8:J.v(d6)
+d7=d6.h(d9,"customerEmail")
+q=d7==null?c9:J.v(d7)
 if(q==null)q=""
-d6=t.f
-p=d6.b(d5.h(d8,c9))?A.bV(d6.a(d5.h(d8,c9)),t.N,t.z):c8
-if(J.q(d5.h(d8,"isFlexibleBudget"),!0))o="Flexible Budget"
+d7=t.f
+p=d7.b(d6.h(d9,d0))?A.bV(d7.a(d6.h(d9,d0)),t.N,t.z):c9
+if(J.q(d6.h(d9,"isFlexibleBudget"),!0))o="Flexible Budget"
 else{o="Budget not specified"
 if(p!=null){n=p.h(0,"min")
-m=n==null?c8:J.v(n)
+m=n==null?c9:J.v(n)
 n=p.h(0,"max")
-l=n==null?c8:J.v(n)
+l=n==null?c9:J.v(n)
 if(m!=null&&l!=null){n=this.a
-o="S$"+n.Nw(m)+" - S$"+n.Nw(l)}}}n=d5.h(d8,"address")
-k=n==null?c8:J.v(n)
+o="S$"+n.Nw(m)+" - S$"+n.Nw(l)}}}n=d6.h(d9,"address")
+k=n==null?c9:J.v(n)
 if(k==null)k=""
-n=d5.h(d8,"unitNumber")
-j=n==null?c8:J.v(n)
+n=d6.h(d9,"unitNumber")
+j=n==null?c9:J.v(n)
 if(j==null)j=""
-n=d5.h(d8,"postalCode")
-i=n==null?c8:J.v(n)
+n=d6.h(d9,"postalCode")
+i=n==null?c9:J.v(n)
 if(i==null)i=""
 if(k.length!==0){h=j.length!==0?k+(", #"+j):k
 if(i.length!==0)h+=", Singapore "+i}else h="Location not specified"
-n=d5.h(d8,"renovationType")
-n=n==null?c8:J.v(n)
-if(n==null){n=d5.h(d8,"propertyType")
-n=n==null?c8:J.v(n)
+n=d6.h(d9,"renovationType")
+n=n==null?c9:J.v(n)
+if(n==null){n=d6.h(d9,"propertyType")
+n=n==null?c9:J.v(n)
 g=n}else g=n
 if(g==null)g="Renovation"
 n=t.g
-f=n.a(d5.h(d8,"partialSelections"))
+f=n.a(d6.h(d9,"partialSelections"))
 if(f==null)f=[]
-e=d5.h(d8,"otherRenovationType")
-d=e==null?c8:J.v(e)
+e=d6.h(d9,"otherRenovationType")
+d=e==null?c9:J.v(e)
 if(d==null)d=""
 if(g.toLowerCase()==="partial"&&J.aP(f))g="Partial ("+J.bF(f,new A.bnE(),t.N).aX(0,", ")+")"
 else if(g.toLowerCase()==="other"&&d.length!==0)g="Other ("+d+")"
 else if(g==="Renovation"&&d.length!==0)g=d
-e=d5.h(d8,"timeline")
-e=e==null?c8:J.v(e)
-if(e==null){e=d5.h(d8,"renovationTiming")
-e=e==null?c8:J.v(e)
+e=d6.h(d9,"timeline")
+e=e==null?c9:J.v(e)
+if(e==null){e=d6.h(d9,"renovationTiming")
+e=e==null?c9:J.v(e)
 c=e}else c=e
 if(c==null)c="Timeline not specified"
-e=d5.h(d8,"propertySize")
-b=e==null?c8:J.v(e)
+e=d6.h(d9,"propertySize")
+b=e==null?c9:J.v(e)
 if(b==null)b="Not specified"
-a=d5.h(d8,"acceptedLeadsCount")
+a=d6.h(d9,"acceptedLeadsCount")
 if(a==null)a=0
-a0=d5.h(d8,"totalLeadsSent")
+a0=d6.h(d9,"totalLeadsSent")
 if(a0==null)a0=0
-e=d5.h(d8,"hasCollectedKeys")
-a1=e==null?d5.h(d8,"keysCollected"):e
+e=d6.h(d9,"hasCollectedKeys")
+a1=e==null?d6.h(d9,"keysCollected"):e
 if(a1==null)a1=!1
-a2=n.a(d5.h(d8,"floorplanFiles"))
+a2=n.a(d6.h(d9,"floorplanFiles"))
 if(a2==null)a2=[]
-a3=n.a(d5.h(d8,"floorplanImages"))
+a3=n.a(d6.h(d9,"floorplanImages"))
 if(a3==null)a3=[]
-a4=n.a(d5.h(d8,"siteImages"))
+a4=n.a(d6.h(d9,"siteImages"))
 if(a4==null)a4=[]
 e=t.z
 a5=A.N(a2,e)
 B.h.t(a5,a3)
 a6=a5.length
 a7=J.aP(a4)
-a8=d5.h(d8,"requiresLoan")
-a9=a8==null?d5.h(d8,"financingRequired"):a8
+a8=d6.h(d9,"requiresLoan")
+a9=a8==null?d6.h(d9,"financingRequired"):a8
 if(a9==null)a9=!1
-a8=d5.h(d8,"loanOption")
-b0=a8==null?c8:J.v(a8)
+a8=d6.h(d9,"loanOption")
+b0=a8==null?c9:J.v(a8)
 if(b0==null)b0=""
-b1=n.a(d5.h(d8,"appointmentSlots"))
+b1=n.a(d6.h(d9,"appointmentSlots"))
 if(b1==null)b1=[]
-a8=d5.h(d8,"appointmentPreference")
-b2=a8==null?c8:J.v(a8)
+a8=d6.h(d9,"appointmentPreference")
+b2=a8==null?c9:J.v(a8)
 if(b2==null)b2=""
-b3=d5.h(d8,"isShowroomAppointment")
+b3=d6.h(d9,"isShowroomAppointment")
 if(b3==null)b3=!1
-b4=n.a(d5.h(d8,"bookedAppointmentSlots"))
+b4=n.a(d6.h(d9,"bookedAppointmentSlots"))
 if(b4==null)b4=[]
-b5=d6.b(d5.h(d8,d0))?A.bV(d6.a(d5.h(d8,d0)),t.N,e):c8
-d6=b5==null
-a8=d6?c8:b5.h(0,d1)
-if(a8==null)a8=d5.h(d8,d1)
-b6=a8==null?d5.h(d8,"renovationLoanInterest"):a8
+b5=d7.b(d6.h(d9,d1))?A.bV(d7.a(d6.h(d9,d1)),t.N,e):c9
+d7=b5==null
+a8=d7?c9:b5.h(0,d2)
+if(a8==null)a8=d6.h(d9,d2)
+b6=a8==null?d6.h(d9,"renovationLoanInterest"):a8
 if(b6==null)b6=a9
-d6=d6?c8:b5.h(0,"loanTypes")
-if(d6==null)d6=d5.h(d8,"selectedLoanTypes")
-if(d6==null)d6=[]
-t.j.a(d6)
-a8=d5.h(d8,"loanType")
-b7=a8==null?c8:J.v(a8)
+d7=d7?c9:b5.h(0,"loanTypes")
+if(d7==null)d7=d6.h(d9,"selectedLoanTypes")
+if(d7==null)d7=[]
+t.j.a(d7)
+a8=d6.h(d9,"loanType")
+b7=a8==null?c9:J.v(a8)
 if(b7==null)b7=b0
 s=null
-if(d5.h(d8,d2)!=null)try{s=A.dE(J.v(d5.h(d8,d2)))}catch(b8){s=null}if(s==null&&d5.h(d8,d3)!=null)try{s=A.dE(d5.h(d8,d3))}catch(b8){s=null}a8=d5.h(d8,d4)
+if(d6.h(d9,d3)!=null)try{s=A.dE(J.v(d6.h(d9,d3)))}catch(b8){s=null}if(s==null&&d6.h(d9,d4)!=null)try{s=A.dE(d6.h(d9,d4))}catch(b8){s=null}a8=d6.h(d9,d5)
 if(a8==null)a8=""
-b9=d5.h(d8,d4)
+b9=d6.h(d9,d5)
 if(b9==null)b9=""
-c0=d7.split(" ")[0]
+c0=d8.split(" ")[0]
 c1=this.a.ahX(c)
 c2=s
 if(c2==null)c2=new A.aK(Date.now(),0,!1)
-c3=a1?"Keys Collected \u2713":"Keys Not Collected"
-n=n.a(d5.h(d8,"publicPreviewFiles"))
+c3=J.q(d6.h(d9,"hideConnectionsCount"),!0)
+c4=a1?"Keys Collected \u2713":"Keys Not Collected"
+n=n.a(d6.h(d9,"publicPreviewFiles"))
 if(n==null)n=[]
-c4=d5.h(d8,"calculatedPrice")
-if(c4==null)c4=20
-c5=d5.h(d8,"specialRequirements")
-c5=c5==null?c8:J.v(c5)
-if(c5==null)c5=""
-c6=d5.h(d8,"otherInfo")
-c6=c6==null?c8:J.v(c6)
+c5=d6.h(d9,"calculatedPrice")
+if(c5==null)c5=20
+c6=d6.h(d9,"specialRequirements")
+c6=c6==null?c9:J.v(c6)
 if(c6==null)c6=""
-c7=A.a([],t.s)
-if(c5.length!==0)c7.push(c5)
-if(c6.length!==0)c7.push(c6)
-c5=B.h.aX(c7,"\n\n")
-c6=d5.h(d8,"adminRemarks")
-c6=c6==null?c8:J.v(c6)
-if(c6==null)c6=""
-d5=d5.h(d8,"quotationFormData")
-if(d5==null)d5=c8
-return A.G(["id",a8,"customer_id",b9,"title","Connect with "+c0,"homeowner",d7,"customer_name",d7,"customer_phone",r,"customer_email",q,"location",h,"budget",o,"timeline",c,"property_type",g,"property_size",b,"description",u.fG,"urgency",c1,"status","available","posted_date",c2,"accepted_leads_count",a,"total_leads_sent",a0,"has_collected_keys",a1,"keys_status",c3,"floorplan_files",a5,"floorplan_images",a3,"floorplan_pdfs",a2,"site_images",a4,"has_floorplans",a6!==0,"has_site_images",a7,"public_preview_files",n,"requires_loan",a9,"loan_option",b0,"is_looking_for_loan",b6,"loan_types",d6,"loan_type",b7,"appointment_slots",b1,"appointment_preference",b2,"is_showroom_appointment",b3,"booked_appointment_slots",b4,"is_potential_lead",!0,"calculated_price",c4,"special_requirements",c5,"reno_research_remarks",c6,"quotation_form_data",d5,"original_customer_data",d8],t.N,e)},
+c7=d6.h(d9,"otherInfo")
+c7=c7==null?c9:J.v(c7)
+if(c7==null)c7=""
+c8=A.a([],t.s)
+if(c6.length!==0)c8.push(c6)
+if(c7.length!==0)c8.push(c7)
+c6=B.h.aX(c8,"\n\n")
+c7=d6.h(d9,"adminRemarks")
+c7=c7==null?c9:J.v(c7)
+if(c7==null)c7=""
+d6=d6.h(d9,"quotationFormData")
+if(d6==null)d6=c9
+return A.G(["id",a8,"customer_id",b9,"title","Connect with "+c0,"homeowner",d8,"customer_name",d8,"customer_phone",r,"customer_email",q,"location",h,"budget",o,"timeline",c,"property_type",g,"property_size",b,"description",u.fG,"urgency",c1,"status","available","posted_date",c2,"accepted_leads_count",a,"hide_connections_count",c3,"total_leads_sent",a0,"has_collected_keys",a1,"keys_status",c4,"floorplan_files",a5,"floorplan_images",a3,"floorplan_pdfs",a2,"site_images",a4,"has_floorplans",a6!==0,"has_site_images",a7,"public_preview_files",n,"requires_loan",a9,"loan_option",b0,"is_looking_for_loan",b6,"loan_types",d7,"loan_type",b7,"appointment_slots",b1,"appointment_preference",b2,"is_showroom_appointment",b3,"booked_appointment_slots",b4,"is_potential_lead",!0,"calculated_price",c5,"special_requirements",c6,"reno_research_remarks",c7,"quotation_form_data",d6,"original_customer_data",d9],t.N,e)},
 $S:70}
 A.bnE.prototype={
 $1(a){return J.v(a)},
@@ -162539,9 +162546,9 @@ r=q.go.h(0,s)
 if(r==null)return
 q.id=!0
 $.az.rx$.push(new A.buw(q,r))},
-bcG(a){var s="connectionsCount",r=null,q=typeof a.h(0,s)=="number"?B.m.au(A.eX(a.h(0,s))):r,p=q!=null&&q>0?A.w(q)+" designers":"enough designers",o=this.c
-o.toString
-A.bT(r,r,!0,r,new A.bv5(this,p),o,r,!0,!0,t.z)},
+bcG(a){var s="connectionsCount",r=null,q=J.q(a.h(0,"hideConnectionsCount"),!0),p=typeof a.h(0,s)=="number"?B.m.au(A.eX(a.h(0,s))):r,o=!q&&p!=null&&p>0?A.w(p)+" designers":"enough designers",n=this.c
+n.toString
+A.bT(r,r,!0,r,new A.bv5(this,o),n,r,!0,!0,t.z)},
 bcX(a){var s=null,r=this.c
 r.toString
 A.bT(s,s,!0,s,new A.bvm(this,a),r,s,!0,!0,t.z)},
@@ -164826,109 +164833,113 @@ if(p!=null&&J.q(s,p)){p=A.f(18)
 o=A.H(B.e,B.n,2.5)
 r=A.a([new A.M(0,B.u,A.m(64,B.e.i()>>>16&255,B.e.i()>>>8&255,B.e.i()&255),B.ap,14)],t.V)
 return A.h(q,this.acM(a),B.d,q,q,new A.k(q,q,o,p,r,q,B.j),q,q,q,q,q,q,q,q)}return this.acM(a)},
-acM(c2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0=this,b1=null,b2="location",b3="not specified",b4="floorplan_count",b5="site_images_count",b6="reno_research_remarks",b7="public_preview_files",b8="quotation_form_data",b9=J.Q(c2),c0=b9.h(c2,"homeowner"),c1=c0==null?b9.h(c2,"customer_name"):c0
-if(c1==null)c1="Unknown Customer"
-s=b9.h(c2,"budget")
+acM(c3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1=this,b2=null,b3="location",b4="not specified",b5="floorplan_count",b6="site_images_count",b7="reno_research_remarks",b8="public_preview_files",b9="quotation_form_data",c0=J.Q(c3),c1=c0.h(c3,"homeowner"),c2=c1==null?c0.h(c3,"customer_name"):c1
+if(c2==null)c2="Unknown Customer"
+s=c0.h(c3,"budget")
 if(s==null)s=""
-r=b9.h(c2,"timeline")
+r=c0.h(c3,"timeline")
 if(r==null)r=""
-q=b9.h(c2,"property_type")
+q=c0.h(c3,"property_type")
 if(q==null)q=""
-p=b9.h(c2,"property_size")
+p=c0.h(c3,"property_size")
 if(p==null)p=""
-o=b9.h(c2,"has_collected_keys")
+o=c0.h(c3,"has_collected_keys")
 if(o==null)o=!1
-n=b9.h(c2,"keys_status")
+n=c0.h(c3,"keys_status")
 if(n==null)n="Keys Not Collected"
-c0=b9.h(c2,"connections_count")
-m=c0==null?b9.h(c2,"accepted_leads_count"):c0
+c1=c0.h(c3,"connections_count")
+m=c1==null?c0.h(c3,"accepted_leads_count"):c1
 if(m==null)m=0
-l=b9.h(c2,"registered_date")
-if(l==null)l=new A.aK(Date.now(),0,!1)
-c0=b9.h(c2,"original_customer_data")
-k=c0==null?b1:J.l(c0,"allowDesignerMatching")
-if(k==null)k=!1
-j=b9.h(c2,"calculated_price")
-if(A.hn(j))i=j
-else i=typeof j=="number"?j:20
-if(q.length!==0&&q!=="Not specified")h=p.length!==0&&p!=="Not specified"?q+(" \u2022 "+p):q
-else h=p.length!==0&&p!=="Not specified"?p:""
-g=b9.h(c2,"has_floorplans")
-if(g==null)g=!1
-f=b9.h(c2,"has_site_images")
+l=J.q(c0.h(c3,"hide_connections_count"),!0)
+k=c0.h(c3,"registered_date")
+if(k==null)k=new A.aK(Date.now(),0,!1)
+c1=c0.h(c3,"original_customer_data")
+j=c1==null?b2:J.l(c1,"allowDesignerMatching")
+if(j==null)j=!1
+i=c0.h(c3,"calculated_price")
+if(A.hn(i))h=i
+else h=typeof i=="number"?i:20
+if(q.length!==0&&q!=="Not specified")g=p.length!==0&&p!=="Not specified"?q+(" \u2022 "+p):q
+else g=p.length!==0&&p!=="Not specified"?p:""
+f=c0.h(c3,"has_floorplans")
 if(f==null)f=!1
-c0=b9.h(c2,"is_looking_for_loan")
-e=c0==null?b9.h(c2,"requires_loan"):c0
+e=c0.h(c3,"has_site_images")
 if(e==null)e=!1
-c0=t.g
-d=c0.a(b9.h(c2,"loan_types"))
-if(d==null)d=[]
-c=b9.h(c2,"special_requirements")
-b=J.v(c==null?"":c)
-c=A.f(14)
-a=A.a([new A.M(-2,B.u,B.o.D(0.06),B.bu,16),new A.M(0,B.u,B.e.D(0.05),B.c1,6)],t.V)
-a0=A.h(b1,B.aID,B.d,b1,b1,new A.k(B.i.D(0.15),b1,b1,A.f(10),b1,b1,B.j),b1,b1,b1,b1,B.aA,b1,b1,b1)
-a1=A.b(c1,b1,B.a8,b1,b1,A.d().$3$color$fontSize$fontWeight(B.i,15,B.t),b1,b1,b1)
-a2=o?B.AD:B.AE
-a2=A.r(a2,o?B.i:B.bA,b1,14)
-a3=t.p
-a2=A.z(A.p(A.a([a1,B.eD,A.n(A.a([a2,B.aV,A.b(n,b1,b1,b1,b1,A.d().$3$color$fontSize$fontWeight(o?B.i:B.bA,11.5,B.z),b1,b1,b1)],a3),B.f,B.c,B.b,0,b1,b1)],a3),B.p,b1,B.c,B.b,B.k),1)
-a1=A.f(20)
-a1=A.h(b1,A.n(A.a([a0,B.aM,a2,A.h(b1,A.b("S$"+B.m.a0(i,0),b1,b1,b1,b1,A.d().$3$color$fontSize$fontWeight(B.r,13,B.t),b1,b1,b1),B.d,b1,b1,new A.k(B.i,b1,b1,a1,b1,b1,B.j),b1,b1,b1,b1,B.pb,b1,b1,b1)],a3),B.f,B.c,B.b,0,b1,b1),B.d,b1,b1,B.ra,b1,b1,b1,b1,B.t7,b1,b1,b1)
-a2=A.a([],a3)
-if(b9.h(c2,b2)!=null&&J.v(b9.h(c2,b2)).length!==0&&!B.l.u(J.v(b9.h(c2,b2)),b3)){a0=A.a([B.Ku,B.Y,A.z(A.b(J.v(b9.h(c2,b2)),2,B.a8,b1,b1,A.d().$2$color$fontSize(B.a2,13),b1,b1,b1),1)],a3)
-if(B.l.u(J.v(b9.h(c2,b2)),"***")){a4=B.e.D(0.1)
-a5=A.f(10)
-a0.push(A.h(b1,A.b("Full Address on Purchase",b1,b1,b1,b1,A.d().$3$color$fontSize$fontWeight(B.r,10,B.q),b1,b1,b1),B.d,b1,b1,new A.k(a4,b1,b1,a5,b1,b1,B.j),b1,b1,b1,B.aan,B.jJ,b1,b1,b1))}B.h.t(a2,A.a([A.n(a0,B.p,B.c,B.b,0,b1,b1),B.b4],a3))}if(h.length!==0)B.h.t(a2,A.a([b0.Ek(B.jP,"Property",h),B.S],a3))
-if(s.length!==0&&!B.l.u(s,b3)&&s!=="Budget not specified")B.h.t(a2,A.a([b0.Ek(B.dK,"Budget",s),B.S],a3))
-if(r.length!==0&&!B.l.u(r,b3)&&r!=="Timeline not specified")B.h.t(a2,A.a([b0.Ek(B.ew,"Timeline",r),B.S],a3))
-a0=!g
-if(!a0||f||e||J.aP(d)){a4=A.f(12)
-a5=A.H(B.az,B.n,1)
-a6=A.a([],a3)
-if(!a0||f){a7=g?"Floorplans":""
-a8=g&&f?", ":""
-a9=f?"Site Images":""
-a6.push(A.n(A.a([B.Ko,B.aP,A.z(A.b("Files: "+a7+a8+a9,b1,b1,b1,b1,A.d().$3$color$fontSize$fontWeight(B.a2,13,B.z),b1,b1,b1),1)],a3),B.f,B.c,B.b,0,b1,b1))}if(!a0||f)a0=e||J.aP(d)
-else a0=!1
-if(a0)a6.push(B.S)
-if(e||J.aP(d))a6.push(A.n(A.a([B.K6,B.aP,A.z(A.b(b0.acD(c2),b1,b1,b1,b1,A.d().$3$color$fontSize$fontWeight(B.a2,13,B.z),b1,b1,b1),1)],a3),B.f,B.c,B.b,0,b1,b1))
-B.h.t(a2,A.a([B.aN,A.h(b1,A.p(a6,B.p,b1,B.c,B.b,B.k),B.d,b1,b1,new A.k(B.bC,b1,a5,a4,b1,b1,B.j),b1,b1,b1,b1,B.b7,b1,b1,b1)],a3))}if(!(b9.h(c2,b4)!=null&&J.e4(b9.h(c2,b4),0)))a0=b9.h(c2,b5)!=null&&J.e4(b9.h(c2,b5),0)
-else a0=!0
-if(a0){a0=A.a([],a3)
-a4=b9.h(c2,b4)
-if(J.e4(a4==null?0:a4,0)){a4=B.e.D(0.06)
-a5=A.f(8)
-a6=A.H(B.e.D(0.3),B.n,1)
-a7=A.w(b9.h(c2,b4))
-a8=A.eA(b9.h(c2,b4))>1?"s":""
-a0.push(A.z(A.h(b1,A.n(A.a([B.Kt,B.eB,A.b(a7+" Floorplan"+a8,b1,b1,b1,b1,A.d().$3$color$fontSize$fontWeight(B.kU,11,B.z),b1,b1,b1)],a3),B.f,B.I,B.b,0,b1,b1),B.d,b1,b1,new A.k(a4,b1,a6,a5,b1,b1,B.j),b1,b1,b1,b1,B.th,b1,b1,b1),1))}a4=b9.h(c2,b4)
-if(J.e4(a4==null?0:a4,0)){a4=b9.h(c2,b5)
-a4=J.e4(a4==null?0:a4,0)}else a4=!1
-if(a4)a0.push(B.aP)
-a4=b9.h(c2,b5)
-if(J.e4(a4==null?0:a4,0)){a4=B.bp.D(0.7)
-a5=A.f(8)
-a6=A.H(B.cw,B.n,1)
-a7=A.r(B.fE,B.ba,b1,14)
-a8=A.w(b9.h(c2,b5))
-a9=A.eA(b9.h(c2,b5))>1?"s":""
-a0.push(A.z(A.h(b1,A.n(A.a([a7,B.eB,A.b(a8+" Image"+a9,b1,b1,b1,b1,A.d().$3$color$fontSize$fontWeight(B.bE,11,B.z),b1,b1,b1)],a3),B.f,B.I,B.b,0,b1,b1),B.d,b1,b1,new A.k(a4,b1,a6,a5,b1,b1,B.j),b1,b1,b1,b1,B.th,b1,b1,b1),1))}B.h.t(a2,A.a([B.b4,A.n(a0,B.f,B.c,B.b,0,b1,b1)],a3))}if(b.length!==0)B.h.t(a2,A.a([B.aa,b0.aci(b)],a3))
-a0=b9.h(c2,b6)
-if(B.l.G(J.v(a0==null?"":a0)).length!==0)a2.push(b0.Xx(J.v(b9.h(c2,b6)),B.p7))
-c0=c0.a(b9.h(c2,b7))
-if(J.aP(c0==null?[]:c0))a2.push(b0.acx(t.j.a(b9.h(c2,b7))))
-if(b9.h(c2,b8)!=null){c0=t.f
-c0=c0.b(b9.h(c2,b8))&&J.aP(c0.a(b9.h(c2,b8)))}else c0=!1
-if(c0)B.h.t(a2,A.a([B.b4,b0.acP(b9.h(c2,b8))],a3))
-b9=A.z(new A.P(B.Gt,A.p(a2,B.p,b1,B.c,B.b,B.k),b1),1)
-c0=A.f(10)
-a0=A.H(B.be,B.n,1)
-c0=A.h(b1,A.n(A.a([A.p(A.a([A.r(B.cF,B.e,b1,20),B.aN,A.b(A.w(m),b1,b1,b1,b1,A.d().$3$color$fontSize$fontWeight(B.a2,15,B.t),b1,b1,b1),A.b("Accepted",b1,b1,b1,b1,A.d().$2$color$fontSize(B.F,11),b1,b1,b1)],a3),B.f,b1,B.c,B.b,B.k),A.h(b1,b1,B.d,B.be,b1,b1,b1,28,b1,b1,b1,b1,b1,1),A.p(A.a([A.r(B.hG,B.e,b1,20),B.aN,A.b(b0.MR(l),b1,b1,b1,b1,A.d().$3$color$fontSize$fontWeight(B.a2,15,B.t),b1,b1,b1),A.b("Last Updated",b1,b1,b1,b1,A.d().$2$color$fontSize(B.F,11),b1,b1,b1)],a3),B.f,b1,B.c,B.b,B.k)],a3),B.f,B.qb,B.b,0,b1,b1),B.d,b1,b1,new A.k(B.bC,b1,a0,c0,b1,b1,B.j),b1,b1,b1,b1,B.bJ,b1,b1,b1)
-a0=A.f(10)
-a2=k?B.J:B.bk
-a2=A.aX(b1,b1,a2,b1,b1,b1,0,b1,b1,B.i,b1,b1,B.fy,B.J,new A.ah(A.f(10),B.v),b1,b1,b1,b1,b1)
-return A.h(b1,A.p(A.a([a1,b9,new A.P(B.Gr,A.p(A.a([B.bN,c0,B.bN,A.h(b1,A.bd(A.n(A.a([B.aG4,B.aP,A.b("Purchase Lead \u2022 S$"+B.m.a0(i,0),b1,b1,b1,b1,A.d().$2$fontSize$fontWeight(14,B.q),b1,b1,b1)],a3),B.f,B.I,B.b,0,b1,b1),new A.bsL(b0,k,c2),a2),B.d,b1,b1,new A.k(b1,b1,b1,a0,b1,B.fj,B.j),b1,b1,b1,b1,b1,b1,b1,1/0)],a3),B.f,b1,B.c,B.b,B.k),b1)],a3),B.p,b1,B.c,B.b,B.k),B.a9,b1,b1,new A.k(B.i,b1,b1,c,a,b1,B.j),b1,b1,b1,b1,b1,b1,b1,b1)},
+c1=c0.h(c3,"is_looking_for_loan")
+d=c1==null?c0.h(c3,"requires_loan"):c1
+if(d==null)d=!1
+c1=t.g
+c=c1.a(c0.h(c3,"loan_types"))
+if(c==null)c=[]
+b=c0.h(c3,"special_requirements")
+a=J.v(b==null?"":b)
+b=A.f(14)
+a0=A.a([new A.M(-2,B.u,B.o.D(0.06),B.bu,16),new A.M(0,B.u,B.e.D(0.05),B.c1,6)],t.V)
+a1=A.h(b2,B.aID,B.d,b2,b2,new A.k(B.i.D(0.15),b2,b2,A.f(10),b2,b2,B.j),b2,b2,b2,b2,B.aA,b2,b2,b2)
+a2=A.b(c2,b2,B.a8,b2,b2,A.d().$3$color$fontSize$fontWeight(B.i,15,B.t),b2,b2,b2)
+a3=o?B.AD:B.AE
+a3=A.r(a3,o?B.i:B.bA,b2,14)
+a4=t.p
+a3=A.z(A.p(A.a([a2,B.eD,A.n(A.a([a3,B.aV,A.b(n,b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(o?B.i:B.bA,11.5,B.z),b2,b2,b2)],a4),B.f,B.c,B.b,0,b2,b2)],a4),B.p,b2,B.c,B.b,B.k),1)
+a2=A.f(20)
+a2=A.h(b2,A.n(A.a([a1,B.aM,a3,A.h(b2,A.b("S$"+B.m.a0(h,0),b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.r,13,B.t),b2,b2,b2),B.d,b2,b2,new A.k(B.i,b2,b2,a2,b2,b2,B.j),b2,b2,b2,b2,B.pb,b2,b2,b2)],a4),B.f,B.c,B.b,0,b2,b2),B.d,b2,b2,B.ra,b2,b2,b2,b2,B.t7,b2,b2,b2)
+a3=A.a([],a4)
+if(c0.h(c3,b3)!=null&&J.v(c0.h(c3,b3)).length!==0&&!B.l.u(J.v(c0.h(c3,b3)),b4)){a1=A.a([B.Ku,B.Y,A.z(A.b(J.v(c0.h(c3,b3)),2,B.a8,b2,b2,A.d().$2$color$fontSize(B.a2,13),b2,b2,b2),1)],a4)
+if(B.l.u(J.v(c0.h(c3,b3)),"***")){a5=B.e.D(0.1)
+a6=A.f(10)
+a1.push(A.h(b2,A.b("Full Address on Purchase",b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.r,10,B.q),b2,b2,b2),B.d,b2,b2,new A.k(a5,b2,b2,a6,b2,b2,B.j),b2,b2,b2,B.aan,B.jJ,b2,b2,b2))}B.h.t(a3,A.a([A.n(a1,B.p,B.c,B.b,0,b2,b2),B.b4],a4))}if(g.length!==0)B.h.t(a3,A.a([b1.Ek(B.jP,"Property",g),B.S],a4))
+if(s.length!==0&&!B.l.u(s,b4)&&s!=="Budget not specified")B.h.t(a3,A.a([b1.Ek(B.dK,"Budget",s),B.S],a4))
+if(r.length!==0&&!B.l.u(r,b4)&&r!=="Timeline not specified")B.h.t(a3,A.a([b1.Ek(B.ew,"Timeline",r),B.S],a4))
+a1=!f
+if(!a1||e||d||J.aP(c)){a5=A.f(12)
+a6=A.H(B.az,B.n,1)
+a7=A.a([],a4)
+if(!a1||e){a8=f?"Floorplans":""
+a9=f&&e?", ":""
+b0=e?"Site Images":""
+a7.push(A.n(A.a([B.Ko,B.aP,A.z(A.b("Files: "+a8+a9+b0,b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.a2,13,B.z),b2,b2,b2),1)],a4),B.f,B.c,B.b,0,b2,b2))}if(!a1||e)a1=d||J.aP(c)
+else a1=!1
+if(a1)a7.push(B.S)
+if(d||J.aP(c))a7.push(A.n(A.a([B.K6,B.aP,A.z(A.b(b1.acD(c3),b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.a2,13,B.z),b2,b2,b2),1)],a4),B.f,B.c,B.b,0,b2,b2))
+B.h.t(a3,A.a([B.aN,A.h(b2,A.p(a7,B.p,b2,B.c,B.b,B.k),B.d,b2,b2,new A.k(B.bC,b2,a6,a5,b2,b2,B.j),b2,b2,b2,b2,B.b7,b2,b2,b2)],a4))}if(!(c0.h(c3,b5)!=null&&J.e4(c0.h(c3,b5),0)))a1=c0.h(c3,b6)!=null&&J.e4(c0.h(c3,b6),0)
+else a1=!0
+if(a1){a1=A.a([],a4)
+a5=c0.h(c3,b5)
+if(J.e4(a5==null?0:a5,0)){a5=B.e.D(0.06)
+a6=A.f(8)
+a7=A.H(B.e.D(0.3),B.n,1)
+a8=A.w(c0.h(c3,b5))
+a9=A.eA(c0.h(c3,b5))>1?"s":""
+a1.push(A.z(A.h(b2,A.n(A.a([B.Kt,B.eB,A.b(a8+" Floorplan"+a9,b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.kU,11,B.z),b2,b2,b2)],a4),B.f,B.I,B.b,0,b2,b2),B.d,b2,b2,new A.k(a5,b2,a7,a6,b2,b2,B.j),b2,b2,b2,b2,B.th,b2,b2,b2),1))}a5=c0.h(c3,b5)
+if(J.e4(a5==null?0:a5,0)){a5=c0.h(c3,b6)
+a5=J.e4(a5==null?0:a5,0)}else a5=!1
+if(a5)a1.push(B.aP)
+a5=c0.h(c3,b6)
+if(J.e4(a5==null?0:a5,0)){a5=B.bp.D(0.7)
+a6=A.f(8)
+a7=A.H(B.cw,B.n,1)
+a8=A.r(B.fE,B.ba,b2,14)
+a9=A.w(c0.h(c3,b6))
+b0=A.eA(c0.h(c3,b6))>1?"s":""
+a1.push(A.z(A.h(b2,A.n(A.a([a8,B.eB,A.b(a9+" Image"+b0,b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.bE,11,B.z),b2,b2,b2)],a4),B.f,B.I,B.b,0,b2,b2),B.d,b2,b2,new A.k(a5,b2,a7,a6,b2,b2,B.j),b2,b2,b2,b2,B.th,b2,b2,b2),1))}B.h.t(a3,A.a([B.b4,A.n(a1,B.f,B.c,B.b,0,b2,b2)],a4))}if(a.length!==0)B.h.t(a3,A.a([B.aa,b1.aci(a)],a4))
+a1=c0.h(c3,b7)
+if(B.l.G(J.v(a1==null?"":a1)).length!==0)a3.push(b1.Xx(J.v(c0.h(c3,b7)),B.p7))
+c1=c1.a(c0.h(c3,b8))
+if(J.aP(c1==null?[]:c1))a3.push(b1.acx(t.j.a(c0.h(c3,b8))))
+if(c0.h(c3,b9)!=null){c1=t.f
+c1=c1.b(c0.h(c3,b9))&&J.aP(c1.a(c0.h(c3,b9)))}else c1=!1
+if(c1)B.h.t(a3,A.a([B.b4,b1.acP(c0.h(c3,b9))],a4))
+c0=A.z(new A.P(B.Gt,A.p(a3,B.p,b2,B.c,B.b,B.k),b2),1)
+c1=A.f(10)
+a1=A.H(B.be,B.n,1)
+a3=A.a([],a4)
+if(!l)B.h.t(a3,A.a([A.p(A.a([A.r(B.cF,B.e,b2,20),B.aN,A.b(A.w(m),b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.a2,15,B.t),b2,b2,b2),A.b("Accepted",b2,b2,b2,b2,A.d().$2$color$fontSize(B.F,11),b2,b2,b2)],a4),B.f,b2,B.c,B.b,B.k),A.h(b2,b2,B.d,B.be,b2,b2,b2,28,b2,b2,b2,b2,b2,1)],a4))
+a3.push(A.p(A.a([A.r(B.hG,B.e,b2,20),B.aN,A.b(b1.MR(k),b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.a2,15,B.t),b2,b2,b2),A.b("Last Updated",b2,b2,b2,b2,A.d().$2$color$fontSize(B.F,11),b2,b2,b2)],a4),B.f,b2,B.c,B.b,B.k))
+c1=A.h(b2,A.n(a3,B.f,B.qb,B.b,0,b2,b2),B.d,b2,b2,new A.k(B.bC,b2,a1,c1,b2,b2,B.j),b2,b2,b2,b2,B.bJ,b2,b2,b2)
+a1=A.f(10)
+a3=j?B.J:B.bk
+a3=A.aX(b2,b2,a3,b2,b2,b2,0,b2,b2,B.i,b2,b2,B.fy,B.J,new A.ah(A.f(10),B.v),b2,b2,b2,b2,b2)
+return A.h(b2,A.p(A.a([a2,c0,new A.P(B.Gr,A.p(A.a([B.bN,c1,B.bN,A.h(b2,A.bd(A.n(A.a([B.aG4,B.aP,A.b("Purchase Lead \u2022 S$"+B.m.a0(h,0),b2,b2,b2,b2,A.d().$2$fontSize$fontWeight(14,B.q),b2,b2,b2)],a4),B.f,B.I,B.b,0,b2,b2),new A.bsL(b1,j,c3),a3),B.d,b2,b2,new A.k(b2,b2,b2,a1,b2,B.fj,B.j),b2,b2,b2,b2,b2,b2,b2,1/0)],a4),B.f,b2,B.c,B.b,B.k),b2)],a4),B.p,b2,B.c,B.b,B.k),B.a9,b2,b2,new A.k(B.i,b2,b2,b,a0,b2,B.j),b2,b2,b2,b2,b2,b2,b2,b2)},
 afT(a){var s,r,q,p,o
 if(a==null)return"\u2014"
 if(t.j.b(a)){s=J.Q(a)
@@ -165062,124 +165073,128 @@ b=A.n(A.a([A.r(B.pL,B.hz,a5,16),B.aP,A.b("Quote Request Details",a5,a5,a5,a5,A.d
 a4=t.PU
 a4=A.N(new A.O(a1,new A.btd(),a4),a4.k("a2.E"))
 return A.h(a5,A.p(A.a([b,B.S,A.bS(B.as,a4,B.ax,6,8)],c),B.p,a5,B.c,B.b,B.k),B.d,a5,a5,new A.k(r,a5,d,e,a5,a5,B.j),a5,a5,a5,a5,B.b7,a5,a5,a5)},
-abQ(c1,c2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1=this,b2=null,b3="floorplan_count",b4="site_images_count",b5="not specified",b6="reno_research_remarks",b7="public_preview_files",b8="quotation_form_data",b9=J.Q(c1),c0=b9.h(c1,"title")
-if(c0==null)c0="Renovation Project"
-s=b9.h(c1,"homeowner")
+abQ(c2,c3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2=this,b3=null,b4="floorplan_count",b5="site_images_count",b6="not specified",b7="reno_research_remarks",b8="public_preview_files",b9="quotation_form_data",c0=J.Q(c2),c1=c0.h(c2,"title")
+if(c1==null)c1="Renovation Project"
+s=c0.h(c2,"homeowner")
 if(s==null)s="Unknown Customer"
-r=b9.h(c1,"location")
+r=c0.h(c2,"location")
 if(r==null)r="Location not specified"
-q=b9.h(c1,"budget")
+q=c0.h(c2,"budget")
 if(q==null)q="Budget not specified"
-p=b9.h(c1,"timeline")
+p=c0.h(c2,"timeline")
 if(p==null)p="Timeline not specified"
-o=b9.h(c1,"posted_date")
+o=c0.h(c2,"posted_date")
 if(o==null)o=new A.aK(Date.now(),0,!1)
-n=b9.h(c1,"connections_count")
+n=c0.h(c2,"connections_count")
 if(n==null)n=0
-m=b1.ZP(c1)
-l=b9.h(c1,"group_name")
-if(l==null)l=""
-k=b9.h(c1,"expiry_threshold")
-if(k==null)k=0
-j=b9.h(c1,"remaining_slots")
-if(j==null)j=-1
-i=b9.h(c1,"has_floorplans")
-if(!(i==null?!1:i)){i=b9.h(c1,b3)
-h=J.e4(i==null?0:i,0)}else h=!0
-i=b9.h(c1,"has_site_images")
-if(!(i==null?!1:i)){i=b9.h(c1,b4)
-g=J.e4(i==null?0:i,0)}else g=!0
-i=b9.h(c1,"is_looking_for_loan")
-f=i==null?b9.h(c1,"requires_loan"):i
-if(f==null)f=!1
-i=t.g
-e=i.a(b9.h(c1,"loan_types"))
-if(e==null)e=[]
-d=b9.h(c1,"special_requirements")
-if(d==null)d=b9.h(c1,"description")
-c=J.v(d==null?"":d)
-d=i.a(b9.h(c1,"appointment_slots"))
-b=J.aP(d==null?[]:d)
-d=A.f(14)
-a=A.a([new A.M(-2,B.u,B.o.D(0.06),B.bu,16),new A.M(0,B.u,B.e.D(0.05),B.c1,6)],t.V)
-a0=B.i.D(0.15)
-a1=A.f(10)
-a0=A.h(b2,A.r(c2?B.azy:B.ev,B.i,b2,20),B.d,b2,b2,new A.k(a0,b2,b2,a1,b2,b2,B.j),b2,b2,b2,b2,B.aA,b2,b2,b2)
-a1=B.i.D(0.2)
-a2=A.f(8)
-if(c2)a3=l.length!==0?l.toUpperCase():"ADMIN LEAD"
-else a3="HOMEOWNER APP LEAD"
-a4=t.p
-a2=A.a([a0,B.aM,A.z(A.p(A.a([A.h(b2,A.b(a3,b2,b2,b2,b2,A.d().$4$color$fontSize$fontWeight$letterSpacing(B.i,10,B.t,0.5),b2,b2,b2),B.d,b2,b2,new A.k(a1,b2,b2,a2,b2,b2,B.j),b2,b2,b2,b2,B.eU,b2,b2,b2),B.aN,A.b(s,b2,B.a8,b2,b2,A.d().$3$color$fontSize$fontWeight(B.i,15,B.t),b2,b2,b2)],a4),B.p,b2,B.c,B.b,B.k),1)],a4)
-a0=m>0
-if(a0){a1=A.f(20)
-a2.push(A.h(b2,A.b(""+m+" Credits",b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.r,13,B.t),b2,b2,b2),B.d,b2,b2,new A.k(B.i,b2,b2,a1,b2,b2,B.j),b2,b2,b2,b2,B.pb,b2,b2,b2))}a1=A.h(b2,A.n(a2,B.f,B.c,B.b,0,b2,b2),B.d,b2,b2,B.ra,b2,b2,b2,b2,B.t7,b2,b2,b2)
-a2=A.a([],a4)
-if(c2&&k>0){a3=j<=1
-a5=a3?B.K.D(0.08):B.e.D(0.08)
-a6=A.f(8)
-a7=A.H(a3?B.K.D(0.3):B.e.D(0.3),B.n,1)
-a8=a3?B.nq:B.un
-a8=A.r(a8,a3?B.K:B.r,b2,14)
-a9=j>0?A.w(j)+" ID Can Connect":"Last ID slot!"
-B.h.t(a2,A.a([A.h(b2,A.n(A.a([a8,B.aP,A.b(a9,b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(a3?B.K:B.r,12,B.q),b2,b2,b2)],a4),B.f,B.c,B.E,0,b2,b2),B.d,b2,b2,new A.k(a5,b2,a7,a6,b2,b2,B.j),b2,b2,b2,b2,B.eu,b2,b2,b2),B.b4],a4))}a2.push(A.b(c0,2,B.a8,b2,b2,A.d().$3$color$fontSize$fontWeight(B.a6f,15,B.t),b2,b2,b2))
-a2.push(B.b4)
-if(r.length!==0&&!B.l.u(r.toLowerCase(),b5))B.h.t(a2,A.a([A.n(A.a([B.Ku,B.Y,A.z(A.b(r,2,B.a8,b2,b2,A.d().$2$color$fontSize(B.a2,13),b2,b2,b2),1)],a4),B.p,B.c,B.b,0,b2,b2),B.b4],a4))
-if(q.length!==0&&!B.l.u(q.toLowerCase(),b5))B.h.t(a2,A.a([b1.Ek(B.dK,"Budget",q),B.S],a4))
-if(p.length!==0&&!B.l.u(p.toLowerCase(),b5))B.h.t(a2,A.a([b1.Ek(B.ew,"Timeline",p),B.S],a4))
-a3=!h
-if(!a3||g||f||J.aP(e)){a5=A.f(12)
-a6=A.H(B.az,B.n,1)
-a7=A.a([],a4)
-if(!a3||g){a8=h?"Floorplans":""
-a9=h&&g?", ":""
-b0=g?"Site Images":""
-a7.push(A.n(A.a([B.Ko,B.aP,A.z(A.b("Files: "+a8+a9+b0,b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.a2,13,B.z),b2,b2,b2),1)],a4),B.f,B.c,B.b,0,b2,b2))}if(!a3||g)a3=f||J.aP(e)
-else a3=!1
-if(a3)a7.push(B.S)
-if(f||J.aP(e))a7.push(A.n(A.a([B.K6,B.aP,A.z(A.b(b1.acD(c1),b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.a2,13,B.z),b2,b2,b2),1)],a4),B.f,B.c,B.b,0,b2,b2))
-B.h.t(a2,A.a([B.aN,A.h(b2,A.p(a7,B.p,b2,B.c,B.b,B.k),B.d,b2,b2,new A.k(B.bC,b2,a6,a5,b2,b2,B.j),b2,b2,b2,b2,B.b7,b2,b2,b2)],a4))}if(!(b9.h(c1,b3)!=null&&J.e4(b9.h(c1,b3),0)))a3=b9.h(c1,b4)!=null&&J.e4(b9.h(c1,b4),0)
-else a3=!0
-if(a3){a3=A.a([],a4)
-a5=b9.h(c1,b3)
-if(J.e4(a5==null?0:a5,0)){a5=B.e.D(0.06)
-a6=A.f(8)
-a7=A.H(B.e.D(0.3),B.n,1)
-a8=A.w(b9.h(c1,b3))
-a9=A.eA(b9.h(c1,b3))>1?"s":""
-a3.push(A.z(A.h(b2,A.n(A.a([B.Kt,B.eB,A.b(a8+" Floorplan"+a9,b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.kU,11,B.z),b2,b2,b2)],a4),B.f,B.I,B.b,0,b2,b2),B.d,b2,b2,new A.k(a5,b2,a7,a6,b2,b2,B.j),b2,b2,b2,b2,B.th,b2,b2,b2),1))}a5=b9.h(c1,b3)
-if(J.e4(a5==null?0:a5,0)){a5=b9.h(c1,b4)
-a5=J.e4(a5==null?0:a5,0)}else a5=!1
-if(a5)a3.push(B.aP)
-a5=b9.h(c1,b4)
-if(J.e4(a5==null?0:a5,0)){a5=B.bp.D(0.7)
-a6=A.f(8)
-a7=A.H(B.cw,B.n,1)
-a8=A.r(B.fE,B.ba,b2,14)
-a9=A.w(b9.h(c1,b4))
-b0=A.eA(b9.h(c1,b4))>1?"s":""
-a3.push(A.z(A.h(b2,A.n(A.a([a8,B.eB,A.b(a9+" Image"+b0,b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.bE,11,B.z),b2,b2,b2)],a4),B.f,B.I,B.b,0,b2,b2),B.d,b2,b2,new A.k(a5,b2,a7,a6,b2,b2,B.j),b2,b2,b2,b2,B.th,b2,b2,b2),1))}B.h.t(a2,A.a([B.b4,A.n(a3,B.f,B.c,B.b,0,b2,b2)],a4))}if(c2&&b){a3=A.f(8)
-a5=A.H(B.xL.D(0.3),B.n,1)
-B.h.t(a2,A.a([B.b4,A.h(b2,A.n(A.a([B.aI9,B.aP,A.b(b1.aSv(c1),b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.xL,12,B.q),b2,b2,b2)],a4),B.f,B.c,B.E,0,b2,b2),B.d,b2,b2,new A.k(B.a51,b2,a5,a3,b2,b2,B.j),b2,b2,b2,b2,B.a99,b2,b2,b2)],a4))}if(c.length!==0)B.h.t(a2,A.a([B.aa,b1.aci(c)],a4))
-a3=b9.h(c1,b6)
-if(B.l.G(J.v(a3==null?"":a3)).length!==0)a2.push(b1.Xx(J.v(b9.h(c1,b6)),B.p7))
-i=i.a(b9.h(c1,b7))
-if(J.aP(i==null?[]:i))a2.push(b1.acx(t.j.a(b9.h(c1,b7))))
-if(b9.h(c1,b8)!=null){i=t.f
-i=i.b(b9.h(c1,b8))&&J.aP(i.a(b9.h(c1,b8)))}else i=!1
-if(i)B.h.t(a2,A.a([B.b4,b1.acP(b9.h(c1,b8))],a4))
-b9=A.z(new A.P(B.Gt,A.p(a2,B.p,b2,B.c,B.b,B.k),b2),1)
-i=A.f(10)
-a2=A.H(B.be,B.n,1)
-i=A.h(b2,A.n(A.a([A.p(A.a([A.r(B.jS,B.e,b2,20),B.aN,A.b(A.w(n),b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.a2,15,B.t),b2,b2,b2),A.b("Connected",b2,b2,b2,b2,A.d().$2$color$fontSize(B.F,11),b2,b2,b2)],a4),B.f,b2,B.c,B.b,B.k),A.h(b2,b2,B.d,B.be,b2,b2,b2,28,b2,b2,b2,b2,b2,1),A.p(A.a([A.r(B.hG,B.e,b2,20),B.aN,A.b(b1.MR(o),b2,b2,b2,b2,A.d().$3$color$fontSize$fontWeight(B.a2,15,B.t),b2,b2,b2),A.b("Received",b2,b2,b2,b2,A.d().$2$color$fontSize(B.F,11),b2,b2,b2)],a4),B.f,b2,B.c,B.b,B.k)],a4),B.f,B.qb,B.b,0,b2,b2),B.d,b2,b2,new A.k(B.bC,b2,a2,i,b2,b2,B.j),b2,b2,b2,b2,B.bJ,b2,b2,b2)
-a2=A.dB(b2,b2,b2,b2,b2,b2,b2,b2,b2,B.an,b2,b2,B.fy,b2,new A.ah(A.f(10),B.v),B.ZM,b2,b2,b2,b2)
-a2=A.z(A.fW(A.b("Decline",b2,b2,b2,b2,A.d().$2$fontSize$fontWeight(13,B.q),b2,b2,b2),new A.bri(b1,c1,c2),a2),1)
-a3=A.f(10)
-a5=A.aX(b2,b2,B.J,b2,b2,b2,0,b2,b2,B.i,b2,b2,B.fy,B.J,new A.ah(A.f(10),B.v),b2,b2,b2,b2,b2)
-a6=A.r(c2&&b?B.J5:B.cF,b2,b2,16)
-if(c2&&b)a0="View Slots"
-else a0=a0?"Accept - "+m+" Credits":"Accept Lead"
-return A.h(b2,A.p(A.a([a1,b9,new A.P(B.Gr,A.p(A.a([B.bN,i,B.bN,A.n(A.a([a2,B.aM,A.z(A.h(b2,A.bd(A.n(A.a([a6,B.aP,new A.cB(1,B.aT,A.b(a0,b2,B.a8,b2,b2,A.d().$2$fontSize$fontWeight(14,B.q),b2,b2,b2),b2)],a4),B.f,B.I,B.b,0,b2,b2),new A.brj(b1,c2,c1),a5),B.d,b2,b2,new A.k(b2,b2,b2,a3,b2,B.fj,B.j),b2,b2,b2,b2,b2,b2,b2,b2),2)],a4),B.f,B.c,B.b,0,b2,b2)],a4),B.f,b2,B.c,B.b,B.k),b2)],a4),B.p,b2,B.c,B.b,B.k),B.a9,b2,b2,new A.k(B.i,b2,b2,d,a,b2,B.j),b2,b2,b2,b2,b2,b2,b2,b2)},
+m=J.q(c0.h(c2,"hide_connections_count"),!0)
+l=b2.ZP(c2)
+k=c0.h(c2,"group_name")
+if(k==null)k=""
+j=c0.h(c2,"expiry_threshold")
+if(j==null)j=0
+i=c0.h(c2,"remaining_slots")
+if(i==null)i=-1
+h=c0.h(c2,"has_floorplans")
+if(!(h==null?!1:h)){h=c0.h(c2,b4)
+g=J.e4(h==null?0:h,0)}else g=!0
+h=c0.h(c2,"has_site_images")
+if(!(h==null?!1:h)){h=c0.h(c2,b5)
+f=J.e4(h==null?0:h,0)}else f=!0
+h=c0.h(c2,"is_looking_for_loan")
+e=h==null?c0.h(c2,"requires_loan"):h
+if(e==null)e=!1
+h=t.g
+d=h.a(c0.h(c2,"loan_types"))
+if(d==null)d=[]
+c=c0.h(c2,"special_requirements")
+if(c==null)c=c0.h(c2,"description")
+b=J.v(c==null?"":c)
+c=h.a(c0.h(c2,"appointment_slots"))
+a=J.aP(c==null?[]:c)
+c=A.f(14)
+a0=A.a([new A.M(-2,B.u,B.o.D(0.06),B.bu,16),new A.M(0,B.u,B.e.D(0.05),B.c1,6)],t.V)
+a1=B.i.D(0.15)
+a2=A.f(10)
+a1=A.h(b3,A.r(c3?B.azy:B.ev,B.i,b3,20),B.d,b3,b3,new A.k(a1,b3,b3,a2,b3,b3,B.j),b3,b3,b3,b3,B.aA,b3,b3,b3)
+a2=B.i.D(0.2)
+a3=A.f(8)
+if(c3)a4=k.length!==0?k.toUpperCase():"ADMIN LEAD"
+else a4="HOMEOWNER APP LEAD"
+a5=t.p
+a3=A.a([a1,B.aM,A.z(A.p(A.a([A.h(b3,A.b(a4,b3,b3,b3,b3,A.d().$4$color$fontSize$fontWeight$letterSpacing(B.i,10,B.t,0.5),b3,b3,b3),B.d,b3,b3,new A.k(a2,b3,b3,a3,b3,b3,B.j),b3,b3,b3,b3,B.eU,b3,b3,b3),B.aN,A.b(s,b3,B.a8,b3,b3,A.d().$3$color$fontSize$fontWeight(B.i,15,B.t),b3,b3,b3)],a5),B.p,b3,B.c,B.b,B.k),1)],a5)
+a1=l>0
+if(a1){a2=A.f(20)
+a3.push(A.h(b3,A.b(""+l+" Credits",b3,b3,b3,b3,A.d().$3$color$fontSize$fontWeight(B.r,13,B.t),b3,b3,b3),B.d,b3,b3,new A.k(B.i,b3,b3,a2,b3,b3,B.j),b3,b3,b3,b3,B.pb,b3,b3,b3))}a2=A.h(b3,A.n(a3,B.f,B.c,B.b,0,b3,b3),B.d,b3,b3,B.ra,b3,b3,b3,b3,B.t7,b3,b3,b3)
+a3=A.a([],a5)
+if(c3&&j>0){a4=i<=1
+a6=a4?B.K.D(0.08):B.e.D(0.08)
+a7=A.f(8)
+a8=A.H(a4?B.K.D(0.3):B.e.D(0.3),B.n,1)
+a9=a4?B.nq:B.un
+a9=A.r(a9,a4?B.K:B.r,b3,14)
+b0=i>0?A.w(i)+" ID Can Connect":"Last ID slot!"
+B.h.t(a3,A.a([A.h(b3,A.n(A.a([a9,B.aP,A.b(b0,b3,b3,b3,b3,A.d().$3$color$fontSize$fontWeight(a4?B.K:B.r,12,B.q),b3,b3,b3)],a5),B.f,B.c,B.E,0,b3,b3),B.d,b3,b3,new A.k(a6,b3,a8,a7,b3,b3,B.j),b3,b3,b3,b3,B.eu,b3,b3,b3),B.b4],a5))}a3.push(A.b(c1,2,B.a8,b3,b3,A.d().$3$color$fontSize$fontWeight(B.a6f,15,B.t),b3,b3,b3))
+a3.push(B.b4)
+if(r.length!==0&&!B.l.u(r.toLowerCase(),b6))B.h.t(a3,A.a([A.n(A.a([B.Ku,B.Y,A.z(A.b(r,2,B.a8,b3,b3,A.d().$2$color$fontSize(B.a2,13),b3,b3,b3),1)],a5),B.p,B.c,B.b,0,b3,b3),B.b4],a5))
+if(q.length!==0&&!B.l.u(q.toLowerCase(),b6))B.h.t(a3,A.a([b2.Ek(B.dK,"Budget",q),B.S],a5))
+if(p.length!==0&&!B.l.u(p.toLowerCase(),b6))B.h.t(a3,A.a([b2.Ek(B.ew,"Timeline",p),B.S],a5))
+a4=!g
+if(!a4||f||e||J.aP(d)){a6=A.f(12)
+a7=A.H(B.az,B.n,1)
+a8=A.a([],a5)
+if(!a4||f){a9=g?"Floorplans":""
+b0=g&&f?", ":""
+b1=f?"Site Images":""
+a8.push(A.n(A.a([B.Ko,B.aP,A.z(A.b("Files: "+a9+b0+b1,b3,b3,b3,b3,A.d().$3$color$fontSize$fontWeight(B.a2,13,B.z),b3,b3,b3),1)],a5),B.f,B.c,B.b,0,b3,b3))}if(!a4||f)a4=e||J.aP(d)
+else a4=!1
+if(a4)a8.push(B.S)
+if(e||J.aP(d))a8.push(A.n(A.a([B.K6,B.aP,A.z(A.b(b2.acD(c2),b3,b3,b3,b3,A.d().$3$color$fontSize$fontWeight(B.a2,13,B.z),b3,b3,b3),1)],a5),B.f,B.c,B.b,0,b3,b3))
+B.h.t(a3,A.a([B.aN,A.h(b3,A.p(a8,B.p,b3,B.c,B.b,B.k),B.d,b3,b3,new A.k(B.bC,b3,a7,a6,b3,b3,B.j),b3,b3,b3,b3,B.b7,b3,b3,b3)],a5))}if(!(c0.h(c2,b4)!=null&&J.e4(c0.h(c2,b4),0)))a4=c0.h(c2,b5)!=null&&J.e4(c0.h(c2,b5),0)
+else a4=!0
+if(a4){a4=A.a([],a5)
+a6=c0.h(c2,b4)
+if(J.e4(a6==null?0:a6,0)){a6=B.e.D(0.06)
+a7=A.f(8)
+a8=A.H(B.e.D(0.3),B.n,1)
+a9=A.w(c0.h(c2,b4))
+b0=A.eA(c0.h(c2,b4))>1?"s":""
+a4.push(A.z(A.h(b3,A.n(A.a([B.Kt,B.eB,A.b(a9+" Floorplan"+b0,b3,b3,b3,b3,A.d().$3$color$fontSize$fontWeight(B.kU,11,B.z),b3,b3,b3)],a5),B.f,B.I,B.b,0,b3,b3),B.d,b3,b3,new A.k(a6,b3,a8,a7,b3,b3,B.j),b3,b3,b3,b3,B.th,b3,b3,b3),1))}a6=c0.h(c2,b4)
+if(J.e4(a6==null?0:a6,0)){a6=c0.h(c2,b5)
+a6=J.e4(a6==null?0:a6,0)}else a6=!1
+if(a6)a4.push(B.aP)
+a6=c0.h(c2,b5)
+if(J.e4(a6==null?0:a6,0)){a6=B.bp.D(0.7)
+a7=A.f(8)
+a8=A.H(B.cw,B.n,1)
+a9=A.r(B.fE,B.ba,b3,14)
+b0=A.w(c0.h(c2,b5))
+b1=A.eA(c0.h(c2,b5))>1?"s":""
+a4.push(A.z(A.h(b3,A.n(A.a([a9,B.eB,A.b(b0+" Image"+b1,b3,b3,b3,b3,A.d().$3$color$fontSize$fontWeight(B.bE,11,B.z),b3,b3,b3)],a5),B.f,B.I,B.b,0,b3,b3),B.d,b3,b3,new A.k(a6,b3,a8,a7,b3,b3,B.j),b3,b3,b3,b3,B.th,b3,b3,b3),1))}B.h.t(a3,A.a([B.b4,A.n(a4,B.f,B.c,B.b,0,b3,b3)],a5))}if(c3&&a){a4=A.f(8)
+a6=A.H(B.xL.D(0.3),B.n,1)
+B.h.t(a3,A.a([B.b4,A.h(b3,A.n(A.a([B.aI9,B.aP,A.b(b2.aSv(c2),b3,b3,b3,b3,A.d().$3$color$fontSize$fontWeight(B.xL,12,B.q),b3,b3,b3)],a5),B.f,B.c,B.E,0,b3,b3),B.d,b3,b3,new A.k(B.a51,b3,a6,a4,b3,b3,B.j),b3,b3,b3,b3,B.a99,b3,b3,b3)],a5))}if(b.length!==0)B.h.t(a3,A.a([B.aa,b2.aci(b)],a5))
+a4=c0.h(c2,b7)
+if(B.l.G(J.v(a4==null?"":a4)).length!==0)a3.push(b2.Xx(J.v(c0.h(c2,b7)),B.p7))
+h=h.a(c0.h(c2,b8))
+if(J.aP(h==null?[]:h))a3.push(b2.acx(t.j.a(c0.h(c2,b8))))
+if(c0.h(c2,b9)!=null){h=t.f
+h=h.b(c0.h(c2,b9))&&J.aP(h.a(c0.h(c2,b9)))}else h=!1
+if(h)B.h.t(a3,A.a([B.b4,b2.acP(c0.h(c2,b9))],a5))
+c0=A.z(new A.P(B.Gt,A.p(a3,B.p,b3,B.c,B.b,B.k),b3),1)
+h=A.f(10)
+a3=A.H(B.be,B.n,1)
+a4=A.a([],a5)
+if(!m)B.h.t(a4,A.a([A.p(A.a([A.r(B.jS,B.e,b3,20),B.aN,A.b(A.w(n),b3,b3,b3,b3,A.d().$3$color$fontSize$fontWeight(B.a2,15,B.t),b3,b3,b3),A.b("Connected",b3,b3,b3,b3,A.d().$2$color$fontSize(B.F,11),b3,b3,b3)],a5),B.f,b3,B.c,B.b,B.k),A.h(b3,b3,B.d,B.be,b3,b3,b3,28,b3,b3,b3,b3,b3,1)],a5))
+a4.push(A.p(A.a([A.r(B.hG,B.e,b3,20),B.aN,A.b(b2.MR(o),b3,b3,b3,b3,A.d().$3$color$fontSize$fontWeight(B.a2,15,B.t),b3,b3,b3),A.b("Received",b3,b3,b3,b3,A.d().$2$color$fontSize(B.F,11),b3,b3,b3)],a5),B.f,b3,B.c,B.b,B.k))
+h=A.h(b3,A.n(a4,B.f,B.qb,B.b,0,b3,b3),B.d,b3,b3,new A.k(B.bC,b3,a3,h,b3,b3,B.j),b3,b3,b3,b3,B.bJ,b3,b3,b3)
+a3=A.dB(b3,b3,b3,b3,b3,b3,b3,b3,b3,B.an,b3,b3,B.fy,b3,new A.ah(A.f(10),B.v),B.ZM,b3,b3,b3,b3)
+a3=A.z(A.fW(A.b("Decline",b3,b3,b3,b3,A.d().$2$fontSize$fontWeight(13,B.q),b3,b3,b3),new A.bri(b2,c2,c3),a3),1)
+a4=A.f(10)
+a6=A.aX(b3,b3,B.J,b3,b3,b3,0,b3,b3,B.i,b3,b3,B.fy,B.J,new A.ah(A.f(10),B.v),b3,b3,b3,b3,b3)
+a7=A.r(c3&&a?B.J5:B.cF,b3,b3,16)
+if(c3&&a)a1="View Slots"
+else a1=a1?"Accept - "+l+" Credits":"Accept Lead"
+return A.h(b3,A.p(A.a([a2,c0,new A.P(B.Gr,A.p(A.a([B.bN,h,B.bN,A.n(A.a([a3,B.aM,A.z(A.h(b3,A.bd(A.n(A.a([a7,B.aP,new A.cB(1,B.aT,A.b(a1,b3,B.a8,b3,b3,A.d().$2$fontSize$fontWeight(14,B.q),b3,b3,b3),b3)],a5),B.f,B.I,B.b,0,b3,b3),new A.brj(b2,c3,c2),a6),B.d,b3,b3,new A.k(b3,b3,b3,a4,b3,B.fj,B.j),b3,b3,b3,b3,b3,b3,b3,b3),2)],a5),B.f,B.c,B.b,0,b3,b3)],a5),B.f,b3,B.c,B.b,B.k),b3)],a5),B.p,b3,B.c,B.b,B.k),B.a9,b3,b3,new A.k(B.i,b3,b3,c,a0,b3,B.j),b3,b3,b3,b3,b3,b3,b3,b3)},
 MR(a){var s,r,q=B.A.bb(new A.aK(Date.now(),0,!1).e_(a).a,864e8)
 if(q===0)return"today"
 else if(q===1)return"yesterday"
@@ -166286,78 +166301,78 @@ A.bul.prototype={
 $0(){return this.a.k4=!1},
 $S:0}
 A.btz.prototype={
-$1(d4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2=null,c3="lastUpdatedAt",c4="registeredOn",c5="isLookingForLoan",c6="customerId",c7="connections_count",c8="floorplanFiles",c9="floorplanImages",d0="siteImages",d1=J.Q(d4),d2=d1.h(d4,"customerName"),d3=d2==null?c2:J.v(d2)
-if(d3==null)d3="Unknown Customer"
-d2=d1.h(d4,"customerPhone")
-r=d2==null?c2:J.v(d2)
+$1(d5){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3=null,c4="lastUpdatedAt",c5="registeredOn",c6="isLookingForLoan",c7="customerId",c8="connections_count",c9="floorplanFiles",d0="floorplanImages",d1="siteImages",d2=J.Q(d5),d3=d2.h(d5,"customerName"),d4=d3==null?c3:J.v(d3)
+if(d4==null)d4="Unknown Customer"
+d3=d2.h(d5,"customerPhone")
+r=d3==null?c3:J.v(d3)
 if(r==null)r=""
-d2=d1.h(d4,"customerEmail")
-q=d2==null?c2:J.v(d2)
+d3=d2.h(d5,"customerEmail")
+q=d3==null?c3:J.v(d3)
 if(q==null)q=""
-d2=t.h
-p=d2.a(d1.h(d4,"selectedBudgetValues"))
-if(J.q(d1.h(d4,"isFlexibleBudget"),!0))o="Flexible Budget"
+d3=t.h
+p=d3.a(d2.h(d5,"selectedBudgetValues"))
+if(J.q(d2.h(d5,"isFlexibleBudget"),!0))o="Flexible Budget"
 else{o="Budget not specified"
 if(p!=null){n=J.Q(p)
 m=n.h(p,"min")
-l=m==null?c2:J.v(m)
+l=m==null?c3:J.v(m)
 n=n.h(p,"max")
-k=n==null?c2:J.v(n)
+k=n==null?c3:J.v(n)
 if(l!=null&&k!=null){n=this.a
-o="S$"+n.ND(l)+" - S$"+n.ND(k)}}}n=d1.h(d4,"address")
-j=n==null?c2:J.v(n)
+o="S$"+n.ND(l)+" - S$"+n.ND(k)}}}n=d2.h(d5,"address")
+j=n==null?c3:J.v(n)
 if(j==null)j=""
-n=d1.h(d4,"unitNumber")
-i=n==null?c2:J.v(n)
+n=d2.h(d5,"unitNumber")
+i=n==null?c3:J.v(n)
 if(i==null)i=""
-n=d1.h(d4,"postalCode")
-h=n==null?c2:J.v(n)
+n=d2.h(d5,"postalCode")
+h=n==null?c3:J.v(n)
 if(h==null)h=""
 if(j.length!==0){g=i.length!==0?j+(", #"+i):j
 if(h.length!==0)g+=", Singapore "+h}else g="Location not specified"
-n=d1.h(d4,"renovationType")
-n=n==null?c2:J.v(n)
-if(n==null){n=d1.h(d4,"propertyType")
-n=n==null?c2:J.v(n)
+n=d2.h(d5,"renovationType")
+n=n==null?c3:J.v(n)
+if(n==null){n=d2.h(d5,"propertyType")
+n=n==null?c3:J.v(n)
 f=n}else f=n
 if(f==null)f="Renovation"
 n=t.g
-e=n.a(d1.h(d4,"partialSelections"))
+e=n.a(d2.h(d5,"partialSelections"))
 if(e==null)e=[]
-m=d1.h(d4,"otherRenovationType")
-d=m==null?c2:J.v(m)
+m=d2.h(d5,"otherRenovationType")
+d=m==null?c3:J.v(m)
 if(d==null)d=""
 if(f.toLowerCase()==="partial"&&J.aP(e))f="Partial ("+J.bF(e,new A.bty(),t.N).aX(0,", ")+")"
 else if(f.toLowerCase()==="other"&&d.length!==0)f="Other ("+d+")"
 else if(f==="Renovation"&&d.length!==0)f=d
-m=d1.h(d4,"timeline")
-m=m==null?c2:J.v(m)
-if(m==null){m=d1.h(d4,"renovationTiming")
-m=m==null?c2:J.v(m)
+m=d2.h(d5,"timeline")
+m=m==null?c3:J.v(m)
+if(m==null){m=d2.h(d5,"renovationTiming")
+m=m==null?c3:J.v(m)
 c=m}else c=m
 if(c==null)c="Timeline not specified"
-m=d1.h(d4,"propertySize")
-b=m==null?c2:J.v(m)
+m=d2.h(d5,"propertySize")
+b=m==null?c3:J.v(m)
 if(b==null)b="Not specified"
 s=null
-if(d1.h(d4,c3)!=null)try{s=A.dE(J.v(d1.h(d4,c3)))}catch(a){s=null}if(s==null&&d1.h(d4,c4)!=null)try{s=A.dE(d1.h(d4,c4))}catch(a){s=null}a0=d2.a(d1.h(d4,"renovationLoan"))
-d2=a0==null
-m=d2?c2:J.l(a0,c5)
-if(m==null)m=d1.h(d4,c5)
-a1=m==null?d1.h(d4,"renovationLoanInterest"):m
+if(d2.h(d5,c4)!=null)try{s=A.dE(J.v(d2.h(d5,c4)))}catch(a){s=null}if(s==null&&d2.h(d5,c5)!=null)try{s=A.dE(d2.h(d5,c5))}catch(a){s=null}a0=d3.a(d2.h(d5,"renovationLoan"))
+d3=a0==null
+m=d3?c3:J.l(a0,c6)
+if(m==null)m=d2.h(d5,c6)
+a1=m==null?d2.h(d5,"renovationLoanInterest"):m
 if(a1==null)a1=!1
-d2=d2?c2:J.l(a0,"loanTypes")
-if(d2==null)d2=d1.h(d4,"selectedLoanTypes")
-if(d2==null)d2=[]
-t.j.a(d2)
-m=d1.h(d4,"loanType")
-a2=m==null?c2:J.v(m)
+d3=d3?c3:J.l(a0,"loanTypes")
+if(d3==null)d3=d2.h(d5,"selectedLoanTypes")
+if(d3==null)d3=[]
+t.j.a(d3)
+m=d2.h(d5,"loanType")
+a2=m==null?c3:J.v(m)
 if(a2==null)a2=""
-m=d1.h(d4,c6)
+m=d2.h(d5,c7)
 if(m==null)m=""
-a3=d1.h(d4,c6)
+a3=d2.h(d5,c7)
 if(a3==null)a3=""
-a4=d3.split(" ")[0]
+a4=d4.split(" ")[0]
 a5=this.a
 a6=a5.b3s(g)
 a5=a5.aeO(c)
@@ -166365,128 +166380,129 @@ a7=s
 if(a7==null)a7=new A.aK(Date.now(),0,!1)
 a8=s
 if(a8==null)a8=new A.aK(Date.now(),0,!1)
-a9=d1.h(d4,"hasCollectedKeys")
-if(a9==null)a9=d1.h(d4,"keysCollected")
+a9=d2.h(d5,"hasCollectedKeys")
+if(a9==null)a9=d2.h(d5,"keysCollected")
 if(a9==null)a9=!1
-b0=d1.h(d4,"calculatedPrice")
+b0=d2.h(d5,"calculatedPrice")
 if(b0==null)b0=20
-b1=A.fm(d1.h(d4,"connectionsCount"))
-if(b1==null)b1=A.fm(d1.h(d4,c7))
-if(b1==null)b1=A.fm(d1.h(d4,"acceptedLeadsCount"))
+b1=A.fm(d2.h(d5,"connectionsCount"))
+if(b1==null)b1=A.fm(d2.h(d5,c8))
+if(b1==null)b1=A.fm(d2.h(d5,"acceptedLeadsCount"))
 if(b1==null)b1=0
-b2=n.a(d1.h(d4,c8))
-if(b2==null)b2=[]
-b3=t.z
-b2=A.N(b2,b3)
-b4=n.a(d1.h(d4,c9))
-B.h.t(b2,b4==null?[]:b4)
-b4=n.a(d1.h(d4,c9))
-if(b4==null)b4=[]
-b5=n.a(d1.h(d4,c8))
+b2=J.q(d2.h(d5,"hideConnectionsCount"),!0)
+b3=n.a(d2.h(d5,c9))
+if(b3==null)b3=[]
+b4=t.z
+b3=A.N(b3,b4)
+b5=n.a(d2.h(d5,d0))
+B.h.t(b3,b5==null?[]:b5)
+b5=n.a(d2.h(d5,d0))
 if(b5==null)b5=[]
-b6=n.a(d1.h(d4,d0))
+b6=n.a(d2.h(d5,c9))
 if(b6==null)b6=[]
-b7=n.a(d1.h(d4,c8))
-if(!J.aP(b7==null?[]:b7)){b7=n.a(d1.h(d4,c9))
-b7=J.aP(b7==null?[]:b7)}else b7=!0
-b8=n.a(d1.h(d4,d0))
-b8=J.aP(b8==null?[]:b8)
-b9=n.a(d1.h(d4,c8))
-b9=J.aA(b9==null?[]:b9)
-c0=n.a(d1.h(d4,c9))
+b7=n.a(d2.h(d5,d1))
+if(b7==null)b7=[]
+b8=n.a(d2.h(d5,c9))
+if(!J.aP(b8==null?[]:b8)){b8=n.a(d2.h(d5,d0))
+b8=J.aP(b8==null?[]:b8)}else b8=!0
+b9=n.a(d2.h(d5,d1))
+b9=J.aP(b9==null?[]:b9)
+c0=n.a(d2.h(d5,c9))
 c0=J.aA(c0==null?[]:c0)
-c1=n.a(d1.h(d4,d0))
+c1=n.a(d2.h(d5,d0))
 c1=J.aA(c1==null?[]:c1)
-n=n.a(d1.h(d4,"publicPreviewFiles"))
+c2=n.a(d2.h(d5,d1))
+c2=J.aA(c2==null?[]:c2)
+n=n.a(d2.h(d5,"publicPreviewFiles"))
 if(n==null)n=[]
-d1=d1.h(d4,"adminRemarks")
-d1=d1==null?c2:J.v(d1)
-if(d1==null)d1=""
-return A.G(["id",m,"customer_id",a3,"title","Connect with "+a4,"homeowner",d3,"customer_name",d3,"customer_phone",r,"customer_email",q,"location",a6,"raw_location",g,"budget",o,"timeline",c,"property_type",f,"property_size",b,"description",u.fG,"urgency",a5,"status","available","posted_date",a7,"registered_date",a8,"has_collected_keys",a9,"is_potential_lead",!0,"calculated_price",b0,c7,b1,"floorplan_files",b2,"floorplan_images",b4,"floorplan_pdfs",b5,"site_images",b6,"has_floorplans",b7,"has_site_images",b8,"floorplan_count",b9+c0,"site_images_count",c1,"public_preview_files",n,"is_looking_for_loan",a1,"loan_types",d2,"loan_type",a2,"reno_research_remarks",d1,"original_customer_data",d4],t.N,b3)},
+d2=d2.h(d5,"adminRemarks")
+d2=d2==null?c3:J.v(d2)
+if(d2==null)d2=""
+return A.G(["id",m,"customer_id",a3,"title","Connect with "+a4,"homeowner",d4,"customer_name",d4,"customer_phone",r,"customer_email",q,"location",a6,"raw_location",g,"budget",o,"timeline",c,"property_type",f,"property_size",b,"description",u.fG,"urgency",a5,"status","available","posted_date",a7,"registered_date",a8,"has_collected_keys",a9,"is_potential_lead",!0,"calculated_price",b0,c8,b1,"hide_connections_count",b2,"floorplan_files",b3,"floorplan_images",b5,"floorplan_pdfs",b6,"site_images",b7,"has_floorplans",b8,"has_site_images",b9,"floorplan_count",c0+c1,"site_images_count",c2,"public_preview_files",n,"is_looking_for_loan",a1,"loan_types",d3,"loan_type",a2,"reno_research_remarks",d2,"original_customer_data",d5],t.N,b4)},
 $S:70}
 A.bty.prototype={
 $1(a){return J.v(a)},
 $S:12}
 A.btx.prototype={
-$1(i8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1="customerData",e2="leadData",e3=null,e4="customerName",e5="isFlexibleBudget",e6="Not specified",e7="selectedBudgetValues",e8="renovationLoan",e9="renovationLoanInterest",f0="selectedLoanTypes",f1="appointmentSlots",f2="floorplanImages",f3="floorplanFiles",f4="siteImages",f5="siteVideoUrls",f6="renovationType",f7="partialSelections",f8="otherRenovationType",f9="address",g0="unitNumber",g1="postalCode",g2="timeline",g3="calculatedPrice",g4="acceptedAppointmentSlot",g5="selectedAppointmentSlot",g6="bundleGroupName",g7="bulkPushGroupName",g8="bundleGroupId",g9="bulkPushGroupId",h0="isBundleLead",h1="expiryThreshold",h2="acceptedLeadsAtCreation",h3="requestCount",h4="customerId",h5="acceptedLeadsCount",h6="leadType",h7="source",h8="quotationFormData",h9="editHistory",i0="adminRemarks",i1=J.Q(i8),i2=t.f,i3=t.N,i4=t.z,i5=i2.b(i1.h(i8,e1))?A.bV(i2.a(i1.h(i8,e1)),i3,i4):A.L(i3,i4),i6=i2.b(i1.h(i8,e2))?A.bV(i2.a(i1.h(i8,e2)),i3,i4):A.L(i3,i4),i7=i5.h(0,"name")
-i7=i7==null?e3:J.v(i7)
-if(i7==null){i7=i1.h(i8,e4)
-i7=i7==null?e3:J.v(i7)}if(i7==null){i7=i6.h(0,e4)
-i7=i7==null?e3:J.v(i7)
-s=i7}else s=i7
+$1(j1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2="customerData",e3="leadData",e4=null,e5="customerName",e6="isFlexibleBudget",e7="Not specified",e8="selectedBudgetValues",e9="renovationLoan",f0="renovationLoanInterest",f1="selectedLoanTypes",f2="appointmentSlots",f3="floorplanImages",f4="floorplanFiles",f5="siteImages",f6="siteVideoUrls",f7="renovationType",f8="partialSelections",f9="otherRenovationType",g0="address",g1="unitNumber",g2="postalCode",g3="timeline",g4="calculatedPrice",g5="acceptedAppointmentSlot",g6="selectedAppointmentSlot",g7="bundleGroupName",g8="bulkPushGroupName",g9="bundleGroupId",h0="bulkPushGroupId",h1="isBundleLead",h2="expiryThreshold",h3="acceptedLeadsAtCreation",h4="requestCount",h5="customerId",h6="acceptedLeadsCount",h7="hideConnectionsCount",h8="customerActivity",h9="leadType",i0="source",i1="quotationFormData",i2="editHistory",i3="adminRemarks",i4=J.Q(j1),i5=t.f,i6=t.N,i7=t.z,i8=i5.b(i4.h(j1,e2))?A.bV(i5.a(i4.h(j1,e2)),i6,i7):A.L(i6,i7),i9=i5.b(i4.h(j1,e3))?A.bV(i5.a(i4.h(j1,e3)),i6,i7):A.L(i6,i7),j0=i8.h(0,"name")
+j0=j0==null?e4:J.v(j0)
+if(j0==null){j0=i4.h(j1,e5)
+j0=j0==null?e4:J.v(j0)}if(j0==null){j0=i9.h(0,e5)
+j0=j0==null?e4:J.v(j0)
+s=j0}else s=j0
 if(s==null)s="Unknown"
-i7=i1.h(i8,"customerPhone")
-i7=i7==null?e3:J.v(i7)
-if(i7==null){i7=i5.h(0,"phone")
-i7=i7==null?e3:J.v(i7)
-r=i7}else r=i7
+j0=i4.h(j1,"customerPhone")
+j0=j0==null?e4:J.v(j0)
+if(j0==null){j0=i8.h(0,"phone")
+j0=j0==null?e4:J.v(j0)
+r=j0}else r=j0
 if(r==null)r=""
-i7=i5.h(0,"email")
-i7=i7==null?e3:J.v(i7)
-if(i7==null){i7=i1.h(i8,"customerEmail")
-i7=i7==null?e3:J.v(i7)
-q=i7}else q=i7
+j0=i8.h(0,"email")
+j0=j0==null?e4:J.v(j0)
+if(j0==null){j0=i4.h(j1,"customerEmail")
+j0=j0==null?e4:J.v(j0)
+q=j0}else q=j0
 if(q==null)q=""
-p=i1.h(i8,"leadId")
-if(p==null)p=i1.h(i8,"id")
-o=J.q(i1.h(i8,"purchased"),!0)||J.q(i1.h(i8,"viewed"),!0)
-if(J.q(i6.h(0,e5),!0)||J.q(i5.h(0,e5),!0))n="Flexible Budget"
-else{m=i6.h(0,e7)
-if(m==null)m=i5.h(0,e7)
-if(m!=null&&J.l(m,"min")!=null){i7=this.a
+p=i4.h(j1,"leadId")
+if(p==null)p=i4.h(j1,"id")
+o=J.q(i4.h(j1,"purchased"),!0)||J.q(i4.h(j1,"viewed"),!0)
+if(J.q(i9.h(0,e6),!0)||J.q(i8.h(0,e6),!0))n="Flexible Budget"
+else{m=i9.h(0,e8)
+if(m==null)m=i8.h(0,e8)
+if(m!=null&&J.l(m,"min")!=null){j0=this.a
 l=J.Q(m)
-n="S$"+i7.ND(J.v(l.h(m,"min")))+" - S$"+i7.ND(J.v(l.h(m,"max")))}else n=e6}k=i6.h(0,e8)
-if(k==null)k=i5.h(0,e8)
-i7=k==null
-l=i7?e3:J.l(k,"isLookingForLoan")
-if(l==null)l=i6.h(0,e9)
-j=l==null?i5.h(0,e9):l
+n="S$"+j0.ND(J.v(l.h(m,"min")))+" - S$"+j0.ND(J.v(l.h(m,"max")))}else n=e7}k=i9.h(0,e9)
+if(k==null)k=i8.h(0,e9)
+j0=k==null
+l=j0?e4:J.l(k,"isLookingForLoan")
+if(l==null)l=i9.h(0,f0)
+j=l==null?i8.h(0,f0):l
 if(j==null)j=!1
-i7=i7?e3:J.l(k,"loanTypes")
-if(i7==null)i7=i6.h(0,f0)
-if(i7==null)i7=i5.h(0,f0)
-if(i7==null)i7=[]
+j0=j0?e4:J.l(k,"loanTypes")
+if(j0==null)j0=i9.h(0,f1)
+if(j0==null)j0=i8.h(0,f1)
+if(j0==null)j0=[]
 l=t.j
-l.a(i7)
-i=i6.h(0,f1)
-if(i==null)i=i5.h(0,f1)
+l.a(j0)
+i=i9.h(0,f2)
+if(i==null)i=i8.h(0,f2)
 h=l.a(i==null?[]:i)
 i=this.a
-g=i6.h(0,"bookedAppointmentSlots")
+g=i9.h(0,"bookedAppointmentSlots")
 g=l.a(g==null?[]:g)
-f=i1.h(i8,"customerBookedAppointmentSlots")
+f=i4.h(j1,"customerBookedAppointmentSlots")
 e=i.b3P(g,l.a(f==null?[]:f))
 g=t.g
-f=g.a(i6.h(0,f2))
-d=f==null?g.a(i5.h(0,f2)):f
+f=g.a(i9.h(0,f3))
+d=f==null?g.a(i8.h(0,f3)):f
 if(d==null)d=[]
-f=g.a(i6.h(0,f3))
-c=f==null?g.a(i5.h(0,f3)):f
+f=g.a(i9.h(0,f4))
+c=f==null?g.a(i8.h(0,f4)):f
 if(c==null)c=[]
-f=A.N(d,i4)
+f=A.N(d,i7)
 B.h.t(f,c)
-b=g.a(i6.h(0,f4))
-a=b==null?g.a(i5.h(0,f4)):b
+b=g.a(i9.h(0,f5))
+a=b==null?g.a(i8.h(0,f5)):b
 if(a==null)a=[]
-b=g.a(i6.h(0,f5))
-a0=b==null?g.a(i5.h(0,f5)):b
+b=g.a(i9.h(0,f6))
+a0=b==null?g.a(i8.h(0,f6)):b
 if(a0==null)a0=[]
-b=i6.h(0,f6)
-b=b==null?e3:J.v(b)
-if(b==null){b=i5.h(0,f6)
-b=b==null?e3:J.v(b)
+b=i9.h(0,f7)
+b=b==null?e4:J.v(b)
+if(b==null){b=i8.h(0,f7)
+b=b==null?e4:J.v(b)
 a1=b}else a1=b
 if(a1==null)a1="Renovation"
-b=g.a(i6.h(0,f7))
-a2=b==null?g.a(i5.h(0,f7)):b
+b=g.a(i9.h(0,f8))
+a2=b==null?g.a(i8.h(0,f8)):b
 if(a2==null)a2=[]
-b=i6.h(0,f8)
-b=b==null?e3:J.v(b)
-if(b==null){b=i5.h(0,f8)
-b=b==null?e3:J.v(b)
+b=i9.h(0,f9)
+b=b==null?e4:J.v(b)
+if(b==null){b=i8.h(0,f9)
+b=b==null?e4:J.v(b)
 a3=b}else a3=b
 if(a3==null)a3=""
-if(a1.toLowerCase()==="partial"&&J.aP(a2))a1="Partial ("+J.bF(a2,new A.btv(),i3).aX(0,", ")+")"
+if(a1.toLowerCase()==="partial"&&J.aP(a2))a1="Partial ("+J.bF(a2,new A.btv(),i6).aX(0,", ")+")"
 else if(a1.toLowerCase()==="other"&&a3.length!==0)a1="Other ("+a3+")"
 else if(a1==="Renovation"&&a3.length!==0)a1=a3
 b=o?s:i.b3t(s)
@@ -166494,115 +166510,117 @@ if(o)a4=r
 else a4=r.length>4?B.l.aa(r,0,4)+"****":"Hidden"
 if(o)a5=q
 else a5=B.l.u(q,"@")?B.l.aa(q,0,2)+"***@"+B.h.gae(q.split("@")):"Hidden"
-a6=i6.h(0,f9)
+a6=i9.h(0,g0)
 if(a6==null)a6="Location hidden"
-a7=i6.h(0,f9)
-if(a7==null)a7=i5.h(0,f9)
+a7=i9.h(0,g0)
+if(a7==null)a7=i8.h(0,g0)
 if(a7==null)a7=""
-a8=i6.h(0,g0)
-if(a8==null)a8=i5.h(0,g0)
+a8=i9.h(0,g1)
+if(a8==null)a8=i8.h(0,g1)
 if(a8==null)a8=""
-a9=i6.h(0,g1)
-if(a9==null)a9=i5.h(0,g1)
+a9=i9.h(0,g2)
+if(a9==null)a9=i8.h(0,g2)
 if(a9==null)a9=""
-b0=i6.h(0,g2)
-if(b0==null)b0=e6
-b1=i6.h(0,g2)
+b0=i9.h(0,g3)
+if(b0==null)b0=e7
+b1=i9.h(0,g3)
 b1=i.aeO(b1==null?"":b1)
-b2=i1.h(i8,g3)
+b2=i4.h(j1,g4)
 if(b2==null)b2=50
-b3=i1.h(i8,"receivedAt")
+b3=i4.h(j1,"receivedAt")
 b3=A.lJ(b3==null?"":b3)
 if(b3==null)b3=new A.aK(Date.now(),0,!1)
-b4=i1.h(i8,"status")
+b4=i4.h(j1,"status")
 if(b4==null)b4="received"
-b5=i6.h(0,"specialRequirements")
+b5=i9.h(0,"specialRequirements")
 if(b5==null)b5=""
-b6=i1.h(i8,g4)
-if(b6==null)b6=i1.h(i8,g5)
-if(b6==null)b6=i6.h(0,g4)
-if(b6==null)b6=i6.h(0,g5)
+b6=i4.h(j1,g5)
+if(b6==null)b6=i4.h(j1,g6)
+if(b6==null)b6=i9.h(0,g5)
+if(b6==null)b6=i9.h(0,g6)
 b7=f.length
 b8=J.Q(a)
 b9=b8.gF(a)
 c0=J.Q(a0)
 c1=c0.gF(a0)
 b8=f.length!==0||b8.gbj(a)||c0.gbj(a0)
-g=g.a(i6.h(0,"publicPreviewFiles"))
+g=g.a(i9.h(0,"publicPreviewFiles"))
 if(g==null)g=[]
-c0=i6.h(0,g6)
-c0=c0==null?e3:J.v(c0)
-if(c0==null){c0=i1.h(i8,g6)
-c0=c0==null?e3:J.v(c0)}if(c0==null){c0=i6.h(0,g7)
-c0=c0==null?e3:J.v(c0)}if(c0==null){c0=i1.h(i8,g7)
-c0=c0==null?e3:J.v(c0)}if(c0==null)c0=""
-c2=i6.h(0,g8)
-c2=c2==null?e3:J.v(c2)
-if(c2==null){c2=i1.h(i8,g8)
-c2=c2==null?e3:J.v(c2)}if(c2==null){c2=i6.h(0,g9)
-c2=c2==null?e3:J.v(c2)}if(c2==null){c2=i1.h(i8,g9)
-c2=c2==null?e3:J.v(c2)}if(c2==null)c2=""
-c3=i6.h(0,h0)
-if(c3==null)c3=i1.h(i8,h0)
+c0=i9.h(0,g7)
+c0=c0==null?e4:J.v(c0)
+if(c0==null){c0=i4.h(j1,g7)
+c0=c0==null?e4:J.v(c0)}if(c0==null){c0=i9.h(0,g8)
+c0=c0==null?e4:J.v(c0)}if(c0==null){c0=i4.h(j1,g8)
+c0=c0==null?e4:J.v(c0)}if(c0==null)c0=""
+c2=i9.h(0,g9)
+c2=c2==null?e4:J.v(c2)
+if(c2==null){c2=i4.h(j1,g9)
+c2=c2==null?e4:J.v(c2)}if(c2==null){c2=i9.h(0,h0)
+c2=c2==null?e4:J.v(c2)}if(c2==null){c2=i4.h(j1,h0)
+c2=c2==null?e4:J.v(c2)}if(c2==null)c2=""
+c3=i9.h(0,h1)
+if(c3==null)c3=i4.h(j1,h1)
 if(c3==null)c3=!1
-c4=i6.h(0,h1)
-if(c4==null)c4=i1.h(i8,h1)
+c4=i9.h(0,h2)
+if(c4==null)c4=i4.h(j1,h2)
 if(c4==null)c4=0
-c5=i1.h(i8,"remainingSlots")
+c5=i4.h(j1,"remainingSlots")
 if(c5==null)c5=-1
-c6=i1.h(i8,"acceptedSinceCreation")
+c6=i4.h(j1,"acceptedSinceCreation")
 if(c6==null)c6=0
-c7=i6.h(0,h2)
-if(c7==null)c7=i1.h(i8,h2)
+c7=i9.h(0,h3)
+if(c7==null)c7=i4.h(j1,h3)
 if(c7==null)c7=0
-c8=i6.h(0,h3)
-if(c8==null)c8=i1.h(i8,h3)
+c8=i9.h(0,h4)
+if(c8==null)c8=i4.h(j1,h4)
 if(c8==null)c8=1
-c9=i6.h(0,h3)
-if(c9==null)c9=i1.h(i8,h3)
+c9=i9.h(0,h4)
+if(c9==null)c9=i4.h(j1,h4)
 i=i.aPH(c9==null?1:c9)
-c9=i1.h(i8,h4)
-if(c9==null)c9=i5.h(0,h4)
+c9=i4.h(j1,h5)
+if(c9==null)c9=i8.h(0,h5)
 if(c9==null)c9=""
-d0=i5.h(0,h5)
-if(d0==null)d0=i1.h(i8,h5)
+d0=i8.h(0,h6)
+if(d0==null)d0=i4.h(j1,h6)
 if(d0==null)d0=0
-d1=A.fm(i1.h(i8,"customerConnectionsCount"))
+d1=A.fm(i4.h(j1,"customerConnectionsCount"))
 if(d1==null)d1=0
-d2=i1.h(i8,"effectiveLeadType")
-d2=d2==null?e3:J.v(d2)
-if(d2==null){d2=i6.h(0,h6)
-d2=d2==null?e3:J.v(d2)}if(d2==null){d2=i1.h(i8,h6)
-d2=d2==null?e3:J.v(d2)}if(d2==null){d2=i6.h(0,"type")
-d2=d2==null?e3:J.v(d2)}if(d2==null)d2=""
-d3=i1.h(i8,"purchaseAmount")
-if(d3==null)d3=i1.h(i8,g3)
-if(d3==null)d3=i6.h(0,g3)
-d4=i1.h(i8,h7)
-d4=d4==null?e3:J.v(d4)
-if(d4==null){d4=i6.h(0,"leadSource")
-d4=d4==null?e3:J.v(d4)}if(d4==null)d4=""
-d5=i1.h(i8,"paymentMethod")
-d5=d5==null?e3:J.v(d5)
-if(d5==null)d5=""
-d6=i1.h(i8,"purchaseId")
-d6=d6==null?e3:J.v(d6)
+if(!J.q(i4.h(j1,h7),!0))d2=i5.b(i4.h(j1,h8))&&J.q(J.l(i5.a(i4.h(j1,h8)),h7),!0)
+else d2=!0
+d3=i4.h(j1,"effectiveLeadType")
+d3=d3==null?e4:J.v(d3)
+if(d3==null){d3=i9.h(0,h9)
+d3=d3==null?e4:J.v(d3)}if(d3==null){d3=i4.h(j1,h9)
+d3=d3==null?e4:J.v(d3)}if(d3==null){d3=i9.h(0,"type")
+d3=d3==null?e4:J.v(d3)}if(d3==null)d3=""
+d4=i4.h(j1,"purchaseAmount")
+if(d4==null)d4=i4.h(j1,g4)
+if(d4==null)d4=i9.h(0,g4)
+d5=i4.h(j1,i0)
+d5=d5==null?e4:J.v(d5)
+if(d5==null){d5=i9.h(0,"leadSource")
+d5=d5==null?e4:J.v(d5)}if(d5==null)d5=""
+d6=i4.h(j1,"paymentMethod")
+d6=d6==null?e4:J.v(d6)
 if(d6==null)d6=""
-d7=i1.h(i8,h7)
-if((d7==null?e3:J.v(d7))!=="explore_page"){d7=i1.h(i8,h7)
-d7=(d7==null?e3:J.v(d7))==="explore_page_credits"}else d7=!0
-d8=i6.h(0,h8)
-if(d8==null)d8=i5.h(0,h8)
-if(d8==null)d8=i1.h(i8,h8)
-d9=J.q(i1.h(i8,"edited"),!0)
-e0=i1.h(i8,"lastEditedAt")
-e0=e0==null?e3:J.v(e0)
-if(e0==null)e0=""
-if(l.b(i1.h(i8,h9))){i1=J.D_(l.a(i1.h(i8,h9)),i2)
-i1=A.ba(A.ky(i1,new A.btw(),i1.$ti.k("X.E"),i4),!0,t.P)}else i1=A.a([],t.t)
-i2=i6.h(0,i0)
-if(i2==null)i2=i5.h(0,i0)
-return A.G(["id",p,"lead_id",p,"title",a1+" Project","homeowner",b,"customer_phone",a4,"customer_email",a5,"location",a6,"raw_customer_name",s,"raw_customer_phone",r,"raw_customer_email",q,"raw_address",a7,"raw_unit_number",a8,"raw_postal_code",a9,"budget",n,"timeline",b0,"urgency",b1,"credits_required",b2,"posted_date",b3,"purchased",o,"status",b4,"description",b5,"property_type",a1,"is_looking_for_loan",j,"loan_types",i7,"appointment_slots",h,"booked_appointment_slots",e,"appointment_slot",b6,"floorplan_images",d,"floorplan_pdfs",c,"floorplan_files",f,"site_images",a,"site_video_urls",a0,"floorplan_count",b7,"site_images_count",b9,"site_videos_count",c1,"has_files",b8,"public_preview_files",g,"group_name",c0,"group_id",c2,"is_bundle_lead",c3,"expiry_threshold",c4,"remaining_slots",c5,"accepted_since_creation",c6,"accepted_leads_at_creation",c7,"request_number",c8,"activity_level",i,"customer_id",c9,"accepted_leads_count",d0,"connections_count",d1,"lead_type",d2,"purchase_amount",d3,"purchase_source",d4,"payment_method",d5,"purchase_id",d6,"is_alacarte",d7,"quotation_form_data",d8,"edited",d9,"last_edited_at",e0,"edit_history",i1,"reno_research_remarks",J.v(i2==null?"":i2),"original_lead_data",i8],i3,i4)},
+d7=i4.h(j1,"purchaseId")
+d7=d7==null?e4:J.v(d7)
+if(d7==null)d7=""
+d8=i4.h(j1,i0)
+if((d8==null?e4:J.v(d8))!=="explore_page"){d8=i4.h(j1,i0)
+d8=(d8==null?e4:J.v(d8))==="explore_page_credits"}else d8=!0
+d9=i9.h(0,i1)
+if(d9==null)d9=i8.h(0,i1)
+if(d9==null)d9=i4.h(j1,i1)
+e0=J.q(i4.h(j1,"edited"),!0)
+e1=i4.h(j1,"lastEditedAt")
+e1=e1==null?e4:J.v(e1)
+if(e1==null)e1=""
+if(l.b(i4.h(j1,i2))){i4=J.D_(l.a(i4.h(j1,i2)),i5)
+i4=A.ba(A.ky(i4,new A.btw(),i4.$ti.k("X.E"),i7),!0,t.P)}else i4=A.a([],t.t)
+i5=i9.h(0,i3)
+if(i5==null)i5=i8.h(0,i3)
+return A.G(["id",p,"lead_id",p,"title",a1+" Project","homeowner",b,"customer_phone",a4,"customer_email",a5,"location",a6,"raw_customer_name",s,"raw_customer_phone",r,"raw_customer_email",q,"raw_address",a7,"raw_unit_number",a8,"raw_postal_code",a9,"budget",n,"timeline",b0,"urgency",b1,"credits_required",b2,"posted_date",b3,"purchased",o,"status",b4,"description",b5,"property_type",a1,"is_looking_for_loan",j,"loan_types",j0,"appointment_slots",h,"booked_appointment_slots",e,"appointment_slot",b6,"floorplan_images",d,"floorplan_pdfs",c,"floorplan_files",f,"site_images",a,"site_video_urls",a0,"floorplan_count",b7,"site_images_count",b9,"site_videos_count",c1,"has_files",b8,"public_preview_files",g,"group_name",c0,"group_id",c2,"is_bundle_lead",c3,"expiry_threshold",c4,"remaining_slots",c5,"accepted_since_creation",c6,"accepted_leads_at_creation",c7,"request_number",c8,"activity_level",i,"customer_id",c9,"accepted_leads_count",d0,"connections_count",d1,"hide_connections_count",d2,"lead_type",d3,"purchase_amount",d4,"purchase_source",d5,"payment_method",d6,"purchase_id",d7,"is_alacarte",d8,"quotation_form_data",d9,"edited",e0,"last_edited_at",e1,"edit_history",i4,"reno_research_remarks",J.v(i5==null?"":i5),"original_lead_data",j1],i6,i7)},
 $S:70}
 A.btv.prototype={
 $1(a){return J.v(a)},
